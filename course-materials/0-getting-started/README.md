@@ -1,0 +1,109 @@
+# Getting Started with Claude Code
+
+> **Time:** 10 minutes | **Prerequisites:** A laptop with terminal access and a Claude account
+
+## What Is Claude Code?
+
+Claude Code is a command-line tool that lets you work with Claude directly in your terminal using natural language. You type instructions in plain English (or Spanish, or any language), and Claude reads your files, writes documents, searches the web, and runs tasks for you.
+
+**You do not need to know how to code.** You give instructions. Claude does the work.
+
+---
+
+## Step 1: Install Claude Code
+
+Open your terminal application and paste the appropriate command:
+
+**macOS / Linux:**
+
+```
+curl -fsSL https://claude.ai/install.sh | sh
+```
+
+**macOS (Homebrew):**
+
+```
+brew install claude-code
+```
+
+**npm (all platforms, requires Node.js 18+):**
+
+```
+npm install -g @anthropic-ai/claude-code
+```
+
+**Windows (PowerShell):**
+
+```
+irm https://claude.ai/install.ps1 | iex
+```
+
+> **Tip for Mac users:** Open the Terminal app from Applications > Utilities, or search for "Terminal" in Spotlight (Cmd + Space).
+
+## Step 2: Authenticate
+
+Once installed, start Claude Code by typing:
+
+```
+claude
+```
+
+The first time you run it, Claude Code will ask you to log in with your Claude account. Follow the on-screen instructions to authenticate via your browser.
+
+## Step 3: Orient Yourself
+
+After authentication, you are in a Claude Code session. This is where you will work. Here is what you need to know:
+
+### Essential Commands
+
+| Command | What It Does |
+|---------|-------------|
+| `/help` | Shows available commands and usage tips |
+| `/clear` | Clears the current conversation and starts fresh |
+| **Shift+Tab** | Switches between modes (Plan, Edit, Auto-accept) |
+| `/quit` or **Ctrl+C** | Exits Claude Code |
+
+### What Can Claude Code Do?
+
+- **Read files** on your computer (reports, spreadsheets, documents)
+- **Write and create files** (briefs, summaries, emails, analyses)
+- **Search the web** for up-to-date market data, regulations, and news
+- **Organize and analyze data** from CSVs, Excel exports, and other files
+- **Run commands** on your system (create folders, manage files)
+
+### What It Cannot Do
+
+- Access your email or calendar directly
+- Log into websites on your behalf
+- Replace your professional judgment on underwriting or compliance decisions
+
+## Step 4: Try Your First Instruction
+
+Type something simple to confirm everything works:
+
+```
+What is the current Solvency II standard formula SCR calculation structure?
+Give me a brief overview in plain language.
+```
+
+Claude will respond directly in your terminal. You are ready to go.
+
+---
+
+## Quick Reference: Working Modes (Shift+Tab)
+
+Claude Code has three modes you can cycle through by pressing **Shift+Tab**:
+
+| Mode | Behavior | When to Use |
+|------|----------|-------------|
+| **Plan** | Claude explains what it would do, but takes no action | When you want to review before Claude makes changes |
+| **Edit** | Claude makes changes but asks for your approval first | Default mode, good for most work |
+| **Auto-accept** | Claude makes changes without asking | When you trust the workflow and want speed |
+
+Start in **Edit** mode. You can always switch later.
+
+---
+
+## Next Step
+
+Proceed to [Module 1.1: First Steps with Claude Code](../1-fundamentals/1.1-first-steps/README.md) to learn how to give effective instructions and complete your first insurance tasks.

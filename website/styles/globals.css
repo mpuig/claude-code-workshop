@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code, pre, .nextra-code-block {
+  font-family: var(--font-mono) !important;
+}
+
+.dark {
+  --nextra-primary-hue: 169deg;
+  --nextra-primary-saturation: 60%;
+}
+
+article table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+article table th,
+article table td {
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+article table th {
+  font-weight: 600;
+}
+
+article blockquote {
+  border-left: 3px solid hsl(169, 60%, 50%);
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  opacity: 0.9;
+}
+
+.nextra-content h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+.nextra-content h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 2.5rem;
+}

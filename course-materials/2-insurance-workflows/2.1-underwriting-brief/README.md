@@ -1,0 +1,228 @@
+# Module 2.1: Writing an Underwriting Brief with Claude Code
+
+> **Time:** 30 minutes | **Prerequisites:** [Module 1.2: Project Memory](../../1-fundamentals/1.2-project-memory/README.md)
+
+## The Scenario
+
+You are an underwriting analyst at Mediterranean Insurance Group. A broker has submitted a new commercial property portfolio for quoting: **a chain of 14 warehouse and logistics facilities across eastern Spain** operated by Levante Logistics S.A.
+
+You need to prepare a structured underwriting brief for the senior underwriter's review. The brief should assess the risk, highlight concerns, and provide pricing considerations.
+
+---
+
+## What You Will Do
+
+1. Provide Claude with portfolio data and risk factors
+2. Ask Claude to analyze exposure concentrations
+3. Generate a structured underwriting brief
+4. Iterate and refine with follow-up questions
+5. Use Claude as a thinking partner to challenge assumptions
+
+---
+
+## Step 1: Provide the Portfolio Data
+
+Start your Claude Code session and give it the context. You can either reference an actual file or provide the information directly.
+
+### Sample prompt:
+
+```
+I need to prepare an underwriting brief for a new commercial property
+submission. Here is the portfolio data:
+
+Client: Levante Logistics S.A.
+Broker: Marsh Spain
+Line of business: Commercial Property
+Policy period: 1 July 2026 to 30 June 2027
+
+The portfolio consists of 14 warehouse/logistics facilities:
+
+| # | Location | City | Built | Area (m2) | TSI (EUR) | Construction | Use |
+|---|----------|------|-------|-----------|-----------|-------------|-----|
+| 1 | Warehouse A1 | Valencia | 2015 | 8,500 | 12.000.000 | Steel frame, metal cladding | General storage |
+| 2 | Warehouse A2 | Valencia | 2015 | 8,500 | 12.000.000 | Steel frame, metal cladding | General storage |
+| 3 | Cold storage | Valencia | 2019 | 4,200 | 9.500.000 | Insulated panels, concrete | Refrigerated goods |
+| 4 | Distribution hub | Castellon | 2012 | 12,000 | 18.000.000 | Steel frame, concrete floor | Cross-docking |
+| 5 | Warehouse B1 | Castellon | 2008 | 6,000 | 7.500.000 | Pre-fab concrete | General storage |
+| 6 | Warehouse B2 | Castellon | 2008 | 6,000 | 7.500.000 | Pre-fab concrete | General storage |
+| 7 | Logistics center | Alicante | 2020 | 15,000 | 22.000.000 | Modern steel/composite | Automated sorting |
+| 8 | Warehouse C1 | Alicante | 2010 | 5,500 | 6.800.000 | Concrete block | General storage |
+| 9 | Warehouse C2 | Alicante | 2010 | 5,500 | 6.800.000 | Concrete block | General storage |
+| 10 | Port facility | Alicante | 2005 | 3,800 | 8.200.000 | Mixed steel/concrete | Marine cargo staging |
+| 11 | Warehouse D | Murcia | 2017 | 7,000 | 10.000.000 | Steel frame, cladding | General storage |
+| 12 | Sorting center | Murcia | 2021 | 9,000 | 14.500.000 | Modern composite | E-commerce fulfillment |
+| 13 | Overflow unit | Albacete | 2003 | 3,000 | 3.200.000 | Older pre-fab | Seasonal overflow |
+| 14 | Admin/ops center | Valencia | 2018 | 2,000 | 5.500.000 | Office grade concrete | Offices and IT |
+
+Total Sum Insured: EUR 143.500.000
+
+Key claims history (last 5 years):
+- 2023: Roof collapse at Castellon B1 due to heavy rain, EUR 340.000
+- 2022: Fire in cold storage Valencia (electrical fault), EUR 1.200.000
+- 2021: Flood damage at Alicante port facility, EUR 520.000
+- 2024: Minor water damage Murcia warehouse, EUR 45.000
+
+The broker is requesting an "all risks" property cover including fire,
+natural catastrophe, flood, theft, and business interruption (12 months
+indemnity period).
+
+Please acknowledge the data and let me know if you need anything else
+before we proceed.
+```
+
+**Why this works:** You gave Claude structured data, claims history, and clear scope. Claude now has everything it needs to begin analysis.
+
+---
+
+## Step 2: Analyze Exposure Concentrations
+
+Now ask Claude to think analytically about the risk.
+
+### Sample prompt:
+
+```
+Analyze the exposure concentrations in this portfolio. I want to understand:
+
+1. Geographic concentration -- how much TSI is concentrated in each city?
+   What is our PML (Probable Maximum Loss) scenario if a single event hits
+   one location cluster?
+
+2. Construction risk -- which facilities have the highest risk based on
+   age and construction type?
+
+3. Natural catastrophe exposure -- these are all in eastern Spain. What
+   are the key nat-cat perils (flood, earthquake, windstorm) and which
+   locations are most exposed?
+
+4. Accumulation risk -- are any locations close enough that a single event
+   (e.g., a wildfire or flood) could affect multiple facilities?
+
+Present this as a risk concentration analysis with a summary table.
+```
+
+### Expected output format:
+
+Claude should produce something structured like:
+
+```
+EXPOSURE CONCENTRATION ANALYSIS
+================================
+
+1. Geographic Distribution of TSI
+----------------------------------
+| City      | # Sites | Total TSI (EUR) | % of Portfolio |
+|-----------|---------|-----------------|----------------|
+| Valencia  | 4       | 39.000.000      | 27,2%          |
+| Alicante  | 4       | 43.800.000      | 30,5%          |
+| Castellon | 3       | 33.000.000      | 23,0%          |
+| Murcia    | 2       | 24.500.000      | 17,1%          |
+| Albacete  | 1       | 3.200.000       | 2,2%           |
+
+Key concern: Alicante represents 30,5% of total exposure...
+```
+
+---
+
+## Step 3: Generate the Underwriting Brief
+
+Ask Claude to pull everything together into a formal document.
+
+### Sample prompt:
+
+```
+Now generate a complete underwriting brief for the senior underwriter.
+Use this structure:
+
+1. EXECUTIVE SUMMARY (5 lines max)
+2. RISK OVERVIEW (client profile, portfolio summary)
+3. EXPOSURE ANALYSIS (the concentration analysis you just did)
+4. CLAIMS EXPERIENCE (loss history analysis, loss ratio if estimable)
+5. KEY RISK FACTORS (top 5 concerns ranked by severity)
+6. PRICING CONSIDERATIONS (factors that should drive the rate,
+   benchmarks if you can estimate them)
+7. RISK IMPROVEMENT RECOMMENDATIONS (what we should require or suggest
+   to the client)
+8. UNDERWRITING RECOMMENDATION (quote / decline / quote with conditions)
+
+Be specific. Use actual figures from the data. Flag anything that would
+make you uncomfortable as an underwriter.
+
+Save this as levante-logistics-uw-brief.md
+```
+
+**What to look for:** The brief should be detailed, reference specific data points from the portfolio, and read like a professional underwriting document.
+
+---
+
+## Step 4: Iterate and Refine
+
+The first draft is rarely perfect. Here are follow-up prompts to refine the output:
+
+### Challenge the analysis:
+
+```
+What are the three weakest points in this submission from an underwriting
+perspective? What additional information would you want from the broker
+before quoting?
+```
+
+### Adjust the recommendation:
+
+```
+The senior underwriter thinks we should quote but wants a higher deductible
+for the flood-exposed locations. Revise the recommendation section to
+include a tiered deductible structure:
+- Standard locations: EUR 25.000 deductible
+- Flood-exposed locations (Alicante port, Castellon): EUR 100.000 deductible
+- Cold storage (Valencia): EUR 50.000 deductible due to the 2022 fire claim
+```
+
+### Add a section:
+
+```
+Add a reinsurance considerations section. Given that MIG's property treaty
+has a EUR 5M excess, identify which scenarios could breach the retention
+and what facultative cover we might need.
+```
+
+### Ask Claude to think differently:
+
+```
+Put yourself in the broker's shoes. What arguments would they make to push
+back on our proposed deductibles and exclusions? How should we prepare to
+respond?
+```
+
+---
+
+## Using Claude as a Thinking Partner
+
+The real power of Claude Code is not just document generation -- it is structured thinking. Try prompts like these:
+
+| Prompt | Purpose |
+|--------|---------|
+| "What am I missing in this analysis?" | Surface blind spots |
+| "What would a loss adjuster flag if they reviewed this portfolio?" | Stress-test from a different perspective |
+| "Compare this submission to a 'good risk' benchmark for logistics warehouses in Spain" | Contextualize the risk quality |
+| "If this portfolio had one more major claim, what would happen to the loss ratio?" | Scenario analysis |
+| "Draft three questions I should ask the broker in our call tomorrow" | Meeting preparation |
+
+---
+
+## Summary
+
+In this module you learned to:
+
+- Feed structured portfolio data into Claude Code
+- Ask for analytical work (exposure concentration, risk assessment)
+- Generate a professional underwriting brief with a specific structure
+- Iterate on drafts with targeted feedback
+- Use Claude as a thinking partner, not just a writer
+
+The key takeaway: **give Claude the data, tell it what structure you want, and then challenge the output.** The best results come from two or three rounds of refinement.
+
+---
+
+## Next Step
+
+Proceed to [Module 2.2: Loss Ratio Analysis](../2.2-loss-ratio-analysis/README.md) to work with claims and premium data in a quantitative workflow.
