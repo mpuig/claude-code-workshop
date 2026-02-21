@@ -26,7 +26,7 @@ If you have actual data files, reference them with `@`. Otherwise, ask Claude to
 
 ### Sample prompt:
 
-```
+```text
 I need to analyze MIG's motor insurance loss ratios. Create two CSV files
 with realistic data for this exercise:
 
@@ -62,7 +62,7 @@ Once you have the data, ask Claude to perform the analysis.
 
 ### Sample prompt:
 
-```
+```text
 Using the data in @mig-motor-premiums.csv and @mig-motor-claims.csv,
 write and execute a Python script to calculate loss ratios with the
 following breakdowns:
@@ -86,7 +86,7 @@ Present the results in clear tables.
 
 Claude should produce tables like:
 
-```
+```text
 LOSS RATIO BY REGION -- 2025
 ==============================
 
@@ -110,7 +110,7 @@ Push Claude to go beyond the numbers and identify patterns.
 
 ### Sample prompt:
 
-```
+```text
 Based on the loss ratio analysis, I need you to dig deeper:
 
 1. TREND ANALYSIS: For the two worst-performing regions, show how their
@@ -141,7 +141,7 @@ Claude Code can create charts and visual aids. Ask for them directly.
 
 ### Sample prompt:
 
-```
+```text
 Create the following visualizations and save them as files:
 
 1. A bar chart comparing loss ratios by region for 2025, with a
@@ -171,7 +171,7 @@ Pull everything together into a document suitable for senior leadership.
 
 ### Sample prompt:
 
-```
+```text
 Write an executive summary for the CUO's quarterly portfolio review.
 Save it as motor-portfolio-review-q4-2025.md
 
@@ -202,7 +202,7 @@ Here are useful follow-up prompts for this type of analysis:
 
 ### Stress test the recommendations:
 
-```
+```text
 If we implement a 15% rate increase in Andalusia and Valencia, and
 assume claims stay flat, what would the projected loss ratios be for
 2026? Show me a simple projection.
@@ -210,7 +210,7 @@ assume claims stay flat, what would the projected loss ratios be for
 
 ### Prepare for questions:
 
-```
+```text
 The CUO will likely ask why Andalusia is so much worse than other
 regions. Give me three possible explanations with supporting evidence
 from the data, and flag which ones I can confirm vs. which need
@@ -219,7 +219,7 @@ further investigation.
 
 ### Create a one-page summary:
 
-```
+```text
 Compress the entire analysis into a single-page briefing note. Maximum
 300 words plus one summary table. This is for board members who will
 spend 60 seconds reading it.
@@ -227,7 +227,7 @@ spend 60 seconds reading it.
 
 ### Export for a presentation:
 
-```
+```text
 Convert the key findings into 5 presentation slides in markdown format.
 Each slide should have a title, 3-4 bullet points, and reference one
 table or chart. Keep the language suitable for a non-technical board

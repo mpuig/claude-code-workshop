@@ -72,7 +72,7 @@ Each CSV contains 120-150 individual claims across MIG's four markets (Spain, Fr
 
 Open Claude Code in this exercise directory and type the following prompt:
 
-```
+```text
 Read all CSV files in the data/ folder and the report template. Give me a summary of what data we have across the 4 quarters, including total claims, total amounts, and any notable patterns you see at first glance.
 ```
 
@@ -99,7 +99,7 @@ Claude Code will read all four CSV files and the report template, then produce a
 
 Type the following prompt:
 
-```
+```text
 Based on the report_template.md, create a comprehensive quarterly claims report structure. The report should include: 1) Executive Summary, 2) Key KPIs (total claims, total paid, average claim cost, loss ratio, claims frequency), 3) Trends vs previous quarter and YoY, 4) Breakdown by product line, 5) Breakdown by region, 6) Top 10 largest claims, 7) Fraud detection summary, 8) Recommendations. Define the exact KPIs and their formulas.
 ```
 
@@ -131,7 +131,7 @@ A detailed report blueprint that includes:
 
 Type the following prompt:
 
-```
+```text
 Generate the full Q4 2025 Quarterly Claims Report using all available data. Compare Q4 to Q3 and to Q4 of the previous periods. Include all sections defined in the structure. Calculate all KPIs. Add professional commentary explaining the trends. Save as quarterly_report_Q4_2025.md
 ```
 
@@ -163,7 +163,7 @@ A complete Markdown file (`quarterly_report_Q4_2025.md`) containing:
 
 Type the following prompt:
 
-```
+```text
 Create an HTML companion to the report with interactive charts: 1) Claims volume trend across all 4 quarters (line chart), 2) Claims by product line per quarter (stacked bar), 3) Average claim cost by region (horizontal bar), 4) Loss ratio evolution (line chart with target line), 5) Claims status distribution (pie chart). Save as quarterly_report_charts.html
 ```
 
@@ -192,7 +192,7 @@ An HTML file (`quarterly_report_charts.html`) that:
 
 Type the following prompt:
 
-```
+```text
 Now imagine Q1 2026 data just arrived. Generate a sample Q1 2026 dataset with realistic seasonal patterns (more motor claims in winter, similar volume to Q1 2025 with 5% growth). Save it as claims_q1_2026.csv. Then regenerate the report comparing Q1 2026 to Q4 2025 and Q1 2025.
 ```
 
@@ -219,7 +219,7 @@ Now imagine Q1 2026 data just arrived. Generate a sample Q1 2026 dataset with re
 
 Type the following prompt:
 
-```
+```text
 Create a Python script called generate_report.py that takes a quarter (e.g., 'Q4_2025') as input and automatically generates both the Markdown report and HTML charts. It should read the relevant data files, calculate all KPIs, and produce the outputs. Pierre should be able to run this whenever new data arrives.
 ```
 

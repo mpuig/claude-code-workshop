@@ -33,7 +33,7 @@ npm run preview
 
 ## Repository Structure
 
-```
+```text
 claude-code-training/
 ├── CLAUDE.md                           # Project context for Claude Code
 ├── company-context/                    # Fictional company documentation
@@ -52,7 +52,8 @@ claude-code-training/
 │   │   ├── 2.2-loss-ratio-analysis/   #   Motor portfolio loss ratio analysis
 │   │   └── 2.3-market-assessment/     #   Portugal market entry assessment
 │   ├── 3-vibe-coding/                 # Building a Claims Dashboard app
-│   └── 4-wrap-up/                     # Course wrap-up and next steps
+│   ├── 4-wrap-up/                     # Course wrap-up and next steps
+│   └── 5-advanced-tips/               # Cost, security, diffs, context window
 │
 ├── exercises/                          # Hands-on exercises with data
 │   ├── exercise-1-data-insight-tool/   # Market white space analysis
@@ -79,8 +80,9 @@ claude-code-training/
 | 5 | [Module 2.2 - Loss Ratio Analysis](course-materials/2-insurance-workflows/2.2-loss-ratio-analysis/) | 30 min | Motor portfolio analysis with visualizations |
 | 6 | [Module 2.3 - Market Assessment](course-materials/2-insurance-workflows/2.3-market-assessment/) | 30 min | Portugal market entry via web research |
 | 7 | [Module 3 - Vibe Coding](course-materials/3-vibe-coding/) | 45 min | Build a Claims Dashboard app |
+| -- | [Advanced Tips](course-materials/5-advanced-tips/) | Reference | Cost management, data security, reading diffs, context window |
 
-**Total guided time: ~3 hours** (modules can be done independently)
+**Total guided time: ~3 hours** (modules can be done independently; Advanced Tips are standalone reference material)
 
 ## Hands-On Exercises
 

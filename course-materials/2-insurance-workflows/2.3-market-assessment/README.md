@@ -14,7 +14,7 @@ This module introduces a powerful capability: **Claude Code can search the web**
 
 ## What You Will Do
 
-1. Gather market data using Claude's web search
+1. Gather market data using Claude Code's web search
 2. Analyze the competitive landscape
 3. Identify gaps and opportunities
 4. Build a market entry scorecard
@@ -28,7 +28,7 @@ Claude Code can search the web for current information. Use this to build a foun
 
 ### Sample prompt:
 
-```
+```text
 I need to build a market assessment for the Portuguese insurance market.
 MIG has acquired LusoProtect and wants to expand its product lines in
 Portugal.
@@ -64,7 +64,7 @@ Save this as portugal-market-overview.md
 
 ### Follow up for more depth:
 
-```
+```text
 Now search for more specific information:
 
 1. What is the motor insurance penetration rate in Portugal vs. Spain
@@ -87,7 +87,7 @@ Ask Claude to synthesize the market data into a competitive analysis.
 
 ### Sample prompt:
 
-```
+```text
 Based on the market data you gathered, create a competitive landscape
 analysis:
 
@@ -128,7 +128,7 @@ Now shift from description to insight. Ask Claude to think strategically.
 
 ### Sample prompt:
 
-```
+```text
 Based on the market overview and competitive analysis, identify the top
 opportunities for MIG in Portugal. Think about this from three angles:
 
@@ -168,7 +168,7 @@ Structure the analysis into a decision-making framework.
 
 ### Sample prompt:
 
-```
+```text
 Create a market entry scorecard that evaluates each potential product
 line for Portugal expansion. Score each line from 1 (low) to 5 (high)
 on these criteria:
@@ -203,7 +203,7 @@ Save as portugal-entry-scorecard.md
 
 ### Expected output format:
 
-```
+```text
 MARKET ENTRY SCORECARD -- MIG PORTUGAL EXPANSION
 ===================================================
 
@@ -223,7 +223,7 @@ Pull everything together into an executive document.
 
 ### Sample prompt:
 
-```
+```text
 Write a strategy brief for MIG's executive committee on the Portugal
 expansion opportunity. Save as portugal-strategy-brief.md
 
@@ -281,14 +281,14 @@ Use these follow-up prompts to strengthen the brief:
 
 ### Challenge the assumptions:
 
-```
+```text
 Play devil's advocate. What are the three strongest arguments AGAINST
 expanding in Portugal? What could go wrong with this strategy? Be honest.
 ```
 
 ### Prepare for board questions:
 
-```
+```text
 The CEO will likely ask: "Why not just grow organically in Spain instead
 of investing in Portugal?" Give me a compelling answer with supporting
 data points.
@@ -296,7 +296,7 @@ data points.
 
 ### Add a competitor response scenario:
 
-```
+```text
 If Fidelidade (the market leader) responds aggressively to our entry
 with price cuts in the segments we target, what is our contingency plan?
 Write a one-paragraph response strategy.
@@ -304,7 +304,7 @@ Write a one-paragraph response strategy.
 
 ### Create an investment summary:
 
-```
+```text
 Create a simple investment summary table showing:
 - Year 1-3 projected GWP, claims, expense ratio, combined ratio
 - Cumulative investment required

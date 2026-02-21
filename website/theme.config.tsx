@@ -4,9 +4,13 @@ import type { DocsThemeConfig } from 'nextra-theme-docs'
 const config: DocsThemeConfig = {
   logo: <strong>Claude Code Workshop</strong>,
   project: {
-    link: 'https://github.com/your-org/claude-code-training',
+    link: 'https://github.com/mpuig/claude-code-workshop',
   },
-  docsRepositoryBase: 'https://github.com/your-org/claude-code-training/tree/main/website',
+  docsRepositoryBase: 'https://github.com/mpuig/claude-code-workshop/tree/main/website',
+  feedback: {
+    content: 'Give us feedback →',
+    useLink: () => 'https://github.com/mpuig/claude-code-workshop/issues/new',
+  },
   darkMode: true,
   color: {
     hue: 169,

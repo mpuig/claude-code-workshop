@@ -31,7 +31,7 @@ Claude Code works like talking to a very capable colleague. You type what you ne
 
 When you want Claude to read a file on your computer, use the `@` symbol followed by the file path:
 
-```
+```text
 Summarize the key findings in @/Users/yourname/Documents/mig-claims-q3-2024.csv
 ```
 
@@ -43,13 +43,13 @@ Claude will read the file and work with its contents. This works with:
 - Text files
 - Any file on your computer
 
-> **Tip:** You can also just tell Claude the file name and location in plain language: "Read the file called claims-report.pdf in my Documents folder." Claude will find it.
+> **Tip:** You can also just tell Claude the file name and location in plain language: "Read the file called claims-report.pdf in my Documents folder." Claude Code will find it.
 
 ## Creating Files
 
 Ask Claude to create any document, and it will save it to your computer:
 
-```
+```text
 Create a file called renewal-summary.md with a structured summary of the
 key renewal terms for our marine cargo portfolio.
 ```
@@ -70,7 +70,7 @@ Claude will write the file and tell you where it saved it.
 
 If you have a claims document available, reference it directly:
 
-```
+```text
 Read @/path/to/claims-report.pdf and give me a structured summary with:
 - Total number of claims
 - Total incurred amount in EUR
@@ -82,7 +82,7 @@ Format it as a brief I can scan in 2 minutes.
 
 If you do not have a file handy, ask Claude to work with a hypothetical:
 
-```
+```text
 I'm going to describe a claims scenario. Pretend this is a quarterly claims
 report for MIG's commercial property line in Catalonia.
 
@@ -103,7 +103,7 @@ Summarize this as a structured claims brief for our underwriting committee.
 
 ### Try it:
 
-```
+```text
 Create a file called sample-claims-messy.csv with realistic but messy
 insurance claims data. Include about 15 rows with these problems:
 - Inconsistent date formats (some DD/MM/YYYY, some MM-DD-YYYY)
@@ -118,7 +118,7 @@ Use Spanish city names for locations.
 
 Once Claude creates the file, follow up with:
 
-```
+```text
 Now clean up sample-claims-messy.csv:
 - Standardize all dates to DD/MM/YYYY format
 - Make all status values consistent (capitalize first letter only)
@@ -140,7 +140,7 @@ of what you changed.
 
 ### Try it:
 
-```
+```text
 Draft a professional email from me (Senior Account Manager at Mediterranean
 Insurance Group) to Maria Torres, CFO of Iberian Logistics S.L.
 
@@ -162,7 +162,7 @@ Save it as torres-renewal-email.md
 
 After reviewing the first draft, give Claude feedback:
 
-```
+```text
 Good start, but:
 - Make the opening warmer -- reference our 8-year relationship
 - Add a bullet-point breakdown of the premium drivers
@@ -205,4 +205,4 @@ For these exercises, **Edit** mode is recommended so you can see what Claude doe
 
 ## Next Step
 
-Proceed to [Module 1.2: Project Memory with CLAUDE.md](../1.2-project-memory/README.md) to learn how to give Claude persistent context about your projects and preferences.
+Proceed to [Module 1.2: Project Memory with CLAUDE.md](../1.2-project-memory/README.md) to learn how to give Claude Code persistent context about your projects and preferences.

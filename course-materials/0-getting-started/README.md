@@ -16,25 +16,25 @@ Open your terminal application and paste the appropriate command:
 
 **macOS / Linux:**
 
-```
+```bash
 curl -fsSL https://claude.ai/install.sh | sh
 ```
 
 **macOS (Homebrew):**
 
-```
+```bash
 brew install claude-code
 ```
 
 **npm (all platforms, requires Node.js 18+):**
 
-```
+```bash
 npm install -g @anthropic-ai/claude-code
 ```
 
 **Windows (PowerShell):**
 
-```
+```powershell
 irm https://claude.ai/install.ps1 | iex
 ```
 
@@ -44,7 +44,7 @@ irm https://claude.ai/install.ps1 | iex
 
 Once installed, start Claude Code by typing:
 
-```
+```bash
 claude
 ```
 
@@ -81,12 +81,12 @@ After authentication, you are in a Claude Code session. This is where you will w
 
 Type something simple to confirm everything works:
 
-```
+```text
 What is the current Solvency II standard formula SCR calculation structure?
 Give me a brief overview in plain language.
 ```
 
-Claude will respond directly in your terminal. You are ready to go.
+Claude Code will respond directly in your terminal. You are ready to go.
 
 ---
 
@@ -96,9 +96,9 @@ Claude Code has three modes you can cycle through by pressing **Shift+Tab**:
 
 | Mode | Behavior | When to Use |
 |------|----------|-------------|
-| **Plan** | Claude explains what it would do, but takes no action | When you want to review before Claude makes changes |
-| **Edit** | Claude makes changes but asks for your approval first | Default mode, good for most work |
-| **Auto-accept** | Claude makes changes without asking | When you trust the workflow and want speed |
+| **Plan** | Claude Code explains what it would do, but takes no action | When you want to review before Claude Code makes changes |
+| **Edit** | Claude Code makes changes but asks for your approval first | Default mode, good for most work |
+| **Auto-accept** | Claude Code makes changes without asking | When you trust the workflow and want speed |
 
 Start in **Edit** mode. You can always switch later.
 

@@ -36,7 +36,7 @@ Start by telling Claude exactly what you want. Think like a product owner writin
 
 ### Sample prompt:
 
-```
+```text
 I want to build a Claims Dashboard web application for Mediterranean
 Insurance Group. I have zero coding experience, so you will handle all
 the technical work. I will describe what I want, and you will build it.
@@ -101,7 +101,7 @@ Claude will create several files and may ask you to confirm before proceeding. I
 
 When Claude finishes, it will tell you how to view the dashboard. Typically:
 
-```
+```text
 Open the file dashboard.html in your browser, or run the following
 command to start a local server...
 ```
@@ -117,7 +117,7 @@ The first version will be functional but probably not exactly what you envisione
 ### Sample refinement prompts:
 
 **Fix the layout:**
-```
+```text
 The dashboard looks good but I want some changes:
 - Make the summary cards at the top larger with bigger numbers
 - Add a EUR symbol and European number formatting to all monetary values
@@ -126,7 +126,7 @@ The dashboard looks good but I want some changes:
 ```
 
 **Improve the design:**
-```
+```text
 The design needs to feel more polished:
 - Add subtle shadows to the summary cards
 - Use a light gray background (#F5F6FA) instead of white
@@ -136,7 +136,7 @@ The design needs to feel more polished:
 ```
 
 **Fix data display:**
-```
+```text
 In the claims table at the bottom:
 - Format all EUR amounts with European number formatting (1.234,56)
 - Add alternating row colors for readability
@@ -154,7 +154,7 @@ Once the basic dashboard looks right, add more functionality.
 
 ### Add data visualizations:
 
-```
+```text
 Add a new section below the existing charts with:
 
 1. A heat map table showing average claim size by region (rows) and
@@ -171,7 +171,7 @@ Add a new section below the existing charts with:
 
 ### Add interactivity:
 
-```
+```text
 When I click on a bar in the "claims by region" chart, the entire
 dashboard should filter to show only that region's data. Clicking
 again should reset the filter.
@@ -179,14 +179,14 @@ again should reset the filter.
 
 ### Add an export feature:
 
-```
+```text
 Add an "Export to CSV" button that downloads the currently filtered
 claims data as a CSV file. Put the button next to the data table.
 ```
 
 ### Add a detail view:
 
-```
+```text
 When I click on a row in the claims table, show a detail panel on the
 right side with all the claim information in a nicely formatted card.
 Include a timeline showing: date of loss, date reported, date of last
@@ -201,7 +201,7 @@ If you want to save your project and share it with colleagues, Claude can help y
 
 ### Sample prompt:
 
-```
+```text
 Help me save this project to GitHub. I have a GitHub account but I have
 never created a repository from the command line. Walk me through it
 step by step.
@@ -222,7 +222,7 @@ If you want your dashboard accessible via a URL (so colleagues can view it witho
 
 ### Sample prompt:
 
-```
+```text
 I want my colleagues to be able to see this dashboard without
 installing anything. What is the simplest way to deploy this as a
 website they can access via a URL? I want free or very cheap hosting.
@@ -258,7 +258,7 @@ Things will break. A chart might not render. A filter might stop working. The la
 
 ### Step 1: Describe the problem
 
-```
+```text
 Something is wrong. The bar chart for claims by region is not showing
 any data. The other charts work fine. The filter dropdowns are all set
 to "All". Can you fix it?
@@ -270,7 +270,7 @@ Claude will look at the code, identify the issue, and fix it. You do not need to
 
 ### Step 3: If it is still broken, give more context
 
-```
+```text
 It's still not working. Here is what I see: the chart area is blank,
 there is a small error icon in the bottom left of my browser. The
 region filter dropdown does show all 6 regions correctly. This
@@ -283,7 +283,7 @@ If Claude seems to be repeating the same fix or going in circles, type `/clear` 
 
 ### Step 4: If you are stuck, start a fresh section
 
-```
+```text
 Let's start the charts section from scratch. Keep all the data and
 the summary cards at the top, but rebuild the chart section. Use a
 simpler approach this time.

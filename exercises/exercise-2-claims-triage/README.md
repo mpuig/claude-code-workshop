@@ -50,13 +50,13 @@ Start by asking Claude Code to explore and summarize all the data files. This gi
 
 **Open your terminal in the exercise folder, then type:**
 
-```
+```bash
 claude
 ```
 
 Once Claude Code is running, enter this prompt:
 
-```
+```text
 Read all files in the data/ folder. Summarize the incoming claims data, the business
 rules, and the historical outcomes. How many claims do we have? What categories exist?
 What are the key business rules? Are there any data quality issues?
@@ -79,7 +79,7 @@ Now ask Claude Code to formalize the triage logic by combining the business rule
 
 **Enter this prompt:**
 
-```
+```text
 Based on the business_rules.json and historical outcomes, create a comprehensive triage
 system. For each incoming claim, determine:
 
@@ -108,7 +108,7 @@ Apply the triage rules to every one of the 220 incoming claims.
 
 **Enter this prompt:**
 
-```
+```text
 Apply the triage rules to all claims in incoming_claims.csv. For each claim, add columns
 for: assigned_category, priority_level, handling_path, assigned_team, estimated_resolution_days,
 and a brief justification. Save the results as triaged_claims.csv
@@ -131,7 +131,7 @@ Create a visual summary of the triage results that Ana could share with her team
 
 **Enter this prompt:**
 
-```
+```text
 Create an HTML dashboard that shows:
 
 1) Summary statistics (claims by priority, by category, by handling path)
@@ -167,7 +167,7 @@ Finally, ask Claude Code to critically review its own work and identify weakness
 
 **Enter this prompt:**
 
-```
+```text
 Review the triaged results. Find any claims that might be misclassified or where the
 rules might not work well. Suggest improvements to the triage rules. Also flag any
 potential fraud indicators based on the claim patterns.

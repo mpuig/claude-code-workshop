@@ -26,7 +26,7 @@ Start your Claude Code session and give it the context. You can either reference
 
 ### Sample prompt:
 
-```
+```text
 I need to prepare an underwriting brief for a new commercial property
 submission. Here is the portfolio data:
 
@@ -80,7 +80,7 @@ Now ask Claude to think analytically about the risk.
 
 ### Sample prompt:
 
-```
+```text
 Analyze the exposure concentrations in this portfolio. I want to understand:
 
 1. Geographic concentration -- how much TSI is concentrated in each city?
@@ -104,7 +104,7 @@ Present this as a risk concentration analysis with a summary table.
 
 Claude should produce something structured like:
 
-```
+```text
 EXPOSURE CONCENTRATION ANALYSIS
 ================================
 
@@ -129,7 +129,7 @@ Ask Claude to pull everything together into a formal document.
 
 ### Sample prompt:
 
-```
+```text
 Now generate a complete underwriting brief for the senior underwriter.
 Use this structure:
 
@@ -160,7 +160,7 @@ The first draft is rarely perfect. Here are follow-up prompts to refine the outp
 
 ### Challenge the analysis:
 
-```
+```text
 What are the three weakest points in this submission from an underwriting
 perspective? What additional information would you want from the broker
 before quoting?
@@ -168,7 +168,7 @@ before quoting?
 
 ### Adjust the recommendation:
 
-```
+```text
 The senior underwriter thinks we should quote but wants a higher deductible
 for the flood-exposed locations. Revise the recommendation section to
 include a tiered deductible structure:
@@ -179,7 +179,7 @@ include a tiered deductible structure:
 
 ### Add a section:
 
-```
+```text
 Add a reinsurance considerations section. Given that MIG's property treaty
 has a EUR 5M excess, identify which scenarios could breach the retention
 and what facultative cover we might need.
@@ -187,7 +187,7 @@ and what facultative cover we might need.
 
 ### Ask Claude to think differently:
 
-```
+```text
 Put yourself in the broker's shoes. What arguments would they make to push
 back on our proposed deductibles and exclusions? How should we prepare to
 respond?

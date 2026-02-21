@@ -306,7 +306,7 @@ Pierre is the most enthusiastic about technology among the four personas. He is 
 
 These four personas interact in ways that reflect MIG's organizational dynamics:
 
-```
+```text
                         Elena Vidal (CEO)
                               |
                     Isabel Santos (Strategy)

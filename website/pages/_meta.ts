@@ -5,6 +5,7 @@ export default {
   'insurance-workflows': 'Module 2: Insurance Workflows',
   'vibe-coding': 'Module 3: Vibe Coding',
   'wrap-up': 'Course Wrap-Up',
+  'advanced-tips': 'Advanced Tips',
   exercises: 'Exercises',
   'company-context': 'MIG Context',
 }

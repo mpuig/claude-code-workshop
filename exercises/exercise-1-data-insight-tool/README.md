@@ -56,7 +56,7 @@ The 68 regions span 4 countries: Spain (17 autonomous communities), Portugal (18
 
 **Prompt to type in Claude Code:**
 
-```
+```text
 Read all the CSV files in the data/ folder and give me a summary of what data we have, including column names, row counts, and any data quality issues you notice.
 ```
 
@@ -80,7 +80,7 @@ Read all the CSV files in the data/ folder and give me a summary of what data we
 
 **Prompt to type in Claude Code:**
 
-```
+```text
 Combine the market penetration, demographics, and accident frequency data into a single unified dataset. Join on region_code. Calculate insurance penetration rate (premiums per capita) and risk-adjusted penetration (penetration / accident frequency). Save as a clean CSV called combined_analysis.csv
 ```
 
@@ -109,7 +109,7 @@ Combine the market penetration, demographics, and accident frequency data into a
 
 **Prompt to type in Claude Code:**
 
-```
+```text
 Analyze the combined dataset to find white spaces - regions where there is high risk exposure (high accident frequency, growing population) but low insurance penetration. Rank regions by opportunity score. Create a summary table.
 ```
 
@@ -138,7 +138,7 @@ Analyze the combined dataset to find white spaces - regions where there is high 
 
 **Prompt to type in Claude Code:**
 
-```
+```text
 Create an HTML page with interactive charts showing: 1) A scatter plot of penetration rate vs accident frequency by region (bubble size = population), 2) A bar chart of top 15 opportunity regions by score, 3) A heatmap of penetration by country and product line. Use Chart.js or similar.
 ```
 
@@ -164,7 +164,7 @@ Create an HTML page with interactive charts showing: 1) A scatter plot of penetr
 
 **Prompt to type in Claude Code:**
 
-```
+```text
 Write an executive summary for Isabel Santos (Head of Strategy at MIG) highlighting the top 5 priority regions for expansion, why they were selected, and recommended next steps. Format as a professional memo.
 ```
 
@@ -259,7 +259,7 @@ If you finish early or want to go deeper:
 
 By the end of this exercise, your directory should contain:
 
-```
+```text
 exercise-1-data-insight-tool/
   README.md                  <-- This file
   data/
