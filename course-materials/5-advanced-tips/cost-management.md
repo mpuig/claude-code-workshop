@@ -40,7 +40,7 @@ On a subscription plan, you have several options:
 
 ## Tokens in Plain Language
 
-A **token** is the unit Claude uses to process text. Think of it as a fragment of a word:
+A **token** is the unit Claude Code uses to process text. Think of it as a fragment of a word:
 
 - ~4 characters = 1 token
 - ~500 tokens = 1 typical page of text
