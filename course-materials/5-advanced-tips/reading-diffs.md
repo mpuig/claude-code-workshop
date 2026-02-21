@@ -4,7 +4,7 @@
 
 ## What Is a Diff?
 
-When Claude edits a file, it shows you a **diff** -- a side-by-side comparison of what changed. Diffs are the standard way software tools show modifications to files.
+When Claude Code edits a file, it shows you a **diff** -- a side-by-side comparison of what changed. Diffs are the standard way software tools show modifications to files.
 
 A diff shows:
 
@@ -37,13 +37,13 @@ Here is a simple example. Suppose Claude updates a claims summary:
 - The lines starting with `+` (green) are the **new** values replacing them
 - Lines with no prefix are unchanged -- they provide context so you know where the change is
 
-In this case, Claude updated the claims count from 142 to 158 and the incurred amount from EUR 2.800.000 to EUR 3.150.000. The average claim size line was not changed.
+In this case, Claude Code updated the claims count from 142 to 158 and the incurred amount from EUR 2.800.000 to EUR 3.150.000. The average claim size line was not changed.
 
 ---
 
 ## Walkthrough: Updating Numbers in a Report
 
-**Scenario:** You asked Claude to update the motor portfolio loss ratios with Q4 data.
+**Scenario:** You asked Claude Code to update the motor portfolio loss ratios with Q4 data.
 
 ```diff
  ## Motor Portfolio - Loss Ratios by Region
@@ -69,7 +69,7 @@ In this case, Claude updated the claims count from 142 to 158 and the incurred a
 
 ## Walkthrough: Restructuring a Section
 
-**Scenario:** You asked Claude to reorganize an executive summary from paragraphs to bullet points.
+**Scenario:** You asked Claude Code to reorganize an executive summary from paragraphs to bullet points.
 
 ```diff
  ## Executive Summary
@@ -89,7 +89,7 @@ In this case, Claude updated the claims count from 142 to 158 and the incurred a
 
 1. The paragraph (4 red lines) was replaced with 4 bullet points (4 green lines)
 2. The key facts are preserved: 18% increase, three large losses, 102,3% combined ratio
-3. Claude added a new action item -- decide if that is appropriate or if it should be removed
+3. Claude Code added a new action item -- decide if that is appropriate or if it should be removed
 
 ---
 
