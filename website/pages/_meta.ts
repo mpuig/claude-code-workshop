@@ -6,7 +6,7 @@ export default {
   },
   'getting-started': 'Module 0: Getting Started',
   fundamentals: 'Module 1: Fundamentals',
-  'insurance-workflows': 'Module 2: Insurance Workflows',
+  'insurance-workflows': 'Module 2: Guided Workflows',
   'vibe-coding': 'Module 3: Vibe Coding',
   'wrap-up': 'Course Wrap-Up',
   'sep-reference': {
@@ -19,6 +19,6 @@ export default {
     type: 'separator',
     title: 'Resources',
   },
-  exercises: 'Exercises',
+  exercises: 'Practice Exercises',
   'company-context': 'MIG Context',
 }

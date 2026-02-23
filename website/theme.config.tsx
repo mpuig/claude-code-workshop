@@ -9,7 +9,7 @@ const config: DocsThemeConfig = {
   docsRepositoryBase: 'https://github.com/mpuig/claude-code-workshop/tree/main/website',
   feedback: {
     content: 'Give us feedback →',
-    useLink: () => 'https://github.com/mpuig/claude-code-workshop/issues/new',
+    useLink: () => 'https://github.com/mpuig/claude-code-workshop/issues/new?title=Feedback%20for%20%E2%80%9CClaude%20Code%20Workshop%E2%80%9D&labels=feedback',
   },
   darkMode: true,
   color: {
