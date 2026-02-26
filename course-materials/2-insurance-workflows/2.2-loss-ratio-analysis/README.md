@@ -52,6 +52,47 @@ FILE 2: mig-motor-claims.csv
 Save both files in the current directory.
 ```
 
+<details>
+<summary>Example output from this step</summary>
+
+Claude generates a Python script, runs it, and creates both CSV files. Here is a preview of the data:
+
+```
+Generated 216 premium records
+Generated 2000 claim records
+```
+
+**mig-motor-premiums.csv** (first rows):
+
+```
+year,quarter,region,segment,earned_premium_eur
+2023,1,Catalonia,Private Motor,19559765.76
+2023,1,Catalonia,Commercial Fleet,8404039.52
+2023,1,Catalonia,Motorcycle,3063847.32
+2023,1,Madrid,Private Motor,17460612.08
+2023,1,Madrid,Commercial Fleet,8216552.31
+```
+
+**mig-motor-claims.csv** (first rows):
+
+```
+claim_id,year,quarter,region,segment,claim_type,incurred_amount_eur,status,date_of_loss
+CLM-10001,2023,1,Andalusia,Commercial Fleet,Theft,141489.85,Closed,18/01/2023
+CLM-10002,2023,1,Andalusia,Commercial Fleet,Third-party liability,131498.37,Closed,21/03/2023
+CLM-10003,2023,1,Andalusia,Commercial Fleet,Collision,47498.14,Closed,21/02/2023
+CLM-10004,2023,1,Andalusia,Commercial Fleet,Theft,99498.19,Closed,05/03/2023
+```
+
+**Annual totals:**
+
+| Year | Earned Premium | Claims | Incurred |
+|------|---------------|--------|----------|
+| 2023 | EUR 455,5M | 644 | EUR 312,3M |
+| 2024 | EUR 473,8M | 670 | EUR 332,2M |
+| 2025 | EUR 487,2M | 686 | EUR 348,2M |
+
+</details>
+
 ---
 
 ## Step 2: Calculate Loss Ratios
@@ -102,6 +143,54 @@ LOSS RATIO BY REGION -- 2025
 TOTAL            | 401.400.000       | 286.465.000    | 1.480    | 193.557   | 71,4%      | YELLOW |
 ```
 
+<details>
+<summary>Example output from this step</summary>
+
+Claude writes and executes a Python script that reads both CSV files and produces four analysis tables. Here are the results:
+
+**1. Overall Portfolio Loss Ratio by Year**
+
+| Year | Earned Premium | Incurred Claims | # Claims | Avg Claim | Loss Ratio | Status |
+| --- | --- | --- | --- | --- | --- | --- |
+| 2023 | 455,5M | 312,3M | 644 | 484.870 | 68,6% | OK |
+| 2024 | 473,8M | 332,2M | 670 | 495.819 | 70,1% | YELLOW |
+| 2025 | 487,2M | 348,2M | 686 | 507.586 | 71,5% | YELLOW |
+| **TOTAL** | 1.416,5M | 992,7M | 2.000 | 496.330 | 70,1% | YELLOW |
+
+**2. Loss Ratio by Region -- 2025**
+
+| Region | Earned Premium | Incurred Claims | # Claims | Avg Claim | Loss Ratio | Status |
+| --- | --- | --- | --- | --- | --- | --- |
+| Andalusia | 80,4M | 73,2M | 141 | 519.224 | 91,1% | RED |
+| Valencia | 63,8M | 53,0M | 100 | 530.371 | 83,1% | YELLOW |
+| Madrid | 127,9M | 85,8M | 175 | 490.398 | 67,1% | OK |
+| Catalonia | 140,2M | 91,3M | 182 | 501.649 | 65,1% | OK |
+| Galicia | 34,2M | 21,3M | 41 | 518.483 | 62,1% | OK |
+| Basque Country | 40,6M | 23,6M | 47 | 501.669 | 58,1% | OK |
+| **TOTAL** | 487,2M | 348,2M | 686 | 507.586 | 71,5% | YELLOW |
+
+**3. Loss Ratio by Segment (All Years)**
+
+| Segment | Earned Premium | Incurred Claims | # Claims | Avg Claim | Loss Ratio | Status |
+| --- | --- | --- | --- | --- | --- | --- |
+| Commercial Fleet | 395,3M | 292,4M | 634 | 461.129 | 74,0% | YELLOW |
+| Private Motor | 879,5M | 606,9M | 1.227 | 494.594 | 69,0% | OK |
+| Motorcycle | 141,7M | 93,4M | 139 | 672.206 | 66,0% | OK |
+
+**4. Loss Ratio by Region and Segment -- 2025** (top entries)
+
+| Region | Segment | Earned Premium | Incurred Claims | Loss Ratio | Status |
+| --- | --- | --- | --- | --- | --- |
+| Andalusia | Commercial Fleet | 22,2M | 21,1M | 95,0% | RED |
+| Andalusia | Private Motor | 50,1M | 45,1M | 90,0% | RED |
+| Andalusia | Motorcycle | 8,0M | 7,0M | 87,0% | RED |
+| Valencia | Commercial Fleet | 17,8M | 15,5M | 87,0% | RED |
+| Valencia | Private Motor | 39,6M | 32,4M | 82,0% | YELLOW |
+| Valencia | Motorcycle | 6,4M | 5,1M | 79,0% | YELLOW |
+| Madrid | Commercial Fleet | 35,8M | 25,4M | 71,0% | YELLOW |
+
+</details>
+
 ---
 
 ## Step 3: Identify Trends and Outliers
@@ -133,6 +222,68 @@ Based on the loss ratio analysis, I need you to dig deeper:
 Present each analysis as a separate section with its own table.
 ```
 
+<details>
+<summary>Example output from this step</summary>
+
+Claude runs a deeper analysis script and produces four sections:
+
+**1. Quarterly Loss Ratio Trends -- Worst Regions**
+
+| Quarter | Andalusia LR | Valencia LR | Portfolio Avg |
+| --- | --- | --- | --- |
+| 2023 Q1 | 57,6% | 78,8% | 65,8% |
+| 2023 Q2 | 95,9% | 87,6% | 67,2% |
+| 2023 Q3 | 85,6% | 91,2% | 76,9% |
+| 2023 Q4 | 91,6% | 51,2% | 64,3% |
+| 2024 Q1 | 96,8% | 46,2% | 68,6% |
+| 2024 Q2 | 57,8% | 85,5% | 56,2% |
+| 2024 Q3 | 112,2% | 98,0% | 78,1% |
+| 2024 Q4 | 83,5% | 88,9% | 78,0% |
+| 2025 Q1 | 103,2% | 75,3% | 80,2% |
+| 2025 Q2 | 73,1% | 80,8% | 62,8% |
+| 2025 Q3 | 103,6% | 83,5% | 76,9% |
+| 2025 Q4 | 85,1% | 92,6% | 66,8% |
+
+Key finding: Andalusia's annual loss ratio has deteriorated from ~83% in 2023 to ~91% in 2025. Valencia moved from ~77% to ~83%. Both regions are pulling the portfolio into YELLOW territory.
+
+**2. Large Loss Impact (claims &gt; EUR 500.000)**
+
+| Region | Full Loss Ratio | Excl. Large Losses | Impact of Large Losses |
+| --- | --- | --- | --- |
+| Andalusia | 87,2% | 27,8% | 59,4% |
+| Valencia | 80,2% | 25,1% | 55,1% |
+| Catalonia | 64,1% | 20,9% | 43,2% |
+| Madrid | 66,8% | 24,0% | 42,8% |
+| Basque Country | 58,4% | 19,6% | 38,8% |
+| Galicia | 61,4% | 19,4% | 42,1% |
+
+**3. Claim Type Analysis -- Andalusia**
+
+| Claim Type | # Claims | Incurred (EUR) | % of Total | Avg Claim |
+| --- | --- | --- | --- | --- |
+| Third-party liability | 84 | 60,4M | 29,5% | 719.327 |
+| Collision | 127 | 46,4M | 22,7% | 365.428 |
+| Total loss | 48 | 45,8M | 22,4% | 954.100 |
+| Theft | 86 | 40,9M | 20,0% | 475.762 |
+| Weather damage | 33 | 9,0M | 4,4% | 272.995 |
+| Windscreen | 34 | 2,1M | 1,0% | 62.593 |
+
+In Andalusia, Theft claims represent a disproportionately high 20,0% share of incurred costs. In Valencia, Weather damage is the standout driver at 13,3% -- consistent with the region's exposure to DANA flooding events.
+
+**4. Outlier Detection -- Date Clustering (3+ claims on same date/region)**
+
+39 date clusters found. Example:
+
+| Date | Region | # Claims | Total Incurred | Claim Types |
+| --- | --- | --- | --- | --- |
+| 23/10/2023 | Madrid | 4 | 1,7M | Collision, Theft, Total loss |
+| 29/04/2025 | Catalonia | 4 | 2,0M | Collision, Theft, Third-party liability |
+| 29/06/2025 | Madrid | 4 | 2,2M | Collision, Third-party liability, Total loss |
+
+These could indicate weather events, multi-vehicle accidents, or potential fraud patterns worth investigating.
+
+</details>
+
 ---
 
 ## Step 4: Generate Visualizations
@@ -162,6 +313,21 @@ for the CUO.
 ```
 
 > **Note:** Claude will likely create these as HTML files with embedded JavaScript charts (using a library like Chart.js). You can open them in any web browser by double-clicking the file.
+
+<details>
+<summary>Example output from this step</summary>
+
+Claude creates three HTML files with Chart.js visualizations:
+
+**1. loss-ratio-by-region.html** -- Bar chart showing 2025 loss ratios by region. Andalusia (91,1%) and Valencia (83,1%) are highlighted in red and yellow respectively, clearly exceeding the 70% target line and 85% critical threshold line. Catalonia, Madrid, Basque Country, and Galicia all appear in green below the target.
+
+**2. quarterly-trend-worst-regions.html** -- Line chart tracking quarterly loss ratios for Andalusia (red line), Valencia (orange line), and the portfolio average (blue dashed line) across 12 quarters from 2023 Q1 to 2025 Q4. Both Andalusia and Valencia show significant volatility quarter-to-quarter but a clear upward trend, consistently above the 70% target line.
+
+**3. loss-ratio-heatmap.html** -- Color-coded table with regions as rows and segments as columns. The heatmap makes it immediately clear that all three segments in Andalusia are red (&gt;80%), and Commercial Fleet is the worst-performing segment across regions. Basque Country and Galicia are uniformly green.
+
+Open any of these files in a browser to view the interactive charts. They use Chart.js loaded from a CDN, so an internet connection is needed.
+
+</details>
 
 ---
 
@@ -193,6 +359,37 @@ Be specific with numbers. Reference actual figures from the data.
 Write it for a senior insurance executive who wants facts and
 recommendations, not filler.
 ```
+
+<details>
+<summary>Example output from this step</summary>
+
+Claude generates `motor-portfolio-review-q4-2025.md` with seven sections. Here are the executive summary and recommendations:
+
+**Executive Summary**
+
+- **Portfolio loss ratio deteriorated to 71,5% in 2025**, up from 68,6% in 2023 -- a 2,9 percentage point increase over two years. The estimated combined ratio of 99,5% means the motor book is now loss-making.
+- **Andalusia is in critical territory at 91,1% loss ratio**, driven by high theft frequency and elevated third-party liability costs. This region alone accounts for EUR 73,2M in incurred claims.
+- **Valencia has crossed the concerning threshold at 83,1%**, with weather damage (DANA-related flooding) as the primary driver. The trend is worsening quarter on quarter.
+- **Immediate pricing and portfolio actions are required** in both regions to prevent further erosion. Without intervention, the portfolio loss ratio is projected to exceed 75% by 2026.
+
+**Recommendations**
+
+*Pricing Actions (Implement by Q1 2026):*
+- Andalusia: 18-22% rate increase across all segments. A 20% increase would bring the projected loss ratio to ~76%.
+- Valencia: 12-15% rate increase, with an additional 5% loading for weather-exposed postal codes.
+- Commercial Fleet nationwide: 8-10% rate increase to address the segment's structural underperformance.
+
+*Portfolio Actions:*
+- Restrict new Commercial Fleet business in Andalusia until loss ratio drops below 80%.
+- Introduce a minimum premium floor for Motorcycle policies in Andalusia and Valencia.
+
+*Claims Management Actions:*
+- Deploy anti-fraud analytics in Andalusia, focusing on theft claims (20% theft share vs. 12% portfolio average).
+- Establish a large loss protocol requiring management sign-off on reserves above EUR 500.000.
+
+*Outlook: If We Act* -- Projected 2026 portfolio loss ratio: 67-69% (combined ratio ~95-97%). *If We Don't Act* -- Projected 2026: 73-76% (combined ratio ~101-104%), with the motor book becoming loss-making at portfolio level.
+
+</details>
 
 ---
 

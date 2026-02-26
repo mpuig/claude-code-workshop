@@ -1,11 +1,11 @@
 ---
 title: "Module 2.3: Market Entry Assessment"
-description: Use Claude Code's web search to build a market entry assessment for Portugal expansion.
+description: "Use Claude Code web search to build a market entry assessment for Portugal expansion."
 ---
 
 # Module 2.3: Market Entry Assessment with Claude Code
 
-> **Time:** 30 minutes | **Prerequisites:** [Module 1: Fundamentals](/fundamentals/first-steps)
+> **Time:** 30 minutes | **Prerequisites:** [Module 2.2: Loss Ratio Analysis](../2.2-loss-ratio-analysis/README.md)
 
 ## The Scenario
 
@@ -84,6 +84,64 @@ Now search for more specific information:
 Add this to the market overview document.
 ```
 
+<details>
+<summary>Example output from this step</summary>
+
+> **Note:** Market data sourced from web search in February 2026. Figures may have changed since this example was generated.
+
+**Market Size and Growth**
+
+| Metric | Value | Source |
+|--------|-------|--------|
+| Total insurance GWP (2024) | ~EUR 14,3 billion (estimated) | [Statista](https://www.statista.com/topics/13197/insurance-industry-in-portugal/) |
+| Non-life GWP (2023) | EUR 6,6 billion | [GlobalData via Insurance Edge](https://insurance-edge.net/2024/01/01/portugals-gi-market-is-set-to-grow/) |
+| Non-life GWP (2028, projected) | EUR 9,2 billion | [GlobalData](https://www.globaldata.com/media/insurance/portugal-general-insurance-industry-surpass-9-billion-2028-says-globaldata/) |
+| Non-life CAGR (2023-2028) | 6,9% | GlobalData |
+| Insurance penetration (% of GDP) | 5,6% | Internal context data |
+
+**Top Insurers -- Market Share (Q3 2024)**
+
+| Rank | Insurer | Market Share | Parent/Owner |
+|------|---------|-------------|--------------|
+| 1 | Fidelidade | ~29,5% | Fosun International (China) |
+| 2 | Ageas Portugal | ~18,1% | Ageas Group (Belgium) |
+| 3 | Generali / Tranquilidade | ~10,7% | Generali Group (Italy) |
+| 4 | Allianz Portugal | ~8,5% | Allianz SE (Germany) |
+| 5 | Zurich Portugal | ~5-6% (estimated) | Zurich Insurance (Switzerland) |
+
+Sources: [Statista -- Leading insurers by GWP](https://www.statista.com/statistics/901333/largest-insurance-groups-in-portugal-by-gross-written-premiums/), [ECO -- Ranking seguros 2023](https://eco.sapo.pt/2024/01/24/ranking-seguros-2023-fidelidade-mantem-lideranca-tranquilidade-ganha-mercado/)
+
+> The top 3 insurers control approximately 59,2% of the market. The top 10 control approximately 88,6%.
+
+**Line of Business Breakdown (Non-Life, 2023)**
+
+| Line of Business | Share of Non-Life GWP | Estimated GWP (EUR M) | CAGR (2023-2028) |
+|------------------|-----------------------|-----------------------|-------------------|
+| Personal Accident &amp; Health | 36,6% | ~2.416 | 8,0% |
+| Motor | 26,5% | ~1.749 | 4,7% |
+| Liability (incl. workers' comp) | 17,7% | ~1.168 | 7,8% |
+| Property (fire and other damage) | ~10% (estimated) | ~660 | ~6% (estimated) |
+| Marine, aviation and transit | ~3% (estimated) | ~198 | ~4% (estimated) |
+| Financial lines and misc. | ~6,2% (estimated) | ~409 | ~7% (estimated) |
+
+Source: [GlobalData via Insurance Edge](https://insurance-edge.net/2024/01/01/portugals-gi-market-is-set-to-grow/)
+
+> **Flag:** The breakdown for health, motor, and liability is confirmed published data. Property, marine, and financial lines percentages are estimates derived from the reported "remaining 19,2%" category.
+
+**Distribution Channels (2024 Estimated)**
+
+| Channel | Estimated Share | Trend |
+|---------|----------------|-------|
+| Agents (tied and independent) | ~40% | Stable |
+| Bancassurance | ~25-30% | Stable |
+| Brokers | ~15-18% | Growing |
+| Direct digital | ~8-10% | Growing fast |
+| Other (embedded, affinity) | ~3-5% | Emerging |
+
+Sources: [Chambers -- Insurance &amp; Reinsurance 2026 Portugal](https://practiceguides.chambers.com/practice-guides/insurance-reinsurance-2026/portugal/trends-and-developments), [Grand View Research](https://www.grandviewresearch.com/industry-analysis/portugal-accident-insurance-market-report)
+
+</details>
+
 ---
 
 ## Step 2: Analyze the Competitive Landscape
@@ -125,6 +183,47 @@ where appropriate.
 Save as portugal-competitive-analysis.md
 ```
 
+<details>
+<summary>Example output from this step</summary>
+
+> **Note:** Market data sourced from web search in February 2026. Figures may have changed since this example was generated.
+
+**Market Concentration**
+
+The Portuguese non-life market is **highly concentrated** -- an oligopoly with a dominant leader. The top 3 players control approximately 59,2% of premiums. The top 10 control approximately 88,6%.
+
+**Top 5 Competitor Profiles**
+
+| Dimension | Fidelidade (~30%) | Ageas (~16%) | Generali/Tranq. (~11%) | Allianz (~9%) | Zurich (~6%) |
+|-----------|------------------|-------------|----------------------|--------------|-------------|
+| Key strength | Scale, brand, full product range | Bancassurance (Millennium BCP) | Health segment, rising share | Commercial lines expertise | Specialty/corporate focus |
+| Distribution | Multi-channel (agents, bancassurance via CGD, digital app with 1,6M+ users) | Heavily dependent on BCP partnership | Agents, brokers, growing digital | Broker-focused (commercial), agents (personal) | Broker channel only |
+| Digital capability | High | Low | Medium | Medium | Low |
+| Weakness | Bureaucratic; slow in niche segments | Over-reliance on single channel | Complex group structure | Perceived as expensive | Very limited retail presence |
+
+**Competitive Intensity by Segment**
+
+| Segment | Intensity | Dominant Players | Opportunity for MIG |
+|---------|-----------|------------------|---------------------|
+| Motor (personal) | Very high | Fidelidade, Ageas | Limited |
+| Motor (fleet) | Medium-high | Fidelidade, Allianz | Medium |
+| Health (individual) | High | Fidelidade, Tranquilidade | Medium |
+| Commercial property (SME) | Medium-low | Allianz, Zurich | **High** |
+| Specialty / niche | Low | Limited local competition | **High** |
+| Cyber | Very low | Minimal competition | **Very high** |
+
+**Key Barriers to Entry**
+
+| Barrier | Severity | Mitigation via LusoProtect |
+|---------|----------|---------------------------|
+| Bancassurance lock-in | High | Partial -- LusoProtect has limited BPI partnership |
+| Brand recognition | High | Partial -- LusoProtect known in motor; MIG brand unknown |
+| Agent network density | Medium-high | Good -- existing ~180 agents in Lisbon/Porto |
+| Regulatory requirements | Medium | Good -- already licensed and ASF-compliant |
+| Scale economics | Medium | Good -- MIG group-level scale (EUR 1,8B GWP) |
+
+</details>
+
 ---
 
 ## Step 3: Identify Gaps and Opportunities
@@ -164,6 +263,32 @@ attractiveness and feasibility. Explain your reasoning.
 
 Present as a table with narrative commentary.
 ```
+
+<details>
+<summary>Example output from this step</summary>
+
+> **Note:** Market data sourced from web search in February 2026. Figures may have changed since this example was generated.
+
+**Opportunity Matrix**
+
+| Opportunity | Attractiveness | Feasibility | Rationale |
+|-------------|---------------|-------------|-----------|
+| **PRODUCT GAPS** | | | |
+| SME commercial property | HIGH | HIGH | Portuguese SMEs are significantly underinsured (32% penetration in rural areas). MIG has proven EUR 216M commercial book in Spain. Few dedicated competitors in this segment. |
+| Cyber insurance for SMEs | HIGH | LOW | Fast-growing segment (12,8% CAGR projected) with minimal existing competition. However, MIG lacks cyber underwriting capability and the market is nascent -- requires investment before returns. |
+| Climate risk products | MEDIUM | MEDIUM | Growing awareness of wildfire and flood risk in Portugal. MIG has Mediterranean climate modelling expertise. But market awareness is still developing and pricing data is limited. |
+| Residential property (renters) | MEDIUM | HIGH | Very low penetration among renters in Lisbon and Porto. MIG has renter products in Spain. Easy to launch via digital channel targeting young urban demographic. |
+| Marine cargo | MEDIUM | MEDIUM | Niche opportunity leveraging MIG Barcelona's port expertise. Portugal's trade flows (Port of Sines, Leixoes) provide addressable market, but segment is small. |
+| **DISTRIBUTION** | | | |
+| Digital-first motor and home | HIGH | MEDIUM | Portuguese market is ~10% digital vs. ~20% EU average. Gap represents opportunity. Requires technology investment (SiGeSeg migration) before full digital capability. |
+| Broker partnerships (commercial) | HIGH | HIGH | Brokers control commercial distribution. MIG can offer competitive products and faster turnaround vs. incumbents. No exclusive lock-in barrier (unlike bancassurance). |
+| Cross-border Spanish-Portuguese business | MEDIUM | HIGH | Unique MIG capability -- no other insurer can seamlessly serve businesses operating in both markets. Small but high-value niche (~5.000 companies). |
+| **OPERATIONAL SYNERGIES** | | | |
+| Reinsurance purchasing power | HIGH | HIGH | Combining MIG+LusoProtect portfolios (EUR 1,8B+ GWP) delivers immediate reinsurance cost savings. Estimated EUR 3-4M annual benefit. Already partially realised. |
+| Claims automation | HIGH | MEDIUM | Deploying MIG's Guidewire ClaimCenter to Portugal could reduce motor claims time from 14,3 to &lt;11 days. Requires SiGeSeg migration investment. |
+| Earnix pricing deployment | HIGH | HIGH | Migrating LusoProtect motor to MIG's Earnix platform enables sophisticated GLM-based pricing. Direct competitive advantage vs. Portuguese peers using simpler models. |
+
+</details>
 
 ---
 
@@ -205,6 +330,41 @@ rationale for each of the top 3 recommended lines.
 
 Save as portugal-entry-scorecard.md
 ```
+
+<details>
+<summary>Example output from this step</summary>
+
+> **Note:** Market data sourced from web search in February 2026. Figures may have changed since this example was generated.
+
+**Market Entry Scorecard** -- Scores 1-5 per criterion. Market Size and MIG Capability weighted at 2x. Maximum possible score: 40.
+
+| Product Line | Mkt Size (2x) | Comp. Intensity* (1x) | MIG Capability (2x) | Platform Readiness (1x) | Reg. Simplicity* (1x) | Synergy (1x) | **TOTAL (/40)** |
+|---|---|---|---|---|---|---|---|
+| **Commercial Property (SME)** | 6 | 4 | 10 | 3 | 3 | 5 | **31** |
+| **Motor (expand existing)** | 8 | 2 | 8 | 5 | 4 | 4 | **31** |
+| **Residential Property** | 6 | 3 | 8 | 4 | 4 | 4 | **29** |
+| Health / Group Health | 10 | 2 | 6 | 2 | 2 | 3 | **25** |
+| Marine Cargo | 4 | 4 | 8 | 2 | 3 | 4 | **25** |
+| General Liability | 6 | 2 | 6 | 3 | 3 | 3 | **23** |
+| Specialty / Niche | 4 | 4 | 6 | 1 | 2 | 3 | **20** |
+| Cyber Insurance | 4 | 5 | 4 | 1 | 2 | 3 | **19** |
+
+*Competitive intensity and regulatory complexity are scored inversely: 5 = least competitive / simplest; 1 = most competitive / most complex.*
+
+**Ranking Summary**
+
+| Rank | Product Line | Score | Priority | Year |
+|------|-------------|-------|----------|------|
+| 1 | Commercial Property (SME) | 31 | **Primary** | Year 1 |
+| 2 | Motor (expand) | 31 | **Primary** | Year 1 |
+| 3 | Residential Property | 29 | **Primary** | Year 1-2 |
+| 4 | Health / Group Health | 25 | Secondary | Year 2 |
+| 5 | Marine Cargo | 25 | Secondary | Year 2-3 |
+| 6 | General Liability | 23 | Evaluate | Year 2-3 |
+| 7 | Specialty / Niche | 20 | Monitor | Year 3+ |
+| 8 | Cyber Insurance | 19 | Monitor | Year 3+ |
+
+</details>
 
 ### Expected output format:
 
@@ -277,6 +437,44 @@ Tone: strategic, evidence-based, confident but honest about uncertainties.
 This is a board-level document. Avoid jargon where possible, define
 acronyms on first use.
 ```
+
+<details>
+<summary>Example output from this step</summary>
+
+> **Note:** Market data sourced from web search in February 2026. Figures may have changed since this example was generated.
+
+**Executive Summary (excerpt)**
+
+Mediterranean Insurance Group has a unique window of opportunity in Portugal. The 2024 acquisition of LusoProtect gives MIG an operational platform in the fastest-growing insurance market in its footprint (6,9% CAGR vs. 4,2% in Spain). The Portuguese non-life market is projected to grow from EUR 6,6 billion to EUR 9,2 billion by 2028, and MIG is positioned to capture a disproportionate share of that growth.
+
+Our top three opportunities are: (1) SME commercial property -- an underserved segment where MIG's existing Spanish expertise transfers directly; (2) Motor expansion -- improving LusoProtect's 6,7% market share through pricing modernisation and fleet products; (3) Residential property cross-sell -- leveraging the motor customer base and low Portuguese home insurance penetration.
+
+Financial target: grow Portugal gross written premium (GWP) from EUR 95M (FY 2025) to EUR 175-200M by FY 2028, achieving a combined ratio below 97% by Year 3.
+
+**Recommended Product Strategy (excerpt)**
+
+| Priority | Product Line | Year 1 (2026) | Year 2 (2027) | Year 3 (2028) |
+|----------|-------------|---------------|---------------|---------------|
+| **Primary** | Motor (expand) | Deploy Earnix pricing; launch fleet product; mobile claims FNOL | Scale fleet; UBI pilot | Full digital motor offering |
+| **Primary** | Commercial Property (SME) | Launch standardised SME package | Expand to mid-market (EUR 5-25M turnover) | Specialty sub-segments |
+| **Primary** | Residential Property | Develop product; recruit underwriters | Launch homeowner + renter; cross-sell from motor | Scale; launch landlord product |
+| Secondary | Health / Group Health | Market research; provider network assessment | Launch group health (25+ lives) | Individual health (if profitable) |
+| Secondary | Marine Cargo | Feasibility study | Pilot with importers/exporters | Scale if profitable |
+
+**Financial Projections (excerpt)**
+
+> **Caveat:** These projections are indicative estimates. Key assumptions are flagged below.
+
+| Metric | FY 2025 (Actual) | Year 1 (2026) | Year 2 (2027) | Year 3 (2028) |
+|--------|------------------|---------------|---------------|---------------|
+| Total Portugal GWP | EUR 95M | EUR 113M | EUR 153M | EUR 198M |
+| Combined Ratio | 98,5% | 99,2% | 97,8% | 96,5% |
+| Total Investment Required | -- | EUR 9,5M | EUR 10M | EUR 6M |
+| **Cumulative Investment** | -- | EUR 9,5M | EUR 19,5M | EUR 25,5M |
+
+Key assumptions: motor retention above 87%; commercial property loss ratio of 62-64% (consistent with MIG Spain); SiGeSeg migration completed by Q4 2027; no major nat-cat events exceeding 1-in-50-year severity; Portuguese GDP growth above 1,5% annually.
+
+</details>
 
 ---
 
@@ -364,4 +562,4 @@ The key takeaway: **Claude Code is not just a writing tool -- it is a research a
 
 ## Next Step
 
-Proceed to [Module 3: Building an Insurance App with Vibe Coding](/vibe-coding) to learn how non-technical users can build working applications with Claude Code.
+Proceed to [Module 3: Building an Insurance App with Vibe Coding](../../3-vibe-coding/README.md) to learn how non-technical users can build working applications with Claude Code.
