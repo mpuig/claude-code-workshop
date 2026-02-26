@@ -1,6 +1,6 @@
 ---
 title: "Exercise 2: Claims Triage Prototype"
-description: Build a claims triage system that classifies, prioritizes, and routes 220 incoming claims.
+description: "Build a claims triage system that classifies, prioritizes, and routes 220 incoming claims."
 ---
 
 # Exercise 2: Claims Triage Prototype
@@ -76,6 +76,50 @@ What are the key business rules? Are there any data quality issues?
 **Why this matters:**
 Before writing any code, you need to understand the data and rules. Claude Code reads and synthesizes multiple files at once, which would take you much longer to do manually.
 
+<details>
+<summary>Example output from this step</summary>
+
+```
+=== INCOMING CLAIMS SUMMARY ===
+Total claims: 220
+
+Product Lines:
+  Motor: 79       Home: 79       Health: 36       Commercial: 26
+
+Incident Types (top 5):
+  theft: 36       water_damage: 33       collision: 32
+  glass_damage: 14       fire: 13
+
+Regions (top 5):
+  Madrid: 56       Catalunya: 50       Valencia: 30
+  Andalucia: 27       Galicia: 17
+
+Estimated Amount (EUR):
+  Min: 154,95       Max: 220.700,00       Mean: 20.172,45
+  Total exposure: 4.437.939,33
+
+Injury Reported: Yes=19, No=201
+Police Report Filed: Yes=83, No=137
+Status: New=196, Under Review=24
+
+=== DATA QUALITY OBSERVATIONS ===
+- Claims with >30 days reporting delay: 14
+- Repeat claimants (2+ claims): 60
+  Elena Rossi Delgado: 6 claims
+  Francesca Romero Reyes: 6 claims
+  Chiara Delgado Morales: 4 claims
+- Claims with suspiciously round amounts (>= EUR 5.000): 21
+- 41 claims already have an adjuster assigned
+
+=== HISTORICAL OUTCOMES (160 claims) ===
+Outcomes: Approved=75, Partially Approved=39, Denied=24,
+          Fraud Confirmed=12, Withdrawn=10
+Fraud rate: 7,5%
+Average resolution: 20,3 days
+```
+
+</details>
+
 ---
 
 ### Step 2: Define the Triage Rules (~10 minutes)
@@ -105,6 +149,58 @@ Document the rules clearly in a file so we can review and adjust them.
 **Why this matters:**
 This step forces clarity. Informal rules in a JSON file become explicit, reviewable logic. You can iterate on these rules later.
 
+<details>
+<summary>Example output from this step</summary>
+
+Claude Code will create a file like `triage_rules.md` with structured rules. Here is the key structure:
+
+**Category Assignment** -- maps product_line + incident_type to 9 categories:
+
+| Product Line | Incident Type | Category |
+|---|---|---|
+| Motor | collision (with injury) | auto-bodily-injury |
+| Motor | collision (no injury) | auto-property |
+| Motor | theft, vandalism, glass_damage | auto-property |
+| Home | water_damage, storm_damage | home-water-damage |
+| Home | fire, electrical_damage | home-fire |
+| Home | theft, vandalism | home-theft |
+| Health | medical_emergency, hospitalization, surgery | health-emergency |
+| Health | outpatient, dental, physiotherapy | health-routine |
+| Commercial | slip_and_fall, product_liability | commercial-liability |
+| Commercial | property_damage, fire, flood | commercial-property |
+
+**Priority Levels** (first match wins, evaluated top-to-bottom):
+
+```
+Critical: amount > EUR 50.000, or injury + amount > EUR 10.000,
+          or commercial fire, or hospitalization
+High:     amount > EUR 20.000, or injury, or any fire,
+          or theft > EUR 10.000, or liability claims
+Medium:   amount EUR 5.000-20.000, or water/storm damage,
+          or police report filed
+Low:      amount < EUR 5.000, or glass/dental/physiotherapy/outpatient
+```
+
+**Handling Paths:**
+
+```
+fast-track:          Low priority + < EUR 2.000, glass damage,
+                     routine health < EUR 3.000
+standard:            Low/Medium not fast-track eligible
+complex-review:      High/Critical priority, > EUR 20.000, fire claims
+fraud-investigation: 2+ fraud indicators triggered
+legal-referral:      Liability + injury, amount > EUR 100.000,
+                     professional negligence
+```
+
+**Fraud Indicators** (2+ triggers mandate SIU referral):
+- FI-001: Multiple recent claims (2+ in 90 days) -- High severity
+- FI-004: Delayed reporting >30 days -- Medium severity
+- FI-005: No police report for theft/vandalism -- High severity
+- FI-008: Suspiciously round estimates >= EUR 5.000 -- Low severity
+
+</details>
+
 ---
 
 ### Step 3: Apply Triage to Incoming Claims (~10 minutes)
@@ -127,6 +223,59 @@ and a brief justification. Save the results as triaged_claims.csv
 
 **Why this matters:**
 This is where the rules get tested against real data. You will see how well the rules handle the variety of claims, and whether any edge cases fall through the cracks.
+
+<details>
+<summary>Example output from this step</summary>
+
+**Summary statistics from the triage run:**
+
+```
+Total claims processed: 220
+
+PRIORITY DISTRIBUTION:
+  Critical  :   34 (15,5%)
+  High      :   59 (26,8%)
+  Medium    :   81 (36,8%)
+  Low       :   46 (20,9%)
+
+CATEGORY DISTRIBUTION:
+  auto-property            :   70 (31,8%)
+  home-water-damage        :   41 (18,6%)
+  health-routine           :   23 (10,5%)
+  home-theft               :   21 ( 9,5%)
+  home-fire                :   17 ( 7,7%)
+  commercial-property      :   15 ( 6,8%)
+  health-emergency         :   13 ( 5,9%)
+  commercial-liability     :   11 ( 5,0%)
+  auto-bodily-injury       :    9 ( 4,1%)
+
+HANDLING PATH DISTRIBUTION:
+  standard                 :   77 (35,0%)
+  complex-review           :   67 (30,5%)
+  fast-track               :   41 (18,6%)
+  fraud-investigation      :   23 (10,5%)
+  legal-referral           :   12 ( 5,5%)
+
+TEAM WORKLOAD:
+  Motor Claims Unit (BCN-MOT)            :   71
+  Property Claims Unit (BCN-PROP)        :   69
+  Health Claims Unit (BCN-HLT)           :   34
+  Special Investigations Unit (BCN-SIU)  :   23
+  Legal & Compliance (BCN-LEG)           :   12
+  Commercial Lines Unit (BCN-COM)        :   11
+```
+
+**Sample triaged rows:**
+
+| Claim ID | Category | Priority | Handling Path | Team | Justification |
+|---|---|---|---|---|---|
+| CLM-2025-30002 | home-fire | Critical | complex-review | BCN-PROP | Amount EUR 90.300 exceeds 50.000 |
+| CLM-2025-30004 | auto-bodily-injury | Critical | complex-review | BCN-MOT | Injury + amount EUR 10.700 (>10.000) |
+| CLM-2025-30014 | commercial-liability | Critical | legal-referral | BCN-LEG | Amount EUR 68.500 + injury |
+| CLM-2025-30026 | auto-property | Low | fast-track | BCN-MOT | Amount EUR 978 below 5.000 |
+| CLM-2025-30093 | home-fire | Critical | fraud-investigation | BCN-SIU | 2 fraud flags: repeat claimant + 48-day delay |
+
+</details>
 
 ---
 
@@ -164,6 +313,31 @@ open dashboard.html
 **Why this matters:**
 A prototype is only useful if stakeholders can see and interact with the results. Claude Code can generate complete, functional web interfaces from a single prompt.
 
+<details>
+<summary>Example output from this step</summary>
+
+The dashboard is a single self-contained HTML file (~108 KB) with no external dependencies. When opened in a browser, it displays:
+
+**Header:** MIG branding with dark blue gradient, dashboard title, generation date, and owner name (Ana Martinez).
+
+**Summary cards (4 across the top):**
+- Critical: 34 claims (15,5%) -- red accent, 4h response SLA
+- High: 59 claims (26,8%) -- amber accent, 24h response SLA
+- Medium: 81 claims (36,8%) -- blue accent, 48h response SLA
+- Low: 46 claims (20,9%) -- green accent, 72h response SLA
+
+**Critical alerts panel:** Red-bordered section listing all 34 Critical claims sorted by amount. Highest: CLM-2025-30201 (commercial-property, EUR 220.700), CLM-2025-30112 (commercial-property, EUR 211.400).
+
+**Distribution charts (2x2 grid):**
+- Category distribution: horizontal bar chart, auto-property leads with 70 claims
+- Handling path distribution: standard (77), complex-review (67), fast-track (41), fraud-investigation (23), legal-referral (12)
+- Team workload: Motor Claims (71), Property Claims (69), Health Claims (34), SIU (23), Legal (12), Commercial (11)
+- Total estimated exposure by priority: Critical claims represent the highest total EUR exposure
+
+**Claims table:** Sortable table of all 220 claims with columns for Claim ID, Policyholder, Product, Incident, Amount, Category, Priority (color-coded badges), Handling Path, Team, and Estimated Days. Includes filter dropdowns for priority and handling path, plus a text search box.
+
+</details>
+
 ---
 
 ### Step 5: Test with Edge Cases (~5 minutes)
@@ -186,6 +360,60 @@ potential fraud indicators based on the claim patterns.
 
 **Why this matters:**
 No rule-based system is perfect on the first pass. This step teaches you to iterate: build, test, review, improve. It also demonstrates how Claude Code can act as a second pair of eyes on your work.
+
+<details>
+<summary>Example output from this step</summary>
+
+**Potential misclassifications:**
+
+```
+Glass damage with high amount on fast-track:
+  CLM-2025-30053 | EUR 10.000,00 | glass_damage
+  (Rule routes all glass_damage to fast-track, but EUR 10.000
+   may warrant standard review)
+
+Dental claim with unusually high amount:
+  CLM-2025-30125 | EUR 20.000,00 | dental | Priority: Medium
+  (Most dental claims are EUR 200-3.000; this outlier may
+   indicate inflated estimate or miscoded procedure)
+```
+
+**Fraud pattern analysis:**
+
+```
+Policyholders with 3+ claims (highest risk):
+  Francesca Romero Reyes: 6 claims, EUR 462.170 total (Motor, Home, Health, Commercial)
+  Elena Rossi Delgado: 6 claims, EUR 76.410 total (Motor, Home, Health, Commercial)
+  Chiara Delgado Morales: 4 claims, EUR 97.700 total (Motor, Home, Health)
+
+Claims with >30 days reporting delay: 14
+  CLM-2025-30049 | 60 days | EUR 18.000 | water_damage
+  CLM-2025-30099 | 60 days | EUR 3.890  | surgery
+  CLM-2025-30093 | 48 days | EUR 89.000 | fire (also repeat claimant)
+
+Theft/vandalism without police report: 7 claims
+  CLM-2025-30211 | theft | EUR 28.500 | Chiara Delgado Morales
+  CLM-2025-30212 | vandalism | EUR 20.000 | Valentina Silva Costa
+
+Round number estimates (>= EUR 5.000): 21 claims flagged
+```
+
+**Rule improvement recommendations:**
+
+```
+a) Add amount cap to fast-track glass damage (EUR 10.000 claim
+   should not be auto-fast-tracked)
+b) Flag dental claims > EUR 5.000 for medical review
+c) Add cross-product repeat claimant detection
+d) Water damage claims > EUR 15.000 should auto-upgrade to High
+   (17 claims affected; historical data shows these take longer)
+e) SIU capacity concern: 23 referrals vs. daily capacity of 5
+   -- queue backlog of approximately 5 days
+f) Consider separate handling for 15-30 day reporting delays
+   (current rule only flags >30 days)
+```
+
+</details>
 
 ---
 
