@@ -324,8 +324,8 @@ These four personas interact in ways that reflect MIG's organizational dynamics:
 ```
 
 **Key interactions:**
-- **Ana <-> Pierre:** Ana's claims data is Pierre's input for reserving. When claims data quality is poor or late, Pierre's actuarial analysis is delayed. They interact primarily through data extracts rather than directly.
-- **Luca <-> Pierre:** Luca requests ad hoc pricing analyses from Pierre's team. Pierre sometimes supports Italian commercial lines pricing during peak periods.
-- **Isabel <-> Ana:** Isabel needs claims performance data for her strategic analyses. Ana is a key source of ground-truth insight about operational challenges.
-- **Isabel <-> Luca:** Isabel relies on Luca for commercial market intelligence in Italy. Luca provides broker feedback on competitive positioning.
-- **All four <-> Project Tramuntana:** Each persona is affected by the digital transformation program, but their priorities and expectations differ significantly.
+- **Ana ↔ Pierre:** Ana's claims data is Pierre's input for reserving. When claims data quality is poor or late, Pierre's actuarial analysis is delayed. They interact primarily through data extracts rather than directly.
+- **Luca ↔ Pierre:** Luca requests ad hoc pricing analyses from Pierre's team. Pierre sometimes supports Italian commercial lines pricing during peak periods.
+- **Isabel ↔ Ana:** Isabel needs claims performance data for her strategic analyses. Ana is a key source of ground-truth insight about operational challenges.
+- **Isabel ↔ Luca:** Isabel relies on Luca for commercial market intelligence in Italy. Luca provides broker feedback on competitive positioning.
+- **All four ↔ Project Tramuntana:** Each persona is affected by the digital transformation program, but their priorities and expectations differ significantly.

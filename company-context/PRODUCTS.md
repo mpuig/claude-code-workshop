@@ -186,7 +186,7 @@ Commercial property serves small and medium enterprises (SMEs) and mid-market bu
 
 | Product | Description | % of Commercial GWP | Avg Premium |
 |---|---|---|---|
-| **SME Package** | Bundled property, liability, and business interruption for businesses with <EUR 5M turnover | 60% | EUR 2,200 |
+| **SME Package** | Bundled property, liability, and business interruption for businesses with &lt;EUR 5M turnover | 60% | EUR 2,200 |
 | **Mid-Market** | Tailored property and casualty programs for businesses with EUR 5M-100M turnover | 40% | EUR 12,800 |
 
 ### Policy Structure -- SME Package
