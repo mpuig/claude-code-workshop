@@ -15,6 +15,22 @@ MCP (Model Context Protocol) is an open standard by Anthropic for connecting Cla
 
 When you add an MCP server, Claude Code gains access to that server's tools alongside its built-in tools (Read, Edit, Bash, etc.). Claude sees tool descriptions and decides when to call them based on your requests. The server handles the actual integration -- querying a database, calling an API, reading from a file system.
 
+```mermaid
+sequenceDiagram
+    participant You
+    participant Claude as Claude Code
+    participant MCP as MCP Server
+    participant Ext as External Service
+
+    You->>Claude: "Show open claims for Barcelona"
+    Claude->>Claude: Selects mcp__claims-db__query tool
+    Claude->>MCP: Tool call with parameters
+    MCP->>Ext: SQL query / API request
+    Ext-->>MCP: Raw results
+    MCP-->>Claude: Formatted response
+    Claude-->>You: Summary with table
+```
+
 MCP servers come in two flavors:
 
 - **Remote servers** (HTTP transport): cloud-hosted, often with OAuth authentication. Examples: GitHub, Sentry, Notion.

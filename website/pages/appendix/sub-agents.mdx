@@ -24,6 +24,16 @@ When Claude Code encounters a task that benefits from isolation -- exploring a l
 
 This isolation is the key benefit: verbose output (hundreds of grep results, full test logs) stays in the sub-agent's context while only the relevant findings return to your conversation.
 
+```mermaid
+flowchart TD
+    A[Your conversation] -->|Spawns| B[Sub-agent]
+    A -->|Spawns| C[Sub-agent]
+    B -->|Own context window| D[Read, Grep, Bash ...]
+    C -->|Own context window| E[Read, Grep, Bash ...]
+    D -->|Summary only| A
+    E -->|Summary only| A
+```
+
 ---
 
 ## Built-in Agent Types
@@ -164,6 +174,19 @@ Agent teams go beyond sub-agents. Instead of isolated workers reporting back to 
 > **Status:** Experimental. Enable with `CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1`.
 
 ### How Teams Work
+
+```mermaid
+flowchart TD
+    Lead[Team Lead] -->|Creates tasks| TL[Shared Task List]
+    Lead -->|Spawns| T1[Teammate 1]
+    Lead -->|Spawns| T2[Teammate 2]
+    Lead -->|Spawns| T3[Teammate 3]
+    TL <-->|Claim & update| T1
+    TL <-->|Claim & update| T2
+    TL <-->|Claim & update| T3
+    T1 <-.->|Messages| T2
+    T2 <-.->|Messages| T3
+```
 
 | Component | Role |
 |-----------|------|

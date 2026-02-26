@@ -19,6 +19,18 @@ Every time Claude Code performs an action -- reading a file, writing code, runni
 
 Hooks are not prompts. They are deterministic: a shell script either succeeds (exit 0) or blocks the action (exit 2). This makes them ideal for guardrails that must never be skipped.
 
+```mermaid
+flowchart LR
+  A[User prompt] --> B[Claude processes]
+  B --> C[Tool call]
+  C --> D{PreToolUse hook}
+  D -->|exit 0| E[Tool executes]
+  D -->|exit 2| F[Action blocked]
+  E --> G{PostToolUse hook}
+  G --> H[Claude continues]
+  F --> H
+```
+
 ---
 
 ## Hook Events

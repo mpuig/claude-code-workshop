@@ -9,6 +9,7 @@
     "preview": "npx serve out -p 3000"
   },
   "dependencies": {
+    "mermaid": "^11.12.3",
     "next": "14.2.5",
     "nextra": "3.2.3",
     "nextra-theme-docs": "3.2.3",
