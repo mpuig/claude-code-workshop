@@ -81,7 +81,10 @@ Read all the CSV files in the data/ folder and give me a summary of what data we
 **Prompt to type in Claude Code:**
 
 ```text
-Combine the market penetration, demographics, and accident frequency data into a single unified dataset. Join on region_code. Calculate insurance penetration rate (premiums per capita) and risk-adjusted penetration (penetration / accident frequency). Save as a clean CSV called combined_analysis.csv
+- Combine the market penetration, demographics, and accident frequency data into a single unified dataset. 
+- Join on region_code. 
+- Calculate insurance penetration rate (premiums per capita) and risk-adjusted penetration (penetration / accident frequency). 
+- Save as a clean CSV called combined_analysis.csv
 ```
 
 **What to expect:**

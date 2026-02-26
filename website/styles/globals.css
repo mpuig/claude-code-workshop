@@ -17,6 +17,11 @@ code, pre, .nextra-code-block {
   font-family: var(--font-mono) !important;
 }
 
+pre code.nextra-code {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
 .dark {
   --nextra-primary-hue: 169deg;
   --nextra-primary-saturation: 60%;
