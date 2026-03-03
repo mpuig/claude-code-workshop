@@ -70,11 +70,11 @@ This project supports Mediterranean Insurance Group (MIG), a mid-size
 composite insurer headquartered in Barcelona, Spain.
 
 ## About MIG
-- Founded in 1987, ~2,400 employees
+- Founded in 1987, ~2.400 employees
 - Operates in Spain, France, and Italy
 - Recently acquired LusoProtect (Portugal) in 2025
 - Lines of business: motor, property, liability, marine, health
-- Gross written premium: approximately EUR 1.8 billion (2025)
+- Gross written premium: approximately EUR 1,8 billion (2025)
 - Regulated under Solvency II (EIOPA framework)
 
 ## Terminology Rules
@@ -121,7 +121,7 @@ composite insurer headquartered in Barcelona, Spain.
 ```text
 You: Calculate the loss ratio for our motor portfolio.
 
-Claude: The loss ratio is $2,500,000 / $5,000,000 = 50%...
+Claude: The loss ratio is $2.500.000 / $5.000.000 = 50%...
 ```
 
 Wrong currency, wrong format, no context about MIG.

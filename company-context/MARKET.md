@@ -2,17 +2,17 @@
 
 ## Market Overview
 
-The Southern European insurance market encompasses Spain, Portugal, Italy, and France (MIG operates specifically in Southern France). Together, these markets represent approximately EUR 430 billion in gross written premiums, making the region one of the largest insurance markets globally. However, growth dynamics, penetration rates, and competitive structures vary significantly by country.
+MIG's Southern European footprint covers Spain, Portugal, Italy, and France (with operations concentrated in Southern France). Together, these markets represent approximately EUR 430 billion in gross written premiums (GWP). Growth dynamics, penetration rates, and competitive structures vary by country.
 
 ### Market Size and Growth (FY 2025)
 
 | Country | Total GWP (EUR B) | Non-Life GWP (EUR B) | Life GWP (EUR B) | YoY Growth (Total) | Insurance Penetration (% of GDP) |
 |---|---|---|---|---|---|
-| **France** (total) | 265.0 | 108.0 | 157.0 | +2.8% | 9.1% |
-| *Southern France* (MIG footprint) | ~42.0 | ~17.0 | ~25.0 | +2.5% | ~8.5% |
-| **Italy** | 145.0 | 42.0 | 103.0 | +3.1% | 7.0% |
-| **Spain** | 72.5 | 40.5 | 32.0 | +4.2% | 4.9% |
-| **Portugal** | 15.8 | 7.2 | 8.6 | +5.1% | 5.6% |
+| **France** (total) | 265,0 | 108,0 | 157,0 | +2,8% | 9,1% |
+| *Southern France* (MIG footprint) | ~42,0 | ~17,0 | ~25,0 | +2,5% | ~8,5% |
+| **Italy** | 145,0 | 42,0 | 103,0 | +3,1% | 7,0% |
+| **Spain** | 72,5 | 40,5 | 32,0 | +4,2% | 4,9% |
+| **Portugal** | 15,8 | 7,2 | 8,6 | +5,1% | 5,6% |
 
 **Key observations:**
 - Spain and Portugal are the fastest-growing markets, benefiting from economic recovery, rising property values, and increasing insurance awareness.
@@ -49,18 +49,18 @@ Insurance penetration varies dramatically between urban and rural areas, and bet
 
 | Market Segment | Market Average | MIG Share | MIG Ranking |
 |---|---|---|---|
-| Spain -- Motor (urban) | -- | 4.1% | #7 |
-| Spain -- Motor (rural/suburban) | -- | 9.8% | #3 |
-| Spain -- Home | -- | 5.2% | #5 |
-| Spain -- Health | -- | 3.8% | #6 |
-| Italy -- Motor | -- | 1.8% | #12 |
-| Italy -- Commercial | -- | 2.4% | #9 |
-| Portugal -- Motor (post-LusoProtect) | -- | 6.7% | #4 |
-| Portugal -- Home (post-LusoProtect) | -- | 5.1% | #5 |
-| France South -- Motor | -- | 2.9% | #8 |
-| France South -- Home | -- | 1.7% | #11 |
+| Spain -- Motor (urban) | -- | 4,1% | #7 |
+| Spain -- Motor (rural/suburban) | -- | 9,8% | #3 |
+| Spain -- Home | -- | 5,2% | #5 |
+| Spain -- Health | -- | 3,8% | #6 |
+| Italy -- Motor | -- | 1,8% | #12 |
+| Italy -- Commercial | -- | 2,4% | #9 |
+| Portugal -- Motor (post-LusoProtect) | -- | 6,7% | #4 |
+| Portugal -- Home (post-LusoProtect) | -- | 5,1% | #5 |
+| France South -- Motor | -- | 2,9% | #8 |
+| France South -- Home | -- | 1,7% | #11 |
 
-MIG's overall market share across its footprint is approximately **2.8%** of total non-life GWP. Its strongest position is in Spanish rural and suburban motor insurance, where its deep agent network and local reputation give it a competitive advantage.
+MIG's overall market share across its footprint is approximately **2,8%** of total non-life GWP. Its strongest position is in Spanish rural and suburban motor insurance, where its deep agent network and local reputation give it a competitive advantage.
 
 ---
 
@@ -70,27 +70,27 @@ MIG's overall market share across its footprint is approximately **2.8%** of tot
 
 | Competitor | HQ | GWP (EUR B) | Key Markets | Strengths | Weaknesses (from MIG's perspective) |
 |---|---|---|---|---|---|
-| **Mapfre** | Madrid | 22.4 | Spain, LatAm, Global | Market leader in Spain, strong brand, extensive agent network, digital investments | Less focused on Mediterranean niche; bureaucratic |
-| **Generali** | Trieste | 82.5 | Italy, Europe, Global | Dominant in Italy, strong life business, sophisticated analytics | Complex organization, slow decision-making in local markets |
-| **Allianz** | Munich | 161.0 | Global | Scale, technology, brand | Perceived as impersonal; weaker in Southern European SME markets |
-| **AXA** | Paris | 102.0 | France, Europe, Global | Market leader in France, strong health business, advanced digital | Premium pricing, less competitive in price-sensitive segments |
-| **Zurich** | Zurich | 72.0 | Global | Strong commercial lines, excellent risk engineering | Limited retail presence in Southern Europe |
-| **Fidelidade** | Lisbon | 5.2 | Portugal | Market leader in Portugal (30%+ share), backed by Fosun | Limited geographic diversification |
-| **Catalana Occidente** | Barcelona | 5.8 | Spain | Strong in Catalonia, growing commercial lines | Direct competitor in MIG's home market |
-| **Mutua Madrilena** | Madrid | 7.1 | Spain | Strong motor brand, high customer satisfaction | Mutual structure limits growth capital |
-| **Reale Group** | Turin | 5.4 | Italy, Spain | Well-positioned in Spain-Italy corridor | Smaller scale, limited digital capabilities |
-| **Ageas Portugal** | Lisbon | 2.1 | Portugal | Strong bancassurance (Millennium BCP) | Dependent on single distribution channel |
+| **Mapfre** | Madrid | 22,4 | Spain, LatAm, Global | Market leader in Spain, strong brand, extensive agent network, digital investments | Less focused on Mediterranean niche; bureaucratic |
+| **Generali** | Trieste | 82,5 | Italy, Europe, Global | Dominant in Italy, strong life business, sophisticated analytics | Complex organization, slow decision-making in local markets |
+| **Allianz** | Munich | 161,0 | Global | Scale, technology, brand | Perceived as impersonal; weaker in Southern European SME markets |
+| **AXA** | Paris | 102,0 | France, Europe, Global | Market leader in France, strong health business, advanced digital | Premium pricing, less competitive in price-sensitive segments |
+| **Zurich** | Zurich | 72,0 | Global | Strong commercial lines, excellent risk engineering | Limited retail presence in Southern Europe |
+| **Fidelidade** | Lisbon | 5,2 | Portugal | Market leader in Portugal (30%+ share), backed by Fosun | Limited geographic diversification |
+| **Catalana Occidente** | Barcelona | 5,8 | Spain | Strong in Catalonia, growing commercial lines | Direct competitor in MIG's home market |
+| **Mutua Madrilena** | Madrid | 7,1 | Spain | Strong motor brand, high customer satisfaction | Mutual structure limits growth capital |
+| **Reale Group** | Turin | 5,4 | Italy, Spain | Well-positioned in Spain-Italy corridor | Smaller scale, limited digital capabilities |
+| **Ageas Portugal** | Lisbon | 2,1 | Portugal | Strong bancassurance (Millennium BCP) | Dependent on single distribution channel |
 
 ### Competitive Dynamics by Country
 
 **Spain:**
-The Spanish non-life market is moderately concentrated. The top 5 players (Mapfre, Mutua Madrilena, Catalana Occidente, Allianz, and Zurich) hold approximately 48% of the market. MIG ranks approximately 8th nationally with a 3.9% share of Spanish non-life GWP. Competition is intensifying in digital channels, where InsurTech startups (Bdeo, Cleverea, Cobee) are gaining traction in motor and health insurance. Price comparison websites (Rastreator, Acierto) account for 22% of new motor policy sales, creating downward pressure on premiums.
+The Spanish non-life market is moderately concentrated. The top 5 players (Mapfre, Mutua Madrilena, Catalana Occidente, Allianz, and Zurich) hold approximately 48% of the market. MIG ranks approximately 8th nationally with a 3,9% share of Spanish non-life GWP. Competition is intensifying in digital channels, where InsurTech startups (Bdeo, Cleverea, Cobee) are gaining traction in motor and health insurance. Price comparison websites (Rastreator, Acierto) account for 22% of new motor policy sales, creating downward pressure on premiums.
 
 **Italy:**
 The Italian non-life market is the most concentrated in Southern Europe. Generali and UnipolSai together hold approximately 45% of the market. MIG is a niche player in Italy, ranking 12th in motor and 9th in commercial lines. Competition is fierce in Northern Italy but less intense in the South, where local agents still dominate. The Italian market has the highest combined ratios in MIG's footprint, due to claims inflation and a litigation-heavy legal environment.
 
 **Portugal:**
-Portugal's insurance market is dominated by Fidelidade (approximately 30% market share), followed by Ageas Portugal and Tranquilidade. The LusoProtect acquisition has given MIG a meaningful position in Portugal for the first time, with a combined 4.5% market share (6.7% in motor). The Portuguese market is growing faster than the European average, driven by economic expansion and increasing insurance awareness. However, margins are thin due to aggressive price competition.
+Portugal's insurance market is dominated by Fidelidade (approximately 30% market share), followed by Ageas Portugal and Tranquilidade. The LusoProtect acquisition has given MIG a meaningful position in Portugal for the first time, with a combined 4,5% market share (6,7% in motor). The Portuguese market is growing faster than the European average, driven by economic expansion and increasing insurance awareness. However, margins are thin due to aggressive price competition.
 
 **Southern France:**
 MIG is a relatively small player in the French market, where AXA, CNP Assurances, Credit Agricole Assurances, and Covea dominate. MIG focuses on the Occitanie and Provence-Alpes-Cote d'Azur regions, competing primarily through independent agents and local brokers. The French market's distinctive features include the mandatory employer-provided complementary health insurance ("mutuelle d'entreprise"), the quasi-mandatory home insurance requirement, and a well-established direct/digital distribution culture.
@@ -105,7 +105,7 @@ The Southern European InsurTech ecosystem has grown rapidly, with over 180 Insur
 
 **Key InsurTech segments:**
 - **Digital distribution:** Online comparison platforms and digital MGAs (Managing General Agents) are capturing market share in personal lines. In Spain, digital channels now account for 15% of motor new business (up from 8% in 2020).
-- **Claims technology:** AI-powered damage assessment (computer vision for motor damage), fraud detection, and automated FNOL are being adopted by forward-thinking incumbents.
+- **Claims technology:** AI-powered damage assessment (computer vision for motor damage), fraud detection, and automated first notice of loss (FNOL) are being adopted by forward-thinking incumbents.
 - **Embedded insurance:** Insurance products embedded in e-commerce, travel, and mobility platforms are a fast-growing channel. Partnerships between insurers and platforms (e.g., Uber, Airbnb, food delivery apps) are becoming standard.
 - **Parametric insurance:** Weather-indexed agricultural insurance and travel delay products are gaining traction, though still niche.
 
@@ -157,10 +157,10 @@ Southern Europe faces significant demographic headwinds that affect insurance de
 
 | Country | Median Age (2025) | Population Growth (2020-2025) | % Population 65+ | Dependency Ratio |
 |---|---|---|---|---|
-| Spain | 45.8 | -0.2% | 21.3% | 56.4% |
-| Italy | 48.4 | -1.8% | 24.1% | 61.2% |
-| Portugal | 46.7 | -1.1% | 23.8% | 58.9% |
-| France | 42.3 | +0.8% | 21.7% | 53.8% |
+| Spain | 45,8 | -0,2% | 21,3% | 56,4% |
+| Italy | 48,4 | -1,8% | 24,1% | 61,2% |
+| Portugal | 46,7 | -1,1% | 23,8% | 58,9% |
+| France | 42,3 | +0,8% | 21,7% | 53,8% |
 
 **Insurance implications:**
 - **Motor:** Declining young driver population reduces new-to-insurance volumes. However, older drivers drive less but have higher per-accident severity.
@@ -221,7 +221,7 @@ Consumer expectations in insurance are being reshaped by digital experiences in 
 - **Instant quotes:** 78% of consumers under 40 expect an insurance quote in under 5 minutes (MIG average: 15 minutes for motor, 48 hours for commercial).
 - **Mobile-first:** 62% of insurance research happens on mobile devices, but only 23% of purchases are completed on mobile (friction in the buying process).
 - **Self-service claims:** 45% of consumers prefer to file claims digitally rather than by phone. MIG's mobile app allows FNOL submission for motor claims in Spain, but completion rates are low (34% abandon before submission).
-- **Personalization:** Consumers increasingly expect risk-based, behavior-linked pricing (UBI, wellness rewards in health) rather than traditional demographic rating.
+- **Personalization:** Consumers increasingly expect risk-based, behavior-linked pricing (usage-based insurance, UBI, and wellness rewards in health) rather than traditional demographic rating.
 - **Transparency:** Younger consumers are less tolerant of complex policy language and hidden exclusions. There is growing demand for plain-language policies and clear pricing breakdowns.
 
 ---
@@ -233,13 +233,13 @@ Consumer expectations in insurance are being reshaped by digital experiences in 
 - **Multi-country Mediterranean footprint:** Unique positioning across the Spain-Portugal-Italy-France corridor, enabling cross-border risk solutions and shared expertise.
 - **Strong rural/suburban presence:** Dominant in smaller cities and towns where price comparison websites and digital-native insurers have lower penetration.
 - **Healthy balance sheet:** 178% Solvency II ratio and A- credit rating provide financial stability and reinsurance capacity.
-- **Growing health business:** The fastest-growing segment (+8.7%) with strong cross-sell potential and sticky customer relationships.
+- **Growing health business:** The fastest-growing segment (+8,7%) with strong cross-sell potential and sticky customer relationships.
 
 ### Weaknesses
-- **Weak urban market position:** Only 3.2% market share in cities above 500,000 population vs. 8.7% in rural/suburban areas. MIG's brand awareness is low among urban consumers under 35.
+- **Weak urban market position:** Only 3,2% market share in cities above 500.000 population vs. 8,7% in rural/suburban areas. MIG's brand awareness is low among urban consumers under 35.
 - **Legacy technology stack:** The AS/400 claims system, fragmented data infrastructure, and Excel-dependent underwriting processes create operational inefficiency and limit speed-to-market.
 - **Digital channel immaturity:** Only 10% of GWP through direct digital channels (market average for comparable insurers: 18%). The mobile app has low engagement.
-- **Slow claims processing:** Motor claims average 14.3 days to settle (benchmark: 9.5 days), which is the number-one driver of customer complaints.
+- **Slow claims processing:** Motor claims average 14,3 days to settle (benchmark: 9,5 days), which is the number-one driver of customer complaints.
 - **Talent gap in technology:** Average IT staff age of 48; difficulty competing for tech talent in Barcelona and Milan against tech companies and digital-native insurers.
 
 ### Opportunities
@@ -264,10 +264,10 @@ Consumer expectations in insurance are being reshaped by digital experiences in 
 
 | Metric | Spain | Italy | Portugal | Southern France |
 |---|---|---|---|---|
-| MIG Market Share (Non-Life) | 3.9% | 1.8% | 4.5% | 1.2% |
+| MIG Market Share (Non-Life) | 3,9% | 1,8% | 4,5% | 1,2% |
 | MIG Market Rank | #8 | #12 | #6 | #15+ |
-| Market Growth Rate | +4.2% | +3.1% | +5.1% | +2.5% |
-| MIG Growth Rate | +3.8% | +2.9% | +7.2% | +3.1% |
+| Market Growth Rate | +4,2% | +3,1% | +5,1% | +2,5% |
+| MIG Growth Rate | +3,8% | +2,9% | +7,2% | +3,1% |
 | Motor Loss Ratio (Market) | 68% | 72% | 65% | 70% |
 | Home Loss Ratio (Market) | 58% | 62% | 55% | 64% |
 | Digital Channel Share (Market) | 15% | 12% | 10% | 18% |

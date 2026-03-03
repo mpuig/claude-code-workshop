@@ -37,22 +37,22 @@ Policy period: 1 July 2026 to 30 June 2027
 
 The portfolio consists of 14 warehouse/logistics facilities:
 
-| # | Location | City | Built | Area (m2) | TSI (EUR) | Construction | Use |
+| # | Location | City | Built | Area (m2) | Total Sum Insured (TSI, EUR) | Construction | Use |
 |---|----------|------|-------|-----------|-----------|-------------|-----|
-| 1 | Warehouse A1 | Valencia | 2015 | 8,500 | 12.000.000 | Steel frame, metal cladding | General storage |
-| 2 | Warehouse A2 | Valencia | 2015 | 8,500 | 12.000.000 | Steel frame, metal cladding | General storage |
-| 3 | Cold storage | Valencia | 2019 | 4,200 | 9.500.000 | Insulated panels, concrete | Refrigerated goods |
-| 4 | Distribution hub | Castellon | 2012 | 12,000 | 18.000.000 | Steel frame, concrete floor | Cross-docking |
-| 5 | Warehouse B1 | Castellon | 2008 | 6,000 | 7.500.000 | Pre-fab concrete | General storage |
-| 6 | Warehouse B2 | Castellon | 2008 | 6,000 | 7.500.000 | Pre-fab concrete | General storage |
-| 7 | Logistics center | Alicante | 2020 | 15,000 | 22.000.000 | Modern steel/composite | Automated sorting |
-| 8 | Warehouse C1 | Alicante | 2010 | 5,500 | 6.800.000 | Concrete block | General storage |
-| 9 | Warehouse C2 | Alicante | 2010 | 5,500 | 6.800.000 | Concrete block | General storage |
-| 10 | Port facility | Alicante | 2005 | 3,800 | 8.200.000 | Mixed steel/concrete | Marine cargo staging |
-| 11 | Warehouse D | Murcia | 2017 | 7,000 | 10.000.000 | Steel frame, cladding | General storage |
-| 12 | Sorting center | Murcia | 2021 | 9,000 | 14.500.000 | Modern composite | E-commerce fulfillment |
-| 13 | Overflow unit | Albacete | 2003 | 3,000 | 3.200.000 | Older pre-fab | Seasonal overflow |
-| 14 | Admin/ops center | Valencia | 2018 | 2,000 | 5.500.000 | Office grade concrete | Offices and IT |
+| 1 | Warehouse A1 | Valencia | 2015 | 8.500 | 12.000.000 | Steel frame, metal cladding | General storage |
+| 2 | Warehouse A2 | Valencia | 2015 | 8.500 | 12.000.000 | Steel frame, metal cladding | General storage |
+| 3 | Cold storage | Valencia | 2019 | 4.200 | 9.500.000 | Insulated panels, concrete | Refrigerated goods |
+| 4 | Distribution hub | Castellon | 2012 | 12.000 | 18.000.000 | Steel frame, concrete floor | Cross-docking |
+| 5 | Warehouse B1 | Castellon | 2008 | 6.000 | 7.500.000 | Pre-fab concrete | General storage |
+| 6 | Warehouse B2 | Castellon | 2008 | 6.000 | 7.500.000 | Pre-fab concrete | General storage |
+| 7 | Logistics center | Alicante | 2020 | 15.000 | 22.000.000 | Modern steel/composite | Automated sorting |
+| 8 | Warehouse C1 | Alicante | 2010 | 5.500 | 6.800.000 | Concrete block | General storage |
+| 9 | Warehouse C2 | Alicante | 2010 | 5.500 | 6.800.000 | Concrete block | General storage |
+| 10 | Port facility | Alicante | 2005 | 3.800 | 8.200.000 | Mixed steel/concrete | Marine cargo staging |
+| 11 | Warehouse D | Murcia | 2017 | 7.000 | 10.000.000 | Steel frame, cladding | General storage |
+| 12 | Sorting center | Murcia | 2021 | 9.000 | 14.500.000 | Modern composite | E-commerce fulfillment |
+| 13 | Overflow unit | Albacete | 2003 | 3.000 | 3.200.000 | Older pre-fab | Seasonal overflow |
+| 14 | Admin/ops center | Valencia | 2018 | 2.000 | 5.500.000 | Office grade concrete | Offices and IT |
 
 Total Sum Insured: EUR 143.500.000
 
@@ -119,8 +119,8 @@ Now ask Claude to think analytically about the risk.
 ```text
 Analyze the exposure concentrations in this portfolio. I want to understand:
 
-1. Geographic concentration -- how much TSI is concentrated in each city?
-   What is our PML (Probable Maximum Loss) scenario if a single event hits
+1. Geographic concentration -- how much total sum insured (TSI) is concentrated in each city?
+   What is our probable maximum loss (PML) scenario if a single event hits
    one location cluster?
 
 2. Construction risk -- which facilities have the highest risk based on
@@ -175,7 +175,7 @@ Key concern: Alicante represents 30,5% of total exposure...
 
 **Key concern:** Alicante and Valencia together represent 57,7% of total exposure (EUR 82.800.000). A single large-scale weather event affecting the coast between Valencia and Alicante could impact up to 8 facilities simultaneously.
 
-**PML estimate (single-event worst case):** A major DANA (Depresion Aislada en Niveles Altos) weather event affecting the Valencia-Alicante corridor could produce aggregate losses across the four Alicante sites and four Valencia sites. Assuming 15-20% damage ratio, the single-event PML is in the range of EUR 12.400.000 to EUR 16.600.000.
+**PML estimate (single-event worst case):** A major DANA event (Spanish meteorological term for an isolated upper-level low) affecting the Valencia-Alicante corridor could produce aggregate losses across the four Alicante sites and four Valencia sites. Assuming 15-20% damage ratio, the single-event PML is in the range of EUR 12.400.000 to EUR 16.600.000.
 
 #### 2. Construction Risk Assessment
 
@@ -201,7 +201,7 @@ Eastern Spain is subject to three principal nat-cat perils:
 
 | Peril | Severity | Most Exposed Sites | Commentary |
 |-------|----------|-------------------|------------|
-| **Flood** | **High** | Alicante port, Castellon B1/B2, Murcia D &amp; sorting center | The Levante coast is one of the highest flood-risk areas in Europe. DANA events in 2019 and 2024 caused widespread damage across the Valencian Community and Murcia. The Consorcio de Compensacion de Seguros (CCS) covers extraordinary flood risk, but standard policy deductibles and BI losses remain the insurer's exposure. |
+| **Flood** | **High** | Alicante port, Castellon B1/B2, Murcia D and sorting center | The Levante coast is one of the highest flood-risk areas in Europe. DANA events in 2019 and 2024 caused widespread damage across the Valencian Community and Murcia. The Consorcio de Compensacion de Seguros (CCS) covers extraordinary flood risk, but standard policy deductibles and business interruption (BI) losses remain the insurer's exposure. |
 | **Windstorm** | **Medium** | All coastal sites, particularly Alicante logistics center (large roof area of 15.000 m2) | Mediterranean cyclones (medicanes) are increasing in frequency. Metal-clad and composite roofs are vulnerable to uplift. |
 | **Earthquake** | **Low** | All sites (Zone V-VI on the Spanish seismic hazard map) | Eastern Spain has moderate seismicity. The 2011 Lorca earthquake (Murcia) caused significant damage. Murcia and Alicante sites have the highest relative exposure. |
 
@@ -322,7 +322,7 @@ respond?
 ```
 
 <details>
-<summary>Example output from this step (representative Q&amp;A exchanges)</summary>
+<summary>Example output from this step (representative Q&A exchanges)</summary>
 
 **Prompt: "What are the three weakest points in this submission?"**
 

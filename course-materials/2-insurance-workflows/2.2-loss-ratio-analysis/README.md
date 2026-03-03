@@ -41,7 +41,7 @@ FILE 1: mig-motor-premiums.csv
 FILE 2: mig-motor-claims.csv
 - Columns: claim_id, year, quarter, region, segment, claim_type,
   incurred_amount_eur, status, date_of_loss
-- About 2,000 claims across the three years
+- About 2.000 claims across the three years
 - Claim types: Collision, Theft, Third-party liability, Windscreen,
   Weather damage, Total loss
 - Make some regions worse than others -- Andalusia and Valencia should
@@ -246,7 +246,7 @@ Claude runs a deeper analysis script and produces four sections:
 
 Key finding: Andalusia's annual loss ratio has deteriorated from ~83% in 2023 to ~91% in 2025. Valencia moved from ~77% to ~83%. Both regions are pulling the portfolio into YELLOW territory.
 
-**2. Large Loss Impact (claims &gt; EUR 500.000)**
+**2. Large Loss Impact (claims > EUR 500.000)**
 
 | Region | Full Loss Ratio | Excl. Large Losses | Impact of Large Losses |
 | --- | --- | --- | --- |
@@ -323,7 +323,7 @@ Claude creates three HTML files with Chart.js visualizations:
 
 **2. quarterly-trend-worst-regions.html** -- Line chart tracking quarterly loss ratios for Andalusia (red line), Valencia (orange line), and the portfolio average (blue dashed line) across 12 quarters from 2023 Q1 to 2025 Q4. Both Andalusia and Valencia show significant volatility quarter-to-quarter but a clear upward trend, consistently above the 70% target line.
 
-**3. loss-ratio-heatmap.html** -- Color-coded table with regions as rows and segments as columns. The heatmap makes it immediately clear that all three segments in Andalusia are red (&gt;80%), and Commercial Fleet is the worst-performing segment across regions. Basque Country and Galicia are uniformly green.
+**3. loss-ratio-heatmap.html** -- Color-coded table with regions as rows and segments as columns. The heatmap makes it immediately clear that all three segments in Andalusia are red (>80%), and Commercial Fleet is the worst-performing segment across regions. Basque Country and Galicia are uniformly green.
 
 Open any of these files in a browser to view the interactive charts. They use Chart.js loaded from a CDN, so an internet connection is needed.
 

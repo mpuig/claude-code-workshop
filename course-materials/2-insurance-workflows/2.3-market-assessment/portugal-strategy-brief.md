@@ -9,14 +9,14 @@
 
 ## 1. Executive Summary
 
-**Mediterranean Insurance Group has a unique window of opportunity in Portugal.** The 2024 acquisition of LusoProtect gives MIG an operational platform in the fastest-growing insurance market in its footprint (6,9% CAGR vs. 4,2% in Spain). The Portuguese non-life market is projected to grow from EUR 6,6 billion to EUR 9,2 billion by 2028, and MIG is now positioned to capture a disproportionate share of that growth.
+**Mediterranean Insurance Group can scale in Portugal with disciplined execution.** The 2024 acquisition of LusoProtect gives MIG an operating platform in the fastest-growing insurance market in its footprint (6,9% CAGR vs. 4,2% in Spain). The Portuguese non-life market is projected to grow from EUR 6,6 billion to EUR 9,2 billion by 2028. MIG's target is to raise share through focused execution in selected segments.
 
 **Our top three opportunities are:**
 1. **SME commercial property** -- an underserved segment where MIG's existing Spanish expertise transfers directly, with limited entrenched competition.
 2. **Motor expansion** -- improving LusoProtect's existing 6,7% market share through pricing modernisation, fleet products, and superior claims handling.
 3. **Residential property cross-sell** -- leveraging the motor customer base and low Portuguese home insurance penetration (42% urban, 19% rural).
 
-**Recommended sequencing:** In Year 1, stabilise the motor book and launch SME commercial packages. In Year 2, scale residential property cross-sell and enter group health. In Year 3, evaluate marine cargo and specialty lines based on Year 1-2 results.
+**Recommended sequencing:** In Year 1, stabilise the motor book and launch SME commercial packages. In Year 2, scale residential cross-sell and enter group health. In Year 3, evaluate marine cargo and specialty lines based on Year 1 and Year 2 results.
 
 **Key risks:** Integration execution (LusoProtect's legacy SiGeSeg system), competitive response from Fidelidade (~30% market share), and climate risk concentration in the Portuguese property portfolio.
 
@@ -42,7 +42,7 @@ The penetration gap relative to the EU average represents both untapped demand a
 
 ### Competitive Landscape
 
-The market is dominated by Fidelidade (~30% non-life share), followed by Ageas Portugal (~16%) and Generali/Tranquilidade (~11%). The top 3 control approximately 59% of premiums and the top 10 control approximately 89%. This is an oligopoly with a clear market leader.
+The market is dominated by Fidelidade (~30% non-life share), followed by Ageas Portugal (~16%) and Generali/Tranquilidade (~11%). The top 3 control approximately 59% of premiums and the top 10 control approximately 89%. For MIG, this means direct price competition in personal lines is unattractive and segment selection is critical.
 
 However, competitive intensity varies significantly by segment. While personal motor is fiercely contested, commercial lines -- particularly SME-focused products -- have meaningfully lower competitive pressure. No single insurer dominates the SME segment, and many small businesses remain uninsured or underinsured.
 
@@ -65,7 +65,7 @@ The Autoridade de Supervisao de Seguros e Fundos de Pensoes (ASF) regulates the 
 
 3. **Capability transfer:** MIG has proven capabilities in SME commercial underwriting (EUR 216M GWP in Spain), health insurance (EUR 270M GWP, +8,7% growth), and digital distribution (Project Tramuntana) that are directly transferable to the Portuguese market.
 
-4. **Reinsurance leverage:** The combined MIG+LusoProtect portfolio (EUR 1,8B+ GWP) provides meaningfully better reinsurance terms than LusoProtect could negotiate independently.
+4. **Reinsurance leverage:** The combined MIG+LusoProtect portfolio (EUR 1,8B+ gross written premium, GWP) improves negotiating power versus standalone LusoProtect placement.
 
 5. **Strategic coherence:** Portugal completes MIG's Iberian footprint, strengthening the "Mediterranean insurer" positioning and enabling cross-border products for Spanish-Portuguese businesses.
 
@@ -101,8 +101,8 @@ The Autoridade de Supervisao de Seguros e Fundos de Pensoes (ASF) regulates the 
 
 | Priority | Product Line | Year 1 (2026) | Year 2 (2027) | Year 3 (2028) |
 |----------|-------------|---------------|---------------|---------------|
-| **PRIMARY** | Motor (expand) | Deploy Earnix pricing; launch fleet product; mobile claims FNOL | Scale fleet segment; UBI pilot | Full digital motor offering |
-| **PRIMARY** | Commercial Property (SME) | Launch standardised SME package (property + liability + BI) | Expand to mid-market accounts (EUR 5-25M turnover) | Specialty sub-segments (construction, renewable energy) |
+| **PRIMARY** | Motor (expand) | Deploy Earnix pricing; launch fleet product; mobile claims first notice of loss (FNOL) | Scale fleet segment; usage-based insurance (UBI) pilot | Full digital motor offering |
+| **PRIMARY** | Commercial Property (SME) | Launch standardised SME package (property + liability + business interruption, BI) | Expand to mid-market accounts (EUR 5-25M turnover) | Specialty sub-segments (construction, renewable energy) |
 | **PRIMARY** | Residential Property | Develop product; recruit underwriters | Launch homeowner + renter via agents and digital; cross-sell from motor | Scale; launch landlord product |
 | **SECONDARY** | Health / Group Health | Market research; provider network assessment | Launch group health for corporate clients (25+ lives) | Individual health launch (if group health profitable) |
 | **SECONDARY** | Marine Cargo | Feasibility study using MIG Barcelona expertise | Pilot with Portuguese importers/exporters | Scale if profitable |
@@ -113,11 +113,11 @@ The Autoridade de Supervisao de Seguros e Fundos de Pensoes (ASF) regulates the 
 **Motor:**
 - Migrate LusoProtect's motor pricing to MIG's Earnix platform (Q2-Q3 2026).
 - Launch fleet product targeting logistics, delivery, and ride-hailing companies.
-- Deploy mobile-first claims FNOL through LusoProtect's app (reduce average claims time from 14,3 to &lt;11 days).
+- Deploy mobile-first claims first notice of loss (FNOL) through LusoProtect's app (reduce average claims time from 14,3 to below 11 days).
 - Target: retain 90%+ of existing motor customers; win 2.000 new fleet vehicles.
 
 **Commercial Property (SME):**
-- Adapt MIG Spain's "SME Package" (property + liability + BI) for Portuguese regulation and market.
+- Adapt MIG Spain's "SME Package" (property + liability + business interruption, BI) for Portuguese regulation and market.
 - Recruit 3-5 experienced commercial underwriters from the Portuguese market.
 - Target sectors: hospitality/tourism (LusoProtect's existing niche), retail, construction, professional services.
 - Distribute through brokers (primary) and LusoProtect's agent network (secondary).
@@ -129,7 +129,7 @@ The Autoridade de Supervisao de Seguros e Fundos de Pensoes (ASF) regulates the 
 
 ### Differentiation Strategy
 
-MIG/LusoProtect should position as **"the insurer for Portuguese businesses"** -- a mid-size insurer that combines local knowledge with the scale and expertise of a multi-country group. This avoids competing head-on with Fidelidade in personal lines and instead targets the underserved commercial segment.
+MIG/LusoProtect should position as **"the insurer for Portuguese businesses"**: a mid-size insurer that combines local knowledge with the scale and expertise of a multi-country group. This positioning avoids head-on competition with Fidelidade in personal lines and focuses resources on underserved commercial segments.
 
 | Positioning Element | How We Differentiate |
 |--------------------|-----------------------|
@@ -143,7 +143,7 @@ MIG/LusoProtect should position as **"the insurer for Portuguese businesses"** -
 
 | Segment | Size (estimated) | Priority | Why |
 |---------|-----------------|----------|-----|
-| SMEs (&lt;EUR 5M turnover) | ~350.000 businesses | Primary | Underinsured; receptive to bundled products; limited incumbent focus |
+| SMEs (turnover below EUR 5M) | ~350.000 businesses | Primary | Underinsured; receptive to bundled products; limited incumbent focus |
 | Fleet operators (5-50 vehicles) | ~15.000 companies | Primary | Growing segment (delivery, logistics); MIG fleet expertise |
 | Urban homeowners (non-mortgage) | ~800.000 households | Secondary | Low penetration; digital-accessible; cross-sell from motor |
 | Renters (Lisbon, Porto) | ~400.000 households | Secondary | Very low penetration; young, digital-first demographic |

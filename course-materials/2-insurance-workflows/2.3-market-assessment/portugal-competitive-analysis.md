@@ -17,7 +17,7 @@ The Portuguese non-life insurance market is **highly concentrated**, with market
 | Top 3 market share (total insurance) | ~59,2% |
 | Top 5 market share (total insurance) | ~72% (estimated) |
 | Top 10 market share (total insurance) | ~88,6% |
-| Herfindahl-Hirschman Index (estimated) | ~1.500-1.700 (moderately concentrated) |
+| Herfindahl-Hirschman Index (HHI, estimated) | ~1.500-1.700 (moderately concentrated) |
 | Number of active non-life insurers | ~45 |
 
 **Structure type:** The Portuguese market is an **oligopoly with a dominant leader**. Fidelidade holds approximately 30% of the non-life market, roughly double the share of the second-largest player (Ageas at ~16%). The gap between the top 3 and the rest of the market is substantial. This structure creates both barriers and opportunities for a mid-tier entrant like MIG/LusoProtect.

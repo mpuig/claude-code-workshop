@@ -49,7 +49,7 @@ _Provide a concise overview (3-5 sentences) of the quarter's claims performance.
 
 ### KPI Dashboard
 
-| KPI | Current Quarter | Prior Quarter | QoQ Change (%) | Same Quarter Last Year | YoY Change (%) |
+| KPI | Current Quarter | Prior Quarter | Quarter-over-Quarter (QoQ) Change (%) | Same Quarter Last Year | Year-over-Year (YoY) Change (%) |
 |-----|----------------|---------------|----------------|----------------------|----------------|
 | Total Claims | [VALUE] | [VALUE] | [CHANGE] | [VALUE] | [CHANGE] |
 | Total Reported (EUR) | [VALUE] | [VALUE] | [CHANGE] | [VALUE] | [CHANGE] |
@@ -139,7 +139,7 @@ _List the ten highest-value claims for the quarter by reported amount._
 
 ### Large Claims Commentary
 
-_Discuss any claims above EUR 50,000 and their potential impact on reserves and reinsurance._
+_Discuss any claims above EUR 50.000 and their potential impact on reserves and reinsurance._
 
 [LARGE_CLAIMS_COMMENTARY]
 

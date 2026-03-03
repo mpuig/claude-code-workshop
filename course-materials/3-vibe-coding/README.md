@@ -272,7 +272,7 @@ region filter dropdown does show all 6 regions correctly. This
 started happening after you added the heat map in the last change.
 ```
 
-### Step 3.5: Clear the conversation if Claude is going in circles
+### Step 3,5: Clear the conversation if Claude is going in circles
 
 If Claude seems to be repeating the same fix or going in circles, type `/clear` to reset the conversation. This gives Claude a fresh perspective on the current state of your files without the baggage of a long debugging history. Your files on disk are not affected -- only the chat history is cleared. (Your CLAUDE.md rules are automatically reloaded.)
 

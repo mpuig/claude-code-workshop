@@ -1,6 +1,6 @@
 # MIG Claims Triage Rules
 
-**Version:** 2.1 | **Owner:** Ana Martinez, Regional Claims Manager, Barcelona
+**Version:** 2,1 | **Owner:** Ana Martinez, Regional Claims Manager, Barcelona
 **Last Updated:** 2025-01-15 | **Applies to:** Iberian Peninsula Operations
 
 ---

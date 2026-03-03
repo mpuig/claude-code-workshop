@@ -75,22 +75,22 @@ At 74,0% portfolio-wide, the Commercial Fleet segment is the worst-performing pr
 
 ## 6. Recommendations
 
-### 6.1 Pricing Actions (Implement by Q1 2026)
+### 6,1 Pricing Actions (Implement by Q1 2026)
 - **Andalusia: 18-22% rate increase** across all segments. Current loss ratio of 91,1% requires aggressive correction. A 20% increase would bring the projected loss ratio to ~76%, still above target but on a viable path.
 - **Valencia: 12-15% rate increase**, with an additional 5% loading for weather-exposed postal codes (coastal zones and river basins).
 - **Commercial Fleet nationwide: 8-10% rate increase** to address the segment's structural underperformance.
 
-### 6.2 Portfolio Actions (Implement by Q1 2026)
+### 6,2 Portfolio Actions (Implement by Q1 2026)
 - **Restrict new Commercial Fleet business in Andalusia** until loss ratio drops below 80%. Current 95,0% is not sustainable.
 - **Introduce a minimum premium floor** for Motorcycle policies in Andalusia and Valencia.
 - **Review and tighten underwriting guidelines** for fleets with more than 20 vehicles in both regions.
 
-### 6.3 Claims Management Actions (Immediate)
+### 6,3 Claims Management Actions (Immediate)
 - **Deploy anti-fraud analytics** in Andalusia, focusing on theft claims. The 20% theft share (vs. 12% portfolio average) warrants investigation.
 - **Establish a large loss protocol** requiring management sign-off on reserves above EUR 500.000.
 - **Accelerate claims settlement** in Valencia for weather-related claims to reduce reserve uncertainty.
 
-### 6.4 Risk Selection Improvements (Q1-Q2 2026)
+### 6,4 Risk Selection Improvements (Q1-Q2 2026)
 - **Implement telematics pricing** for Private Motor in Andalusia and Valencia to improve risk segmentation.
 - **Enhance flood risk scoring** for Valencia using updated DANA exposure maps from AEMET.
 - **Review broker performance** in both regions -- identify whether specific distribution channels are driving adverse selection.

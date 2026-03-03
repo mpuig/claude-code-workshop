@@ -21,12 +21,12 @@ These personas represent key stakeholders within Mediterranean Insurance Group. 
 
 ### Role and Responsibilities
 
-Ana manages the largest regional claims operation in MIG, handling approximately 45,000 motor and home claims per year across Catalonia and Aragon. Her team of 20 adjusters processes everything from minor windshield replacements to complex water damage and multi-vehicle accidents. She reports to Marta Oliveira (COO) and works closely with the fraud detection team and external loss adjusters.
+Ana manages the largest regional claims operation in MIG, handling approximately 45.000 motor and home claims per year across Catalonia and Aragon. Her team of 20 adjusters processes everything from minor windshield replacements to complex water damage and multi-vehicle accidents. She reports to Marta Oliveira (COO) and works closely with the fraud detection team and external loss adjusters.
 
 Her responsibilities include:
 - Daily triage and assignment of incoming claims
 - Monitoring team caseloads and cycle times
-- Authorizing settlements above EUR 5,000 (her approval threshold is EUR 25,000)
+- Authorizing settlements above EUR 5.000 (her approval threshold is EUR 25.000)
 - Managing relationships with 35 repair shops and 12 loss-adjusting firms in the region
 - Monthly performance reporting to the COO
 - Participating in the Tramuntana Claims Automation workstream as a business sponsor
@@ -51,7 +51,7 @@ At 3:30 PM she joins the weekly Tramuntana project call. The IT team presents a 
 
 3. **No real-time visibility into performance.** Ana produces monthly reports by exporting data to Excel and manually calculating KPIs (cycle time, settlement amounts, adjuster productivity). This takes her an entire Friday afternoon every month. She cannot see real-time dashboards.
 
-4. **Fraud detection is reactive, not proactive.** MIG has no automated fraud-scoring model. Fraud is identified by experienced adjusters who "notice something off." Ana estimates 3-5% of claims have some fraudulent element, but only about 1.2% are formally flagged.
+4. **Fraud detection is reactive, not proactive.** MIG has no automated fraud-scoring model. Fraud is identified by experienced adjusters who "notice something off." Ana estimates 3-5% of claims have some fraudulent element, but only about 1,2% are formally flagged.
 
 5. **Team burnout and retention.** Adjusters handle an average of 190 open cases each. Industry benchmark is 120-150. Two adjusters resigned in the past six months, citing workload and outdated tools. Hiring replacements takes 4-6 months.
 
@@ -105,7 +105,7 @@ His responsibilities include:
 
 ### A Day in Luca's Life
 
-Luca's morning begins with a review of the previous day's submissions. His team received 14 new broker submissions overnight, ranging from a small restaurant in Florence (EUR 1,200 premium) to a mid-size furniture manufacturer near Bergamo (EUR 85,000 premium).
+Luca's morning begins with a review of the previous day's submissions. His team received 14 new broker submissions overnight, ranging from a small restaurant in Florence (EUR 1.200 premium) to a mid-size furniture manufacturer near Bergamo (EUR 85.000 premium).
 
 For each submission, the underwriter must manually review the broker's submission documents (usually a PDF or Word document with the client's details), consult the rating manual (a 200-page Excel workbook maintained by the Barcelona actuarial team), assess the risk, and produce a quote. The furniture manufacturer submission includes a 15-page risk survey, three years of loss history, and photographs of the premises.
 
@@ -123,7 +123,7 @@ At 4:00 PM he joins a call with Sofia Papadopoulos (Chief Actuary) in Barcelona 
 
 2. **No integrated view of risk.** To assess a commercial risk properly, Luca needs data from the policy system, claims system, risk engineering reports, broker submissions, external data (company financials, flood maps, fire statistics), and his own experience. None of these are connected.
 
-3. **Quote turnaround is too slow.** Average time from broker submission to quote is 4.2 business days. For complex risks it can be 8-10 days. Brokers expect 2 days for standard risks. MIG is losing business to faster competitors.
+3. **Quote turnaround is too slow.** Average time from broker submission to quote is 4,2 business days. For complex risks it can be 8-10 days. Brokers expect 2 days for standard risks. MIG is losing business to faster competitors.
 
 4. **Portfolio monitoring is manual and backward-looking.** Luca can only assess portfolio performance after month-end, when finance produces the management accounts. He has no ability to monitor loss ratios, exposure accumulations, or pricing adequacy in real time.
 
@@ -134,7 +134,7 @@ At 4:00 PM he joins a call with Sofia Papadopoulos (Chief Actuary) in Barcelona 
 - **A modern underwriting workbench** that consolidates submission data, rating tools, risk engineering reports, and claims history in a single interface.
 - **Automated data enrichment** -- pulling external data (company financials, geospatial risk data, weather patterns) into the underwriting workflow automatically.
 - **Real-time portfolio analytics** -- dashboards showing loss ratios by segment, geographic exposure accumulations, and pricing adequacy indicators.
-- **Faster quote generation** -- ideally a system that can auto-quote simple SME risks (below EUR 3,000 premium) with underwriter review only for exceptions.
+- **Faster quote generation** -- ideally a system that can auto-quote simple SME risks (below EUR 3.000 premium) with underwriter review only for exceptions.
 
 ### Attitude Toward Technology and Change
 
@@ -179,9 +179,9 @@ Her responsibilities include:
 
 ### A Day in Isabel's Life
 
-Isabel starts her day at 8:00 AM with a call to Barcelona. Elena Vidal wants an updated view on the Portuguese market -- specifically, how MIG+LusoProtect's combined market share compares to Fidelidade (the market leader) in the Lisbon metro area. Isabel asks one of her analysts to pull the data, but the analyst explains it will take two days: the MIG Portugal data is in SAP, the LusoProtect data is still in the SiGeSeg system, and market-level data needs to be sourced from the Portuguese insurance association (ASF) website, which publishes quarterly with a 3-month lag.
+Isabel starts her day at 8:00 AM with a call to Barcelona. Elena Vidal wants an updated view on the Portuguese market, specifically how MIG+LusoProtect's combined market share compares to Fidelidade (the market leader) in the Lisbon metro area. Isabel asks one of her analysts to pull the data. The analyst explains it will take two days: MIG Portugal data is in SAP, LusoProtect data is still in SiGeSeg, and market-level data must be sourced from the Portuguese insurance association (ASF) website, which publishes quarterly with a 3-month lag.
 
-At 9:30 AM she chairs the weekly LusoProtect integration steering committee. The meeting brings together 12 people from IT, operations, HR, finance, and commercial. Key issues this week: the product harmonization workstream is behind schedule (LusoProtect's motor policy wordings differ significantly from MIG's), agent attrition in Porto is running at 15% (double the expected rate), and IT integration costs are EUR 2.3 million over budget.
+At 9:30 AM she chairs the weekly LusoProtect integration steering committee. The meeting brings together 12 people from IT, operations, HR, finance, and commercial. Key issues this week: the product harmonization workstream is behind schedule (LusoProtect's motor policy wordings differ significantly from MIG's), agent attrition in Porto is running at 15% (double the expected rate), and IT integration costs are EUR 2,3 million over budget.
 
 After the meeting, Isabel works on a board presentation analyzing MIG's competitive position in urban markets. She needs to compare MIG's market share, growth rates, customer demographics, and product penetration against Mapfre, Generali, Allianz, and local digital players across Barcelona, Madrid, Milan, Lisbon, and Marseille. The data comes from a mix of sources: internal MIG data (which she extracts via ad hoc SQL queries that her analyst writes), industry reports (from Swiss Re, EIOPA, and local regulators), and broker intelligence. Synthesizing all of this into a coherent strategic picture is painstaking manual work.
 
@@ -210,11 +210,11 @@ At 4:30 PM she reviews a market entry feasibility study for Greece. One of her a
 
 ### Attitude Toward Technology and Change
 
-Isabel is the most digitally fluent persona in this set. Coming from management consulting, she is comfortable with data, technology, and ambiguity. She is frustrated by the gap between what she knows is possible and what MIG's current systems allow. She is a strong internal advocate for investment in analytics and digital tools, and she has the CEO's ear. However, she sometimes underestimates the organizational change management required to implement new tools -- she tends to focus on the "what" and "why" and delegate the "how" to others.
+Isabel is the most digitally fluent persona in this set. She is comfortable with data, technology, and ambiguity. She strongly advocates for analytics and digital investment and has the CEO's ear. Her main risk is execution bias: she focuses on the "what" and "why" and may underestimate the change management needed for the "how."
 
 ### Quotes
 
-> "I spent three days last month trying to answer a simple question: what is our market share by product line in cities with more than 500,000 people? The answer should be available in two clicks."
+> "I spent three days last month trying to answer a simple question: what is our market share by product line in cities with more than 500.000 people? The answer should be available in two clicks."
 
 > "The LusoProtect integration is the most important strategic initiative we have, and we're managing it with spreadsheets and weekly meetings. We need real-time visibility."
 
@@ -232,7 +232,7 @@ Isabel is the most digitally fluent persona in this set. Coming from management 
 | **Title** | Actuarial Analyst, Southern France Region |
 | **Location** | Marseille office, Rue de la Republique 45 |
 | **Age** | 27 |
-| **Tenure at MIG** | 2.5 years (joined July 2023, first job after university) |
+| **Tenure at MIG** | 2,5 years (joined July 2023, first job after university) |
 | **Education** | Master's in Actuarial Science, ISFA Lyon; passed 4 of 7 Institut des Actuaires exams |
 | **Direct Reports** | None (individual contributor) |
 | **Languages** | French (native), English (professional), Spanish (basic) |
@@ -255,7 +255,7 @@ It is the second week of January -- quarter-end reporting season, the busiest ti
 
 His first task is to update the loss development triangles for French motor insurance. He needs claims data as of December 31 from the claims system. He submits a data request to the IT data team via email (there is no self-service data access for actuaries). The standard turnaround is 48 hours. He submitted this request three days ago and it has not arrived yet. He sends a follow-up email.
 
-While waiting, he works on the Portuguese motor reserve. The LusoProtect claims data arrived last week, but it is in a different format from MIG's standard extract. Pierre spends two hours reformatting the data in Excel -- converting date formats, mapping claim status codes (LusoProtect uses a different coding scheme), and reconciling paid amounts against finance records. He finds a EUR 340,000 discrepancy and spends another hour investigating. It turns out to be a currency conversion issue in the extract (LusoProtect's system stores some historical claims in escudos, the pre-euro Portuguese currency).
+While waiting, he works on the Portuguese motor reserve. The LusoProtect claims data arrived last week, but it is in a different format from MIG's standard extract. Pierre spends two hours reformatting the data in Excel -- converting date formats, mapping claim status codes (LusoProtect uses a different coding scheme), and reconciling paid amounts against finance records. He finds a EUR 340.000 discrepancy and spends another hour investigating. It turns out to be a currency conversion issue in the extract (LusoProtect's system stores some historical claims in escudos, the pre-euro Portuguese currency).
 
 After lunch, the French motor data arrives. Pierre loads it into his SAS model, which runs a chain-ladder projection. The model takes 20 minutes to execute. While it runs, he begins writing the actuarial commentary for last quarter's results -- a Word document that explains reserve movements, highlights unusual claims, and identifies emerging trends. He writes this from scratch each quarter; there is no template or automation.
 
@@ -288,7 +288,7 @@ He leaves at 7:30 PM, knowing he will need to work Saturday to meet the Tuesday 
 
 ### Attitude Toward Technology and Change
 
-Pierre is the most enthusiastic about technology among the four personas. He is a digital native who is genuinely frustrated by the gap between what he learned at university (Python, R, modern data tools) and what he is allowed to use at work (SAS 9.4 and Excel). He is eager to automate, eager to learn, and eager to prove himself. However, he is junior and somewhat hesitant to push back on established processes or challenge senior colleagues. He needs a sponsor (like Sofia Papadopoulos) to champion his ideas.
+Pierre is the most enthusiastic about technology among the four personas. He is a digital native who is genuinely frustrated by the gap between what he learned at university (Python, R, modern data tools) and what he is allowed to use at work (SAS 9,4 and Excel). He is eager to automate, eager to learn, and eager to prove himself. However, he is junior and somewhat hesitant to push back on established processes or challenge senior colleagues. He needs a sponsor (like Sofia Papadopoulos) to champion his ideas.
 
 ### Quotes
 

@@ -18,7 +18,7 @@ Claude Code itself is free to install. You pay for the AI model usage, either th
 
 ### Shared usage limits
 
-Your subscription usage is **shared** between the Claude web/desktop app and Claude Code. Heavy use of Claude Code counts against the same limits as chatting in the web app. If you hit your limit in Claude Code, you cannot continue in the web app either (and vice versa) until the limit resets.
+Your subscription usage is **shared** between the Claude web/desktop app and Claude Code. Heavy use in one consumes the same limit pool. If you hit your limit in Claude Code, you cannot continue in the web app (and vice versa) until reset.
 
 ### Subscription vs. API credits
 
@@ -79,7 +79,7 @@ On a **subscription**, large tasks eat into your rate limit faster. On **API cre
 - **Subscription (Pro/Max):** Check remaining usage at [claude.ai/settings](https://claude.ai/settings). Limits reset on your billing cycle.
 - **API credits:** Go to the [Anthropic Console](https://console.anthropic.com), navigate to **Usage** in the left sidebar. Set spending alerts to avoid surprises.
 
-> **Tip:** Run `/status` at the start of a work session so you know how much capacity you have.
+> **Tip:** Run `/status` first to check remaining capacity.
 
 ---
 

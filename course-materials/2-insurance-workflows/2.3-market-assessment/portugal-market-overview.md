@@ -12,15 +12,15 @@
 
 | Metric | Value | Source |
 |--------|-------|--------|
-| Total insurance GWP (2024) | EUR 14,3 billion (estimated) | [Statista](https://www.statista.com/topics/13197/insurance-industry-in-portugal/) |
+| Total insurance gross written premium (GWP, 2024) | EUR 14,3 billion (estimated) | [Statista](https://www.statista.com/topics/13197/insurance-industry-in-portugal/) |
 | Non-life GWP (2023) | EUR 6,6 billion | [GlobalData via Insurance Edge](https://insurance-edge.net/2024/01/01/portugals-gi-market-is-set-to-grow/) |
 | Non-life GWP (2028, projected) | EUR 9,2 billion | [GlobalData](https://www.globaldata.com/media/insurance/portugal-general-insurance-industry-surpass-9-billion-2028-says-globaldata/) |
 | Non-life CAGR (2023-2028) | 6,9% | GlobalData |
 | YoY growth (2023-2024) | ~6,4% | GlobalData |
-| Life GWP (2023, estimated) | EUR 8,6 billion | [MARKET.md context data](../../../company-context/MARKET.md) |
+| Life GWP (2023, internal estimate) | EUR 8,6 billion | [MARKET.md context data](../../../company-context/MARKET.md) |
 | Insurance penetration (% of GDP) | 5,6% | MARKET.md context data |
 
-> **Note:** Total market GWP figures for 2024 are estimated based on reported premium revenues exceeding EUR 14 billion. The non-life GWP figures from GlobalData are confirmed published data. Life GWP is estimated from internal context documents.
+> **Note:** The table mixes years and sources. Do not add the 2023 non-life and life rows to derive the 2024 total market figure. The 2024 total GWP is an external estimate based on reported premium revenues above EUR 14 billion, while life GWP is an internal 2023 estimate from context documents.
 
 ### Growth Trajectory
 

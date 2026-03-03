@@ -11,7 +11,7 @@ Review existing quarterly claims datasets, define a standard periodic report str
 By the end of this exercise you will have:
 
 1. Explored and understood four quarters of claims data.
-2. Defined a reusable report structure with precise KPI formulas.
+2. Defined a reusable report structure with precise key performance indicator (KPI) formulas.
 3. Generated a full Q4 2025 quarterly claims report in Markdown.
 4. Created an HTML companion with interactive charts.
 5. Simulated a new quarter arriving and regenerated the report effortlessly.
@@ -142,7 +142,17 @@ TOTAL           527      8.169.350,00      2.113.650,00       2.287.550,00
 Type the following prompt:
 
 ```text
-Based on the report_template.md, create a comprehensive quarterly claims report structure. The report should include: 1) Executive Summary, 2) Key KPIs (total claims, total paid, average claim cost, loss ratio, claims frequency), 3) Trends vs previous quarter and YoY, 4) Breakdown by product line, 5) Breakdown by region, 6) Top 10 largest claims, 7) Fraud detection summary, 8) Recommendations. Define the exact KPIs and their formulas.
+Based on report_template.md, create a comprehensive quarterly claims report structure.
+Include these sections:
+1) Executive Summary
+2) Key KPIs (total claims, total paid, average claim cost, loss ratio, claims frequency)
+3) Trends vs previous quarter and year-over-year (YoY)
+4) Breakdown by product line
+5) Breakdown by region
+6) Top 10 largest claims
+7) Fraud detection summary
+8) Recommendations
+Define the exact KPI formulas.
 ```
 
 **What to expect:**
@@ -156,7 +166,7 @@ A detailed report blueprint that includes:
   - **Claims Frequency** = Number of Claims / Number of Active Policies (estimated)
   - **Settlement Rate** = Settled Claims / Total Claims
   - **Denial Rate** = Denied Claims / Total Claims
-- Trend calculation methodology (QoQ and YoY).
+- Trend calculation methodology (quarter-over-quarter, QoQ, and year-over-year, YoY).
 - Table formats for the product line and region breakdowns.
 
 **What to look for:**
@@ -291,7 +301,13 @@ A complete Markdown file (`quarterly_report_Q4_2025.md`) containing:
 Type the following prompt:
 
 ```text
-Create an HTML companion to the report with interactive charts: 1) Claims volume trend across all 4 quarters (line chart), 2) Claims by product line per quarter (stacked bar), 3) Average claim cost by region (horizontal bar), 4) Loss ratio evolution (line chart with target line), 5) Claims status distribution (pie chart). Save as quarterly_report_charts.html
+Create an HTML companion to the report with interactive charts:
+1) Claims volume trend across all 4 quarters (line chart)
+2) Claims by product line per quarter (stacked bar)
+3) Average claim cost by region (horizontal bar)
+4) Loss ratio evolution (line chart with target line)
+5) Claims status distribution (pie chart)
+Save as quarterly_report_charts.html
 ```
 
 **What to expect:**

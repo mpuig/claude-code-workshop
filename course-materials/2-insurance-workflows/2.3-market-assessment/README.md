@@ -112,7 +112,7 @@ Sources: [Statista -- Leading insurers by GWP](https://www.statista.com/statisti
 
 | Line of Business | Share of Non-Life GWP | Estimated GWP (EUR M) | CAGR (2023-2028) |
 |------------------|-----------------------|-----------------------|-------------------|
-| Personal Accident &amp; Health | 36,6% | ~2.416 | 8,0% |
+| Personal Accident and Health | 36,6% | ~2.416 | 8,0% |
 | Motor | 26,5% | ~1.749 | 4,7% |
 | Liability (incl. workers' comp) | 17,7% | ~1.168 | 7,8% |
 | Property (fire and other damage) | ~10% (estimated) | ~660 | ~6% (estimated) |
@@ -133,7 +133,7 @@ Source: [GlobalData via Insurance Edge](https://insurance-edge.net/2024/01/01/po
 | Direct digital | ~8-10% | Growing fast |
 | Other (embedded, affinity) | ~3-5% | Emerging |
 
-Sources: [Chambers -- Insurance &amp; Reinsurance 2026 Portugal](https://practiceguides.chambers.com/practice-guides/insurance-reinsurance-2026/portugal/trends-and-developments), [Grand View Research](https://www.grandviewresearch.com/industry-analysis/portugal-accident-insurance-market-report)
+Sources: [Chambers -- Insurance and Reinsurance 2026 Portugal](https://practiceguides.chambers.com/practice-guides/insurance-reinsurance-2026/portugal/trends-and-developments), [Grand View Research](https://www.grandviewresearch.com/industry-analysis/portugal-accident-insurance-market-report)
 
 </details>
 
@@ -280,7 +280,7 @@ Present as a table with narrative commentary.
 | Cross-border Spanish-Portuguese business | MEDIUM | HIGH | Unique MIG capability -- no other insurer can seamlessly serve businesses operating in both markets. Small but high-value niche (~5.000 companies). |
 | **OPERATIONAL SYNERGIES** | | | |
 | Reinsurance purchasing power | HIGH | HIGH | Combining MIG+LusoProtect portfolios (EUR 1,8B+ GWP) delivers immediate reinsurance cost savings. Estimated EUR 3-4M annual benefit. Already partially realised. |
-| Claims automation | HIGH | MEDIUM | Deploying MIG's Guidewire ClaimCenter to Portugal could reduce motor claims time from 14,3 to &lt;11 days. Requires SiGeSeg migration investment. |
+| Claims automation | HIGH | MEDIUM | Deploying MIG's Guidewire ClaimCenter to Portugal could reduce motor claims time from 14,3 to below 11 days. Requires SiGeSeg migration investment. |
 | Earnix pricing deployment | HIGH | HIGH | Migrating LusoProtect motor to MIG's Earnix platform enables sophisticated GLM-based pricing. Direct competitive advantage vs. Portuguese peers using simpler models. |
 
 </details>

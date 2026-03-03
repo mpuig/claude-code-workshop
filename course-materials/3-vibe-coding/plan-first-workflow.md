@@ -4,7 +4,7 @@
 
 In the [previous section](README.md) you used `Shift+Tab` to switch to Plan mode -- a quick way to ask Claude to show its approach before acting. That works well for focused tasks like "add a filter to the dashboard."
 
-But for larger projects -- building a claims triage tool from scratch, adding a full reporting section to an existing app, or restructuring a multi-page dashboard -- Plan mode alone is not enough. You need a more structured workflow that keeps you in control of every important decision.
+For larger projects, Plan mode alone is not enough. Building a claims triage tool from scratch, adding a full reporting section, or restructuring a multi-page dashboard needs a stricter workflow so you stay in control of key decisions.
 
 This is the **"Plan First" workflow**: separate planning from execution so that Claude never builds anything you have not reviewed and approved first.
 
@@ -26,7 +26,7 @@ Before making any changes, ask Claude to study the relevant parts of your projec
 > "Read the entire dashboard project in depth. Understand how the charts, filters, and data flow work. When you are done, write a detailed report of your findings in `research.md`."
 
 **Why this matters:**
-Without explicit instructions to read thoroughly and document its understanding, Claude might only skim the surface. The `research.md` file gives you something concrete to review -- you can verify Claude actually understands your project *before* it starts changing things.
+Without explicit instructions to read thoroughly and document its understanding, Claude may skim the surface. The `research.md` file gives you a concrete artifact to review before any code changes begin.
 
 ### Phase 2: Planning
 
@@ -35,7 +35,7 @@ Once you confirm the research is accurate, ask for an implementation plan.
 **Sample Prompt:**
 > "I want to add a reinsurance treaty comparison section to the dashboard. It should show a table of treaty structures, a bar chart comparing retention levels, and a summary card with the total ceded premium. Write a detailed `plan.md` document outlining how to implement this. Do not implement yet."
 
-The output should be a detailed markdown file explaining the approach, which files will be created or modified, and any trade-offs. You can point Claude to existing parts of the project as reference (e.g., "Follow the same approach as the existing claims-by-region chart").
+The output should be a detailed markdown file that explains the approach, lists which files will change, and notes key trade-offs. You can reference existing components (for example: "Follow the same approach as the existing claims-by-region chart").
 
 ### The Annotation Cycle
 
@@ -46,7 +46,7 @@ This is where you add the most value. Do not steer the implementation through ch
 3. Go back to Claude Code and say:
    > "I added a few notes to the plan. Address all the notes and update the document accordingly. **Do not implement yet.**"
 
-Repeat this 1 to 3 times until the plan matches your expectations. The markdown file acts as shared, editable context between you and Claude -- much easier to review than scrolling through a long chat history.
+Repeat this 1 to 3 times until the plan matches your expectations. The markdown file becomes shared, editable context that is easier to review than a long chat history.
 
 ### The Todo List
 
@@ -63,7 +63,7 @@ When the plan is right, give Claude the go-ahead. Since all decisions have been 
 **Sample Prompt:**
 > "Implement it all. When you finish a task or phase, mark it as completed in the plan document. Do not stop until all tasks and phases are completed."
 
-If Claude makes a mistake during execution, you can provide brief feedback ("the chart should be wider", "wrong folder, move it to the reports section"). Because Claude has the full context of the plan, short corrections are usually enough.
+If Claude makes a mistake during execution, give brief feedback ("the chart should be wider", "wrong folder, move it to the reports section"). Because Claude has the full plan context, short corrections are usually enough.
 
 ---
 

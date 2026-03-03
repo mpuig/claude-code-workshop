@@ -146,7 +146,7 @@ Insurance Group) to Maria Torres, CFO of Iberian Logistics S.L.
 
 Context:
 - Their commercial property policy renews on 1 April 2026
-- Premium is increasing from EUR 145,000 to EUR 168,000 (approx. 16%)
+- Premium is increasing from EUR 145.000 to EUR 168.000 (approx. 16%)
 - Reasons: two large claims in the past 18 months (warehouse flood EUR 220K
   and equipment damage EUR 95K), plus hardening reinsurance market
 - We want to keep the relationship -- offer a risk improvement plan that

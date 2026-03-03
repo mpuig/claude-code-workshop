@@ -6,18 +6,18 @@ Mediterranean Insurance Group operates five principal lines of business across i
 
 | Line of Business | GWP (EUR M) | % of Total | Policies in Force | Avg Premium | Combined Ratio | YoY Growth |
 |---|---|---|---|---|---|---|
-| Motor Insurance | 810 | 45% | 1,620,000 | EUR 500 | 94.8% | +2.1% |
-| Home Insurance | 360 | 20% | 720,000 | EUR 500 | 93.5% | +5.3% |
-| Health Insurance | 270 | 15% | 195,000 | EUR 1,385 | 98.1% | +8.7% |
-| Commercial Property | 216 | 12% | 42,000 | EUR 5,143 | 97.4% | +4.2% |
-| Life Insurance | 144 | 8% | 88,000 | EUR 1,636 | N/A | +1.9% |
-| **Total** | **1,800** | **100%** | **2,665,000** | -- | **96.2%** | **+3.8%** |
+| Motor Insurance | 810 | 45% | 1.620.000 | EUR 500 | 94,8% | +2,1% |
+| Home Insurance | 360 | 20% | 720.000 | EUR 500 | 93,5% | +5,3% |
+| Health Insurance | 270 | 15% | 195.000 | EUR 1.385 | 98,1% | +8,7% |
+| Commercial Property | 216 | 12% | 42.000 | EUR 5.143 | 97,4% | +4,2% |
+| Life Insurance | 144 | 8% | 88.000 | EUR 1.636 | N/A | +1,9% |
+| **Total** | **1.800** | **100%** | **2.665.000** | -- | **96,2%** | **+3,8%** |
 
 ---
 
 ## 1. Motor Insurance
 
-**GWP: EUR 810M | 1,620,000 policies | Combined Ratio: 94.8%**
+**GWP: EUR 810M | 1.620.000 policies | Combined Ratio: 94,8%**
 
 Motor is MIG's heritage line, the business on which the company was founded. It remains the largest segment by premium volume and is the most mature in terms of pricing sophistication.
 
@@ -26,7 +26,7 @@ Motor is MIG's heritage line, the business on which the company was founded. It 
 | Product | Description | % of Motor GWP | Avg Premium |
 |---|---|---|---|
 | **Standard Auto** | Comprehensive and third-party cover for private passenger vehicles | 72% | EUR 438 |
-| **Fleet** | Multi-vehicle policies for businesses (5+ vehicles) | 18% | EUR 1,850/vehicle |
+| **Fleet** | Multi-vehicle policies for businesses (5+ vehicles) | 18% | EUR 1.850/vehicle |
 | **Motorcycle** | Cover for motorcycles and scooters (significant in Italy and Spain) | 10% | EUR 295 |
 
 ### Policy Structure -- Standard Auto
@@ -44,20 +44,20 @@ Motor is MIG's heritage line, the business on which the company was founded. It 
 - Vehicle make, model, and year (grouped into 22 risk classes)
 - Geographic zone (48 zones across four countries based on claims frequency)
 - Annual mileage (declared, with telematics discount available in Spain)
-- Claims history (bonus-malus system: 0-22 scale, with coefficient range 0.50 to 3.50)
+- Claims history (bonus-malus system: 0-22 scale, with coefficient range 0,50 to 3,50)
 - Garage/parking situation
 
 **Performance metrics (FY 2025):**
 
 | Metric | Value |
 |---|---|
-| Loss Ratio | 66.2% |
-| Expense Ratio | 28.6% |
-| Combined Ratio | 94.8% |
-| Claims Frequency | 8.2% |
-| Average Claim Cost | EUR 3,420 |
-| Average Time to Settle | 14.3 days |
-| Renewal Rate | 87.3% |
+| Loss Ratio | 66,2% |
+| Expense Ratio | 28,6% |
+| Combined Ratio | 94,8% |
+| Claims Frequency | 8,2% |
+| Average Claim Cost | EUR 3.420 |
+| Average Time to Settle | 14,3 days |
+| Renewal Rate | 87,3% |
 | NPS (Net Promoter Score) | +18 |
 | Telematics Adoption (Spain) | 11% of new policies |
 
@@ -65,13 +65,13 @@ Motor is MIG's heritage line, the business on which the company was founded. It 
 - Motor pricing uses the Earnix platform in Spain; other countries still use Excel-based generalized linear models (GLMs) maintained by the actuarial team.
 - MIG is piloting usage-based insurance (UBI) via a smartphone telematics app in Barcelona and Madrid. Early results show a 15% reduction in claims frequency among opted-in customers.
 - Fleet business is growing, driven by the rise of last-mile delivery companies. Average fleet size is 23 vehicles.
-- Motorcycle segment is highly seasonal (peak April-September) and has a higher loss ratio (72.1%) due to severity.
+- Motorcycle segment is highly seasonal (peak April-September) and has a higher loss ratio (72,1%) due to severity.
 
 ---
 
 ## 2. Home Insurance
 
-**GWP: EUR 360M | 720,000 policies | Combined Ratio: 93.5%**
+**GWP: EUR 360M | 720.000 policies | Combined Ratio: 93,5%**
 
 Home insurance is MIG's second-largest line and has been the fastest-growing segment after Health. Growth is driven by bancassurance partnerships and increasing consumer awareness of climate-related risks.
 
@@ -106,14 +106,14 @@ Home insurance is MIG's second-largest line and has been the fastest-growing seg
 
 | Metric | Value |
 |---|---|
-| Loss Ratio | 61.8% |
-| Expense Ratio | 31.7% |
-| Combined Ratio | 93.5% |
-| Claims Frequency | 12.4% |
-| Average Claim Cost | EUR 1,790 |
+| Loss Ratio | 61,8% |
+| Expense Ratio | 31,7% |
+| Combined Ratio | 93,5% |
+| Claims Frequency | 12,4% |
+| Average Claim Cost | EUR 1.790 |
 | Top Peril (by frequency) | Water damage (48% of claims) |
-| Top Peril (by severity) | Fire (avg EUR 14,200) |
-| Renewal Rate | 91.2% |
+| Top Peril (by severity) | Fire (avg EUR 14.200) |
+| Renewal Rate | 91,2% |
 | NPS | +24 |
 
 **Strategic notes:**
@@ -125,15 +125,15 @@ Home insurance is MIG's second-largest line and has been the fastest-growing seg
 
 ## 3. Health Insurance
 
-**GWP: EUR 270M | 195,000 policies | Combined Ratio: 98.1%**
+**GWP: EUR 270M | 195.000 policies | Combined Ratio: 98,1%**
 
-Health insurance is MIG's fastest-growing line (+8.7% YoY), driven by demand for private healthcare in Spain and growing corporate wellness programs. This line operates primarily in Spain and Portugal, where private health insurance supplements the public system.
+Health insurance is MIG's fastest-growing line (+8,7% YoY), driven by demand for private healthcare in Spain and growing corporate wellness programs. This line operates primarily in Spain and Portugal, where private health insurance supplements the public system.
 
 ### Sub-products
 
 | Product | Description | % of Health GWP | Avg Premium |
 |---|---|---|---|
-| **Individual / Family** | Private medical insurance for individuals and families | 55% | EUR 1,080/person |
+| **Individual / Family** | Private medical insurance for individuals and families | 55% | EUR 1.080/person |
 | **Group / Corporate** | Employer-sponsored health plans (10+ employees) | 45% | EUR 920/person |
 
 ### Policy Structure -- Individual Health
@@ -143,8 +143,8 @@ Health insurance is MIG's fastest-growing line (+8.7% YoY), driven by demand for
 | Tier | Name | Primary Care | Specialist Access | Hospitalization | Dental | Mental Health | Avg Annual Premium |
 |---|---|---|---|---|---|---|---|
 | Basic | "Salud Basica" | Yes | Referral required | Shared room | No | No | EUR 640 |
-| Standard | "Salud Confort" | Yes | Direct access | Private room | Basic (cleaning, extractions) | 8 sessions/year | EUR 1,080 |
-| Premium | "Salud Premium" | Yes | Direct access | Private room + choice of hospital | Comprehensive | Unlimited | EUR 1,720 |
+| Standard | "Salud Confort" | Yes | Direct access | Private room | Basic (cleaning, extractions) | 8 sessions/year | EUR 1.080 |
+| Premium | "Salud Premium" | Yes | Direct access | Private room + choice of hospital | Comprehensive | Unlimited | EUR 1.720 |
 
 **Key rating factors:**
 - Age (community-rated bands: 0-17, 18-29, 30-44, 45-54, 55-64, 65+)
@@ -157,28 +157,28 @@ Health insurance is MIG's fastest-growing line (+8.7% YoY), driven by demand for
 
 | Metric | Value |
 |---|---|
-| Medical Loss Ratio | 82.4% |
-| Expense Ratio | 15.7% |
-| Combined Ratio | 98.1% |
-| Provider Network | 12,500 practitioners, 185 hospitals |
-| Average Claims per Member | 6.8/year |
+| Medical Loss Ratio | 82,4% |
+| Expense Ratio | 15,7% |
+| Combined Ratio | 98,1% |
+| Provider Network | 12.500 practitioners, 185 hospitals |
+| Average Claims per Member | 6,8/year |
 | Average Claim Cost | EUR 165 |
-| Hospitalization Rate | 8.2 per 100 members |
-| Avg Hospital Stay Cost | EUR 4,850 |
-| Renewal Rate | 93.8% |
+| Hospitalization Rate | 8,2 per 100 members |
+| Avg Hospital Stay Cost | EUR 4.850 |
+| Renewal Rate | 93,8% |
 | NPS | +31 |
 
 **Strategic notes:**
 - Health is strategically important despite a thin margin. It drives cross-sell (health policyholders are 2.4x more likely to hold a motor or home policy with MIG).
 - The corporate/group segment is growing at 12% YoY, fueled by Spanish tax incentives for employer-provided health benefits.
-- MIG is piloting a digital health platform ("MIG Salud Digital") offering video consultations, AI symptom checking, and digital prescriptions. Pilot launched in Madrid in Q2 2025 with 8,400 registered users.
+- MIG is piloting a digital health platform ("MIG Salud Digital") offering video consultations, AI symptom checking, and digital prescriptions. Pilot launched in Madrid in Q2 2025 with 8.400 registered users.
 - Mental health coverage was expanded in 2025 in response to market demand and regulatory guidance.
 
 ---
 
 ## 4. Commercial Property Insurance
 
-**GWP: EUR 216M | 42,000 policies | Combined Ratio: 97.4%**
+**GWP: EUR 216M | 42.000 policies | Combined Ratio: 97,4%**
 
 Commercial property serves small and medium enterprises (SMEs) and mid-market businesses across all four countries. This is MIG's most complex line from an underwriting perspective and the one with the most reliance on manual processes.
 
@@ -186,8 +186,8 @@ Commercial property serves small and medium enterprises (SMEs) and mid-market bu
 
 | Product | Description | % of Commercial GWP | Avg Premium |
 |---|---|---|---|
-| **SME Package** | Bundled property, liability, and business interruption for businesses with &lt;EUR 5M turnover | 60% | EUR 2,200 |
-| **Mid-Market** | Tailored property and casualty programs for businesses with EUR 5M-100M turnover | 40% | EUR 12,800 |
+| **SME Package** | Bundled property, liability, and business interruption for businesses with turnover below EUR 5M | 60% | EUR 2.200 |
+| **Mid-Market** | Tailored property and casualty programs for businesses with EUR 5M-100M turnover | 40% | EUR 12.800 |
 
 ### Policy Structure -- SME Package
 
@@ -214,18 +214,18 @@ Commercial property serves small and medium enterprises (SMEs) and mid-market bu
 
 | Metric | Value |
 |---|---|
-| Loss Ratio | 63.9% |
-| Expense Ratio | 33.5% |
-| Combined Ratio | 97.4% |
-| Claims Frequency | 14.8% |
-| Average Claim Cost | EUR 8,750 |
-| Average Time to Settle | 34.2 days |
-| Retention Rate | 84.6% |
+| Loss Ratio | 63,9% |
+| Expense Ratio | 33,5% |
+| Combined Ratio | 97,4% |
+| Claims Frequency | 14,8% |
+| Average Claim Cost | EUR 8.750 |
+| Average Time to Settle | 34,2 days |
+| Retention Rate | 84,6% |
 | Broker Channel Share | 72% |
 | Avg Policies per Underwriter | 580 |
 
 **Strategic notes:**
-- Commercial property underwriting is almost entirely manual. Underwriters rely on Excel workbooks, PDF risk surveys, and email-based workflows. Average quote turnaround is 4.2 business days (broker expectation: 2 days).
+- Commercial property underwriting is almost entirely manual. Underwriters rely on Excel workbooks, PDF risk surveys, and email-based workflows. Average quote turnaround is 4,2 business days (broker expectation: 2 days).
 - The mid-market segment has higher margins but requires specialized underwriting expertise. MIG has 18 dedicated mid-market underwriters across the group.
 - Climate risk is acutely relevant: 23% of commercial property portfolio is located in flood zones (based on EU flood directive mapping).
 - LusoProtect brought a small but profitable commercial book (EUR 18M GWP) focused on the Portuguese tourism and hospitality sector.
@@ -234,7 +234,7 @@ Commercial property serves small and medium enterprises (SMEs) and mid-market bu
 
 ## 5. Life Insurance
 
-**GWP: EUR 144M | 88,000 policies | Life Margin: 2.8%**
+**GWP: EUR 144M | 88.000 policies | Life Margin: 2,8%**
 
 Life insurance is MIG's smallest and slowest-growing line. It consists primarily of traditional term life and savings/endowment products distributed through bancassurance and the agent network.
 
@@ -244,7 +244,7 @@ Life insurance is MIG's smallest and slowest-growing line. It consists primarily
 |---|---|---|---|
 | **Term Life** | Pure protection for a fixed term (10, 15, 20, 25 years) | 45% | EUR 420/year |
 | **Mortgage Life** | Decreasing term life linked to mortgage balance (bancassurance) | 30% | EUR 310/year |
-| **Savings / Endowment** | Guaranteed savings products with life cover | 25% | EUR 3,200/year |
+| **Savings / Endowment** | Guaranteed savings products with life cover | 25% | EUR 3.200/year |
 
 ### Policy Structure -- Term Life
 
@@ -254,7 +254,7 @@ Life insurance is MIG's smallest and slowest-growing line. It consists primarily
 |---|---|---|---|---|
 | Simplified | Up to EUR 100K | Declaration only | Fast issue, limited cover | EUR 240 |
 | Standard | EUR 100K - EUR 500K | Health questionnaire + GP report | Flexible term, critical illness rider available | EUR 420 |
-| High Sum | Above EUR 500K | Full medical exam + financial underwriting | Tailored, wealth planning integration | EUR 1,150 |
+| High Sum | Above EUR 500K | Full medical exam + financial underwriting | Tailored, wealth planning integration | EUR 1.150 |
 
 **Key rating factors:**
 - Age at entry
@@ -269,12 +269,12 @@ Life insurance is MIG's smallest and slowest-growing line. It consists primarily
 | Metric | Value |
 |---|---|
 | New Business Premiums | EUR 22M |
-| Lapse Rate | 6.8% |
+| Lapse Rate | 6,8% |
 | Mortality Experience vs. Expected | 92% (favorable) |
-| Life Margin (VNB / APE) | 2.8% |
+| Life Margin (VNB / APE) | 2,8% |
 | Embedded Value | EUR 320M |
-| Average Policy Duration | 18.4 years |
-| Average Sum Assured (Term) | EUR 185,000 |
+| Average Policy Duration | 18,4 years |
+| Average Sum Assured (Term) | EUR 185.000 |
 | Bancassurance Share | 52% |
 
 **Strategic notes:**
@@ -290,12 +290,12 @@ MIG actively promotes multi-product bundling. Key metrics:
 
 | Metric | Value |
 |---|---|
-| Average Products per Customer | 1.7 |
+| Average Products per Customer | 1,7 |
 | Customers with 2+ Products | 38% |
 | Customers with 3+ Products | 11% |
 | Cross-sell Discount (Motor + Home) | 8% |
 | Cross-sell Discount (Motor + Home + Health) | 12% |
-| Multi-product Customer Retention | 94.1% (vs. 85.2% single-product) |
+| Multi-product Customer Retention | 94,1% (vs. 85,2% single-product) |
 
 The most common bundle is Motor + Home (held by 24% of multi-product customers), followed by Motor + Health (18%).
 

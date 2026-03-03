@@ -199,7 +199,7 @@ from all three source files plus the two calculated metrics:
 - `risk_adjusted_penetration` = premiums per capita / composite accident frequency
 
 Spain dominates in absolute GWP (EUR 183,8M) and market share (avg ~6,7%),
-while Italy and France show much lower penetration (avg &lt;0,5%).
+while Italy and France show much lower penetration (avg below 0,5%).
 
 </details>
 
@@ -230,7 +230,7 @@ Analyze the combined dataset to find white spaces - regions where there is high 
 - Are the top regions plausible? (Expect large Italian regions like Lombardy, Lazio, Campania and French regions like Ile-de-France, Provence-Alpes-Cote d'Azur)
 - Does Claude explain its methodology, or does it just present numbers?
 
-> **Tip:** Push Claude to refine the analysis: *"Weight the opportunity score more heavily toward regions where MIG already has some presence (market share > 0.1%) -- pure greenfield markets may be too risky."*
+> **Tip:** Push Claude to refine the analysis: *"Weight the opportunity score more heavily toward regions where MIG already has some presence (market share > 0,1%) -- pure greenfield markets may be too risky."*
 
 <details>
 <summary>Example output from this step</summary>
@@ -405,7 +405,7 @@ This analysis identifies the highest-priority regions for MIG's geographic
 expansion based on a systematic evaluation of 68 regions across Spain,
 Portugal, Italy, and France. [...] The top opportunities are concentrated
 in large Italian and French urban regions where MIG's market share is below
-0.3% despite strong demand indicators.
+0,3% despite strong demand indicators.
 
 ---
 
@@ -498,7 +498,7 @@ If you finish early or want to go deeper:
 
 4. **Risk Overlay:** *"Cross-reference the opportunity regions with the natural disaster risk score. Flag any high-opportunity regions that also have high climate risk (score >= 7)."*
 
-5. **Competitor Inference:** *"If MIG's market share in Lombardy is 0.3%, and the total market is implied by our GWP / market_share, what is the total addressable market in each of the top 10 opportunity regions?"*
+5. **Competitor Inference:** *"If MIG's market share in Lombardy is 0,3%, and the total market is implied by our GWP / market_share, what is the total addressable market in each of the top 10 opportunity regions?"*
 
 ---
 
