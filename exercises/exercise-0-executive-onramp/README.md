@@ -45,7 +45,7 @@ Progressive challenge. We remove scaffolding step by step so you decide what to 
 Recommended folder context:
 
 ```text
-/Users/puigmarc/code/claude-code-training
+<your-project-folder>/claude-code-training
 ```
 
 ---
