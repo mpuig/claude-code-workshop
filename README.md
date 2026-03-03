@@ -89,11 +89,11 @@ claude-code-training/
 
 These are standalone exercises designed for the live session. Each includes step-by-step prompts, expected outputs, and rich fake data.
 
-| Exercise | Persona | Duration | What You Build |
-|----------|---------|----------|----------------|
-| [0 - Executive Onramp (Zero to One)](exercises/exercise-0-executive-onramp/) | Managing Directors & Partners | 90 min | Executive prompting fundamentals with progressive challenge |
-| [1 - Data Insight Tool](exercises/exercise-1-data-insight-tool/) | Isabel Santos (Strategy) | 40 min | Market white space analysis with interactive charts |
-| [2 - Claims Triage](exercises/exercise-2-claims-triage/) | Ana Martinez (Claims) | 45 min | Claims classification, prioritization & routing prototype |
+| Exercise | Persona                   | Duration | What You Build |
+|----------|---------------------------|----------|----------------|
+| [0 - Executive Onramp (Zero to One)](exercises/exercise-0-executive-onramp/) | Executives | 90 min | Executive prompting fundamentals with progressive challenge |
+| [1 - Data Insight Tool](exercises/exercise-1-data-insight-tool/) | Isabel Santos (Strategy)  | 40 min | Market white space analysis with interactive charts |
+| [2 - Claims Triage](exercises/exercise-2-claims-triage/) | Ana Martinez (Claims)     | 45 min | Claims classification, prioritization & routing prototype |
 | [3 - Automated Reporting](exercises/exercise-3-automated-reporting/) | Pierre Dupont (Actuarial) | 55 min | Quarterly claims report with auto-update capability |
 
 ## Prerequisites

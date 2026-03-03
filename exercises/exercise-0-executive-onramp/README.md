@@ -2,7 +2,6 @@
 
 **Duration:** ~90 minutes  
 **Difficulty:** Beginner to Intermediate  
-**Audience:** Managing Directors, Partners, and senior consulting leaders (non-technical welcome)
 
 ---
 
