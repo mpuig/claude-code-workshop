@@ -50,6 +50,10 @@ claude
 
 The first time you run it, Claude Code will ask you to log in with your Claude account. Follow the on-screen instructions to authenticate via your browser.
 
+![Claude Code session after startup](images/claude.jpg)
+
+_Example of Claude Code running in the terminal after login._
+
 ## Step 3: Orient Yourself
 
 After authentication, you are in a Claude Code session. This is where you will work. Here is what you need to know:
@@ -106,4 +110,5 @@ Start in **Edit** mode. You can always switch later.
 
 ## Next Step
 
-Proceed to [Module 1.1: First Steps with Claude Code](../1-fundamentals/1.1-first-steps/README.md) to learn how to give effective instructions and complete your first insurance tasks.
+For non-technical executive users, start with [Exercise 0: Executive Onramp (Zero to One)](../../exercises/exercise-0-executive-onramp/README.md).  
+Then proceed to [Module 1.1: First Steps with Claude Code](../1-fundamentals/1.1-first-steps/README.md) to learn how to give effective instructions and complete your first insurance tasks.

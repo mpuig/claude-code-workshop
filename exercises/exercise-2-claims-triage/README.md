@@ -333,6 +333,12 @@ The dashboard is a single self-contained HTML file (~108 KB) with no external de
 
 </details>
 
+### Example Final Result (Browser View)
+
+![Exercise 2 final browser result](images/screenshot.png)
+
+_Example output of the generated claims triage dashboard opened in a browser._
+
 ---
 
 ### Step 5: Test with Edge Cases (~5 minutes)

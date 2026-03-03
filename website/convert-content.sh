@@ -90,6 +90,13 @@ add_frontmatter_and_copy \
 
 # Exercise 1
 add_frontmatter_and_copy \
+  "$REPO_ROOT/exercises/exercise-0-executive-onramp/README.md" \
+  "$PAGES_DIR/exercises/executive-onramp.mdx" \
+  "Exercise 0: Executive Onramp (Zero to One)" \
+  "Zero-to-one onboarding for executive users with copy/paste wins and progressive prompting challenge."
+
+# Exercise 1
+add_frontmatter_and_copy \
   "$REPO_ROOT/exercises/exercise-1-data-insight-tool/README.md" \
   "$PAGES_DIR/exercises/data-insight-tool.mdx" \
   "Exercise 1: Data-Driven Insight Tool" \

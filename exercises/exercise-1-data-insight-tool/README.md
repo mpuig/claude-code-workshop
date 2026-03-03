@@ -355,6 +355,12 @@ the initial Chart.js CDN load.
 
 </details>
 
+### Example Final Result (Browser View)
+
+![Exercise 1 final browser result](images/screenshot.jpg)
+
+_Example output of the generated interactive visualization page opened in a browser._
+
 ---
 
 ### Step 5: Executive Summary (~5 minutes)
