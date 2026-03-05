@@ -9,6 +9,10 @@ description: "How to connect Claude Code to external tools, databases, and APIs 
 
 MCP (Model Context Protocol) is an open standard by Anthropic for connecting Claude to external tools and data sources. Each MCP server exposes tools that Claude can call -- a PostgreSQL MCP provides `query`, a Jira MCP provides `search_issues` and `create_issue`, and so on. This appendix covers CLI-specific MCP setup. For the Claude Desktop perspective (remote connectors, extensions, visual toggles), see [Appendix A: Claude Cowork](/appendix/claude-cowork#mcp-connecting-cowork-to-your-tools).
 
+![MCP in Claude Code -- add servers, manage via /mcp, configure in .mcp.json](/images/appendix/mcp-overview.png)
+
+_Use `mcp add <server-name>` to connect new servers and `/mcp` to manage them. Integrations are available for Atlassian, Asana, Linear, Canva, Sentry, Cloudflare, and more._
+
 ---
 
 ## How MCP Works in Claude Code
@@ -274,6 +278,16 @@ If you need the same MCP in both Desktop and CLI, configure it in both places.
 - **Output limits**: MCP tool output is capped at 25.000 tokens by default. Override with `MAX_MCP_OUTPUT_TOKENS=50000 claude` if you need more.
 - **Permission rules**: Control MCP tool access in settings with patterns like `mcp__server-name__tool-name` in `allow` or `deny` lists.
 - **Tool search**: When many MCP tools are configured (>10% of context), Claude Code enables tool search to find relevant tools efficiently. Requires Sonnet 4 or Opus 4 models.
+
+---
+
+## Plugins
+
+Plugins are the distribution format for extending Claude Code. A single plugin can bundle MCP servers, slash commands, subagents, and hooks into one installable package.
+
+![Plugins -- unified distribution for MCP servers, slash commands, subagents, and hooks](/images/appendix/plugins-overview.png)
+
+_Organizations can create internal and external marketplaces to distribute plugins across teams or customers. Use `/plugin` to discover, install, and manage plugins._
 
 ---
 

@@ -1,14 +1,6 @@
-# Getting Started with Claude Code
+# Install Claude Code
 
-> **Time:** 10 minutes | **Prerequisites:** A laptop with terminal access and a Claude account
-
-## What Is Claude Code?
-
-Claude Code is a command-line tool that lets you work with Claude directly in your terminal using natural language. You type instructions in plain English (or Spanish, or any language), and Claude reads your files, writes documents, searches the web, and runs tasks for you.
-
-**You do not need to know how to code.** You give instructions. Claude does the work.
-
----
+> **Time:** 5 minutes | **Prerequisites:** A laptop with terminal access and a Claude account
 
 ## Step 1: Install Claude Code
 
@@ -67,20 +59,6 @@ After authentication, you are in a Claude Code session. This is where you will w
 | **Shift+Tab** | Switches between modes (Plan, Edit, Auto-accept) |
 | `/quit` or **Ctrl+C** | Exits Claude Code |
 
-### What Can Claude Code Do?
-
-- **Read files** on your computer (reports, spreadsheets, documents)
-- **Write and create files** (briefs, summaries, emails, analyses)
-- **Search the web** for up-to-date market data, regulations, and news
-- **Organize and analyze data** from CSVs, Excel exports, and other files
-- **Run commands** on your system (create folders, manage files)
-
-### What It Cannot Do
-
-- Access your email or calendar directly
-- Log into websites on your behalf
-- Replace your professional judgment on underwriting or compliance decisions
-
 ## Step 4: Try Your First Instruction
 
 Type something simple to confirm everything works:
@@ -110,5 +88,5 @@ Start in **Edit** mode. You can always switch later.
 
 ## Next Step
 
-For non-technical executive users, start with [Exercise 0: Executive Onramp (Zero to One)](../../exercises/exercise-0-executive-onramp/README.md).  
-Then proceed to [Module 1.1: First Steps with Claude Code](../1-fundamentals/1.1-first-steps/README.md) to learn how to give effective instructions and complete your first insurance tasks.
+For non-technical executive users, start with [Exercise 0: Executive Onramp (Zero to One)](../../../exercises/exercise-0-executive-onramp/README.md).
+Then proceed to [Module 1.1: First Steps with Claude Code](../../1-fundamentals/1.1-first-steps/README.md) to learn how to give effective instructions and complete your first insurance tasks.

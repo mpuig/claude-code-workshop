@@ -82,6 +82,10 @@ Both tools use the same skill format. You can load Code's developer plugins into
 
 **MCP (Model Context Protocol)** is the open standard by Anthropic for connecting Claude to external services. Each MCP server exposes tools Claude can call -- for example, a Gmail MCP provides `search_emails`, `send_email`, and `read_email`.
 
+![MCP in Claude Code](images/mcp-overview.png)
+
+_Use `mcp add <server-name>` to connect new servers and `/mcp` to manage them. Integrations are available for Atlassian, Asana, Linear, Canva, Sentry, Cloudflare, and more._
+
 ### Types of MCP Connections
 
 | Type | How it works | Where it works |
