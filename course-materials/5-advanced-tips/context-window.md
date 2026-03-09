@@ -32,7 +32,7 @@ Every message you send includes **all previous messages** in the conversation as
 
 ---
 
-## The Desk Analogy
+## The desk analogy
 
 Imagine you are working at a desk:
 

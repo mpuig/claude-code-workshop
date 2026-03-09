@@ -6,7 +6,7 @@
 
 Vibe coding is building software by describing what you want in natural language. You are the product owner. Claude is the developer. You do not write a single line of code -- you describe features, review results, and iterate.
 
-This is not a gimmick. Non-technical professionals are building real, functional applications this way. In this module, you will build a **Claims Dashboard** for MIG -- a web application that visualizes claims data with charts, filters, and summaries.
+Non-technical professionals are building real, functional applications this way. In this module, you will build a **Claims Dashboard** for MIG -- a web application that visualizes claims data with charts, filters, and summaries.
 
 **You do not need to understand code.** You need to know what you want the app to do.
 
@@ -290,7 +290,7 @@ simpler approach this time.
 
 ## What You Can Build Next
 
-Once you are comfortable with vibe coding, the possibilities expand significantly:
+Once you are comfortable with vibe coding, the possibilities expand:
 
 | Project Idea | Complexity | Time Estimate |
 |-------------|-----------|---------------|
@@ -316,7 +316,7 @@ In this module you learned to:
 - Handle errors and breakages without technical knowledge
 - Optionally save and deploy your application
 
-The key takeaway: **You do not need to be a developer to build useful tools.** With Claude Code, the skill that matters is clearly describing what you need -- which is exactly what you do as a consultant every day. The ability to quickly prototype dashboards, calculators, and workflow tools is a genuine superpower for non-technical professionals.
+The key takeaway: **You do not need to be a developer to build useful tools.** With Claude Code, the skill that matters is clearly describing what you need -- which is exactly what you do as a consultant every day.
 
 ---
 

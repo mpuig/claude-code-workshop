@@ -107,15 +107,15 @@ The Portuguese non-life insurance market is **highly concentrated**, with market
 
 The Portuguese insurance market competes primarily on:
 
-1. **Distribution reach** (most critical): Access to the bancassurance channel or a large agent network is the single most important competitive factor. Fidelidade's CGD partnership and Ageas's Millennium BCP relationship give them structural advantages that are difficult to replicate.
+1. Distribution reach (most critical) -- Access to the bancassurance channel or a large agent network is the single most important competitive factor. Fidelidade's CGD partnership and Ageas's Millennium BCP relationship give them structural advantages that are difficult to replicate.
 
-2. **Price**: Motor and personal lines remain price-sensitive. Comparison websites are growing (though less dominant than in Spain), putting downward pressure on margins.
+2. Price -- Motor and personal lines remain price-sensitive. Comparison websites are growing (though less dominant than in Spain), putting downward pressure on margins.
 
-3. **Brand trust**: Portuguese consumers place high value on trusted, established brands. Fidelidade, Tranquilidade, and Ageas benefit from decades of brand building.
+3. Brand trust -- Portuguese consumers place high value on trusted, established brands. Fidelidade, Tranquilidade, and Ageas benefit from decades of brand building.
 
-4. **Product breadth**: The ability to cross-sell motor + home + health bundles drives customer retention. Multi-product customers have significantly lower lapse rates.
+4. Product breadth -- The ability to cross-sell motor + home + health bundles drives customer retention. Multi-product customers have significantly lower lapse rates.
 
-5. **Service quality**: Claims handling speed and digital self-service are emerging differentiators, particularly for younger urban consumers.
+5. Service quality -- Claims handling speed and digital self-service are emerging differentiators, particularly for younger urban consumers.
 
 ### Competitive Intensity by Segment
 
@@ -183,4 +183,4 @@ Given MIG/LusoProtect's current position, the realistic approach is:
 2. **Bancassurance lock-in** is the single biggest structural barrier. MIG must find alternative distribution strategies (digital, broker, embedded).
 3. **Commercial lines and specialty segments** are the most attractive competitive spaces, with lower intensity and fewer entrenched players.
 4. LusoProtect's **motor base provides a credible foundation**, but the real growth opportunity is in adjacent and underserved lines.
-5. **Digital capability is an emerging differentiator**. Most competitors (except Fidelidade) have limited digital distribution. This is MIG's window of opportunity via Project Tramuntana.
+5. **Digital capability is an emerging differentiator**. Most competitors (except Fidelidade) have limited digital distribution. MIG can exploit this gap through Project Tramuntana.

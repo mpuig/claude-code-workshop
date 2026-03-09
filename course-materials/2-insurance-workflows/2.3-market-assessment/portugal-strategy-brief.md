@@ -9,7 +9,7 @@
 
 ## 1. Executive Summary
 
-**Mediterranean Insurance Group can scale in Portugal with disciplined execution.** The 2024 acquisition of LusoProtect gives MIG an operating platform in the fastest-growing insurance market in its footprint (6,9% CAGR vs. 4,2% in Spain). The Portuguese non-life market is projected to grow from EUR 6,6 billion to EUR 9,2 billion by 2028. MIG's target is to raise share through focused execution in selected segments.
+**Mediterranean Insurance Group can scale in Portugal with disciplined execution.** The 2024 acquisition of LusoProtect gives MIG an operating platform in the fastest-growing insurance market in its footprint (6,9% CAGR vs. 4,2% in Spain). The Portuguese non-life market is projected to grow from EUR 6,6 billion to EUR 9,2 billion by 2028. MIG's target is to grow share in selected segments.
 
 **Our top three opportunities are:**
 1. **SME commercial property** -- an underserved segment where MIG's existing Spanish expertise transfers directly, with limited entrenched competition.

@@ -26,10 +26,10 @@
 
 Portugal is the fastest-growing insurance market in MIG's footprint, with total market growth of approximately 5,1% in 2025. Key growth drivers include:
 
-- **Economic recovery:** Portugal's GDP growth has been above the EU average, supporting insurance demand.
-- **Rising risk awareness:** Post-pandemic health awareness and climate-related property concerns are driving uptake.
-- **Vehicle sales rebound:** New vehicle registrations increased 29,9% during January-October 2023, directly boosting motor insurance volumes.
-- **Digital adoption:** Growing acceptance of online insurance distribution is expanding market reach.
+- Portugal's GDP growth has been above the EU average, supporting insurance demand.
+- Post-pandemic health awareness and climate-related property concerns are driving uptake.
+- New vehicle registrations increased 29,9% during January-October 2023, directly boosting motor insurance volumes.
+- Online distribution is growing, though still below the EU average (~10% vs. ~20%).
 
 ---
 

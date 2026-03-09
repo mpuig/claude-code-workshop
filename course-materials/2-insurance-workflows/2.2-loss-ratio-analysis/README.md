@@ -456,7 +456,7 @@ In this module you learned to:
 - Generate professional visualizations
 - Produce executive-ready summaries with actionable recommendations
 
-The key takeaway: **Claude Code can do in 30 minutes what typically takes a half-day of spreadsheet work.** When you ask Claude to write and execute scripts for calculations, the math is exact. Still, spot-check at least two or three results against your own math as a second layer of assurance -- this confirms the script logic is correct, not just the arithmetic.
+The key takeaway: **Claude Code significantly speeds up spreadsheet-heavy analysis.** When you ask Claude to write and execute scripts for calculations, the math is exact. Still, spot-check at least two or three results against your own math -- this confirms the script logic is correct, not only the arithmetic.
 
 ---
 
