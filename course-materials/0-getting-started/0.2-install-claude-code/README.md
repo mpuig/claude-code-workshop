@@ -2,6 +2,13 @@
 
 > **Time:** 5 minutes | **Prerequisites:** A laptop with terminal access and a Claude account
 
+For detailed, platform-specific installation guides (including corporate network setup, API key configuration, and troubleshooting), see:
+
+- [Mac Installation Guide](install-mac.md)
+- [Windows Installation Guide](install-windows.md)
+
+The quick-start steps below cover the essentials.
+
 ## Step 1: Install Claude Code
 
 Open your terminal application and paste the appropriate command:

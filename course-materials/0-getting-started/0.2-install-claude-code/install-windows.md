@@ -1,0 +1,339 @@
+# Claude Code Installation Guide for Windows
+
+> **Time:** ~30 minutes | **Prerequisites:** Windows 10 or later, admin access to install software
+
+Windows needs a few extra steps compared to Mac. Follow each section in order.
+
+---
+
+## Part 1: Anthropic Account Setup
+
+Before installing Claude Code, you need an Anthropic API key.
+
+1. Go to [console.anthropic.com](https://console.anthropic.com) and create an account (or sign in)
+2. Go to **API Keys**
+3. Click **Create Key**
+4. Copy and save your API key somewhere safe — you'll need it in Part 6
+
+> **Important:** Your API key starts with `sk-ant-`. Keep it secret and never commit it to version control.
+
+---
+
+## Part 2: Install prerequisites
+
+### Step 2.1: Install Git for Windows
+
+1. Go to: **https://git-scm.com/downloads/win**
+2. Download the **64-bit Git for Windows Setup**
+3. Run the installer with **all default options**
+4. Click through until complete
+
+### Step 2.2: Install Node.js
+
+1. Go to: **https://nodejs.org/**
+2. Click the **LTS** button (green, left side)
+3. Run the downloaded `.msi` installer
+4. **Keep all defaults** — especially "Add to PATH"
+5. When asked about "Tools for Native Modules", you can check the box, but it is optional
+
+### Step 2.3: Close and Reopen PowerShell
+
+**Important:** Close ALL PowerShell/Terminal windows, then open a fresh one.
+
+Verify installations:
+
+```powershell
+node --version
+git --version
+```
+
+Both should show version numbers. If not, restart your computer and try again.
+
+---
+
+## Part 3: Install Claude Code
+
+### Option A: Native installer (recommended)
+
+Run in PowerShell:
+
+```powershell
+irm https://claude.ai/install.ps1 | iex
+```
+
+### Option B: Install via npm
+
+If the native installer does not work, use npm:
+
+```powershell
+npm install -g @anthropic-ai/claude-code
+```
+
+Wait for it to complete (should say "added X packages").
+
+> **Note:** If the npm install fails with SSL errors and you are behind a corporate proxy or VPN, you may need to temporarily disable it during installation, then re-enable it afterwards. See Part 5 for configuring certificates for ongoing use.
+
+---
+
+## Part 4: Configure Git Bash path
+
+Claude Code uses Git Bash under the hood. You need to tell it where to find `bash.exe`:
+
+### Step 4.1: Verify bash exists
+
+```powershell
+Test-Path "$env:LOCALAPPDATA\Programs\Git\bin\bash.exe"
+```
+
+Should return `True`. If it returns `False`, try:
+
+```powershell
+Test-Path "C:\Program Files\Git\bin\bash.exe"
+```
+
+### Step 4.2: Set the environment variable
+
+**If Step 4.1 returned True for the first path:**
+
+```powershell
+[Environment]::SetEnvironmentVariable("CLAUDE_CODE_GIT_BASH_PATH", "$env:LOCALAPPDATA\Programs\Git\bin\bash.exe", "User")
+```
+
+**If Step 4.1 returned True for the second path (Program Files):**
+
+```powershell
+[Environment]::SetEnvironmentVariable("CLAUDE_CODE_GIT_BASH_PATH", "C:\Program Files\Git\bin\bash.exe", "User")
+```
+
+---
+
+## Part 5: SSL certificates (corporate networks)
+
+> **Skip this part** if you're on a personal network with no VPN or proxy.
+
+Corporate networks often intercept SSL traffic with their own certificates. Node.js (which Claude Code runs on) won't trust these by default, so connections fail. The fix: export the certificates from Windows and point Node.js at them.
+
+### Step 5.1: Export certificates
+
+Run this in PowerShell to export certificates from the Windows store:
+
+```powershell
+# Create directory for certificate
+New-Item -ItemType Directory -Force -Path C:\tools
+
+# Get all custom root and intermediate certificates
+$allCerts = @()
+$allCerts += Get-ChildItem Cert:\CurrentUser\Root
+$allCerts += Get-ChildItem Cert:\CurrentUser\CA
+
+# Export to PEM format
+$pemContent = ""
+foreach ($cert in $allCerts) {
+    $pemContent += "-----BEGIN CERTIFICATE-----`n"
+    $pemContent += [System.Convert]::ToBase64String($cert.RawData, [System.Base64FormattingOptions]::InsertLineBreaks)
+    $pemContent += "`n-----END CERTIFICATE-----`n`n"
+}
+
+$pemContent | Out-File -FilePath "C:\tools\corporate-certs.pem" -Encoding ASCII
+Write-Host "Certificates exported to C:\tools\corporate-certs.pem"
+```
+
+### Step 5.2: Tell Node.js to trust them
+
+```powershell
+[Environment]::SetEnvironmentVariable("NODE_EXTRA_CA_CERTS", "C:\tools\corporate-certs.pem", "User")
+```
+
+### Step 5.3: Verify
+
+```powershell
+[Environment]::GetEnvironmentVariable("NODE_EXTRA_CA_CERTS", "User")
+```
+
+Should return: `C:\tools\corporate-certs.pem`
+
+---
+
+## Part 6: Set up your API key
+
+### Option A: Environment Variable (Simplest)
+
+```powershell
+[Environment]::SetEnvironmentVariable("ANTHROPIC_API_KEY", "your-api-key-here", "User")
+```
+
+Replace `your-api-key-here` with your actual API key.
+
+### Option B: API key helper script
+
+If you'd rather not store the key in an environment variable:
+
+#### Step 6.1: Create the .claude folder
+
+```powershell
+New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.claude"
+```
+
+#### Step 6.2: Create the API key script
+
+```powershell
+Set-Content -Path "$env:USERPROFILE\.claude\anthropic_key.cmd" -Value "@echo off`necho YOUR_API_KEY_HERE" -Encoding ASCII
+```
+
+Replace `YOUR_API_KEY_HERE` with your actual API key (starts with `sk-ant-`).
+
+#### Step 6.3: Find your Windows short username
+
+Windows short paths avoid issues with spaces and special characters in usernames:
+
+```powershell
+cmd /c dir /x $env:USERPROFILE\..
+```
+
+Look for your username in the output — you will see something like:
+
+```
+01/16/2026  SMITHJ~1     smithjohn
+            ^^^^^^^^ This is your short name
+```
+
+Copy your short name (e.g., `SMITHJ~1`).
+
+#### Step 6.4: Create settings.json
+
+Replace `YOURSH~1` with your actual short username from Step 6.3:
+
+```powershell
+Set-Content -Path "$env:USERPROFILE\.claude\settings.json" -Value '{
+  "apiKeyHelper": "C:/Users/YOURSH~1/.claude/anthropic_key.cmd"
+}'
+```
+
+> **Why short paths?** Windows 8.3 short names (like `SMITHJ~1`) never contain spaces or special characters. Claude Code parses these paths more reliably, preventing "apiKeyHelper did not return a valid value" errors.
+
+#### Step 6.5: Verify both files
+
+```powershell
+Get-Content "$env:USERPROFILE\.claude\anthropic_key.cmd"
+Get-Content "$env:USERPROFILE\.claude\settings.json"
+```
+
+The first should show the API key. The second should show the JSON with `apiKeyHelper` pointing to the script.
+
+---
+
+## Part 7: First launch
+
+### Step 7.1: Restart PowerShell
+
+**You must close all PowerShell windows and open a new one.** Environment variables don't update in existing sessions.
+
+### Step 7.2: Launch Claude Code
+
+```powershell
+claude
+```
+
+You should see:
+
+1. A theme selection (pick Dark or Light)
+2. Claude Code starting up without asking for login
+
+If you see a "Select login method" prompt instead, see **Troubleshooting** below.
+
+---
+
+## Troubleshooting
+
+### `claude` command not recognized
+
+1. Close ALL PowerShell windows
+2. Open a fresh PowerShell
+3. Try `claude --version`
+
+If still not working:
+
+```powershell
+# Check if npm global bin is in PATH
+npm config get prefix
+```
+
+The path shown should be in your system PATH.
+
+### Claude prompts for login
+
+If Claude Code shows "Select login method" instead of starting directly, the API key is not configured correctly.
+
+1. If using Option A (environment variable), verify:
+   ```powershell
+   [Environment]::GetEnvironmentVariable("ANTHROPIC_API_KEY", "User")
+   ```
+
+2. If using Option B (helper script), verify:
+   ```powershell
+   & "$env:USERPROFILE\.claude\anthropic_key.cmd"
+   ```
+   Should print the API key starting with `sk-ant-`.
+
+3. Check settings.json has the correct path:
+   ```powershell
+   Get-Content "$env:USERPROFILE\.claude\settings.json"
+   ```
+   Should show `apiKeyHelper` with a path using **forward slashes** (not backslashes).
+
+4. Close ALL PowerShell windows and try `claude` again.
+
+### "apiKeyHelper did not return a valid value"
+
+Verify your `settings.json` uses the correct short path format:
+
+1. The path uses **forward slashes** (`/`), not backslashes
+2. The path uses your **short username** (like `SMITHJ~1`), not your full username
+3. The short username matches what you see when running `cmd /c dir /x $env:USERPROFILE\..`
+
+If needed, re-run Steps 6.3 and 6.4 to fix the file.
+
+### npm install fails with SSL errors
+
+You may be behind a corporate proxy or VPN that intercepts SSL connections. Temporarily disable it during installation, then configure certificates (Part 5) for ongoing use.
+
+### Git Bash path errors
+
+Verify the path is correct:
+
+```powershell
+# Check current setting
+[Environment]::GetEnvironmentVariable("CLAUDE_CODE_GIT_BASH_PATH", "User")
+
+# Verify bash exists at that path
+Test-Path "YOUR_PATH_HERE"
+```
+
+### Web search fails with certificate errors
+
+If Claude Code starts but web searches fail with SSL errors:
+
+1. Verify the certificate file exists:
+   ```powershell
+   Test-Path "C:\tools\corporate-certs.pem"
+   ```
+2. Verify the environment variable:
+   ```powershell
+   [Environment]::GetEnvironmentVariable("NODE_EXTRA_CA_CERTS", "User")
+   ```
+3. Close ALL PowerShell windows and start a fresh one
+
+> **Important:** Environment variables only take effect in new PowerShell sessions. Always fully close and reopen PowerShell after setting them.
+
+---
+
+## Quick reference
+
+| Command | What it does |
+|---------|-------------|
+| `claude` | Start Claude Code |
+| `claude status` | Check connection |
+| `claude --help` | List all options |
+| `claude --version` | Print version |
+
+Full docs: [docs.anthropic.com](https://docs.anthropic.com)
