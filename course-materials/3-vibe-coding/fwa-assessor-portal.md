@@ -1,4 +1,4 @@
-# 🛡️ Vibe Coding Exercise: Insurance FWA Assessor Portal
+# Exercise: Insurance FWA Assessor Portal
 
 ---
 
@@ -12,8 +12,8 @@
 A web application where an insurance assessor can upload a claim document, run automated FWA checks powered by AI agents, review a risk dashboard, and chat with an AI about the findings.
 
 **What you need:**
-- Claude Code installed and running ✅
-- An API key *(will be provided by the facilitator at the start of the session)* 🔑
+- Claude Code installed and running
+- An API key *(will be provided by the facilitator at the start of the session)*
 - A browser (Chrome, Safari, or Edge)
 
 **How this works:**
@@ -21,22 +21,24 @@ You will copy and paste prompts into Claude Code. Claude will build the app. You
 
 ---
 
-## 🗂️ The Four Steps
+## The Four Steps
 
 | Step | What You'll Do | Time |
-|------|---------------|------|
+|------|----------------|------|
 | Step 1 | Set up the project & claim upload screen | 10 min |
 | Step 2 | Build the AI agent pipeline (3 agents) | 15 min |
 | Step 3 | Build the results dashboard | 15 min |
-| Step 4 | Add the chat button & iterate | 10 min |
-| Buffer | Fix issues, explore, personalise | 10 min |
+| Step 4 | Add the chat assistant & iterate | 10 min |
+| Buffer | Fix issues, explore, personalize | 10 min |
 
 ---
 
-## 🔑 API Key Setup
+## API Key Setup
 
-> ⚠️ **The facilitator will share the API key at the start of the session.**
+> **The facilitator will share the API key at the start of the session.**
 > When you receive it, paste it into Claude Code when prompted, or keep it handy — you will include it in your first prompt below.
+
+> **Security note:** For this workshop the key is stored directly in the app file for simplicity. Never commit a real API key to a shared repository or send it over email.
 
 ---
 
@@ -71,10 +73,10 @@ UPLOAD SCREEN LAYOUT:
 - Below the upload box, 4 input fields in a 2x2 grid:
     - Claim ID (text field)
     - Claimant Name (text field)
-    - Claim Type dropdown: Medical, Motor, Property, Liability
+    - Claim Type dropdown: Motor, Home, Health, Commercial Property, Life
     - Claim Amount (EUR) (number field)
-- A large button at the bottom labelled "🔍 Run FWA Investigation"
-  in amber colour
+- A large button at the bottom labeled "Run FWA Investigation"
+  in amber color
 - When the file is uploaded, show the filename and a green checkmark
 - The button should be disabled until a file is uploaded and all
   fields are filled in
@@ -86,7 +88,7 @@ agents in the next step.
 Make this a single HTML file I can open in my browser.
 ```
 
-### ✅ Check before moving on
+### Check before moving on
 - [ ] Page opens in your browser
 - [ ] You can drag and drop (or click to select) a file
 - [ ] All 4 input fields appear
@@ -116,7 +118,7 @@ Now wire up the AI agent pipeline. When the user clicks
 
 AGENT 1 — Medical Necessity Check Agent
 System prompt:
-"You are a senior medical reviewer for an insurance company specialising
+"You are a senior medical reviewer for an insurance company specializing
 in FWA detection. Your job is to assess whether a submitted claim is
 medically necessary and clinically justified."
 
@@ -153,10 +155,10 @@ Pass it all previous findings. Ask it to return JSON:
 
 LOADING EXPERIENCE:
 - Show a step-by-step progress indicator as each agent runs:
-  "🔬 Agent 1: Checking medical necessity..."
-  "📊 Agent 2: Calculating risk score..."
-  "📋 Agent 3: Generating recommendations..."
-- Each step should visually tick off (✅) when complete
+  "Agent 1: Checking medical necessity..."
+  "Agent 2: Calculating risk score..."
+  "Agent 3: Generating recommendations..."
+- Each step should visually tick off when complete
 
 ERROR HANDLING:
 - If the API call fails, show a clear error message:
@@ -166,7 +168,7 @@ Keep all results in a JavaScript variable called investigationResults
 so we can display them in the next step.
 ```
 
-### ✅ Check before moving on
+### Check before moving on
 - [ ] Upload a sample document (any PDF or image will do for testing)
 - [ ] Fill in the claim fields
 - [ ] Click the button — you should see the 3-step progress indicator
@@ -189,7 +191,7 @@ have finished. Replace the loading screen with this layout:
 HEADER SECTION:
 - Show "Investigation Complete" with a timestamp
 - Show the Claim ID and Claimant Name from the inputs
-- A coloured banner based on the recommended action:
+- A colored banner based on the recommended action:
     - "Approve" → green banner
     - "Request More Information" → amber banner
     - "Refer to Special Investigations Unit" → orange banner
@@ -200,40 +202,40 @@ HEADER SECTION:
 THREE AGENT RESULT CARDS (displayed side by side in a row):
 
 Card 1 — Medical Necessity (left):
-- Title: "🔬 Medical Necessity Check"
+- Title: "Medical Necessity Check"
 - Large verdict badge (green/amber/red based on verdict)
 - Confidence percentage shown as a progress bar
 - List of key findings as bullet points
 - Red flags section (show in red if any exist, hide if empty)
 
-Card 2 — Risk Score (centre):
-- Title: "📊 FWA Risk Score"
+Card 2 — Risk Score (center):
+- Title: "FWA Risk Score"
 - A large circular score display showing the number (0-100)
-- Colour of circle: green <30, amber 30-60, orange 60-80, red >80
+- Color of circle: green <30, amber 30-60, orange 60-80, red >80
 - Risk level label below the circle
 - List of risk factors as bullet points
 - Anomalies section (show in red if any, hide if empty)
 
 Card 3 — Recommended Actions (right):
-- Title: "📋 Assessor Actions"
+- Title: "Assessor Actions"
 - Recommended action in a prominent badge
 - Action rationale in a text box
 - Numbered list of next steps for the assessor
 
 BOTTOM SECTION:
-- A "📄 Download Report" button that exports the findings as a
+- A "Download Report" button that exports the findings as a
   formatted text file
-- A "🔄 New Investigation" button that resets the form
+- A "New Investigation" button that resets the form
 - Leave a placeholder div with id="chat-section" at the bottom
-  with the text "💬 Chat Assistant — Coming Soon"
+  with the text "Chat Assistant — Coming Soon"
   (we will build this in the next step)
 ```
 
-### ✅ Check before moving on
+### Check before moving on
 - [ ] Results dashboard appears after agents finish
 - [ ] All 3 agent cards are visible with the correct data
-- [ ] The top banner colour matches the recommendation
-- [ ] Risk score circle changes colour based on the score
+- [ ] The top banner color matches the recommendation
+- [ ] Risk score circle changes color based on the score
 - [ ] Download Report button works
 - [ ] You can see the "Chat Assistant — Coming Soon" placeholder
 
@@ -251,7 +253,7 @@ Now build the Chat Assistant section. Replace the placeholder
 div with id="chat-section" with a fully working chat interface.
 
 CHAT UI:
-- Section title: "💬 Ask the FWA Assistant"
+- Section title: "Ask the FWA Assistant"
 - Subtitle: "Ask follow-up questions about this investigation"
 - A scrollable chat message window (300px tall) with:
     - An opening message from the assistant:
@@ -263,7 +265,7 @@ CHAT UI:
   "Ask a question about this claim..."
 - A "Send" button in amber
 
-CHAT BEHAVIOUR:
+CHAT BEHAVIOR:
 - When the assessor sends a message, call the OpenAI API with:
     - A system prompt that includes ALL investigation findings as
       context, so the assistant can answer specific questions
@@ -273,16 +275,16 @@ CHAT BEHAVIOUR:
 - Show a typing indicator ("Assistant is thinking...") while waiting
 - Display the assistant's response in the chat window
 - Style user messages aligned right (navy background, white text)
-  and assistant messages aligned left (light grey background)
+  and assistant messages aligned left (light gray background)
 
 EXAMPLE QUESTIONS the assessor might ask:
 - "Why was this flagged as high risk?"
 - "What documents should I request?"
 - "Has this type of anomaly been seen before?"
-- "Can you summarise the key concerns in one paragraph?"
+- "Can you summarize the key concerns in one paragraph?"
 ```
 
-### ✅ Final checks
+### Final checks
 - [ ] Chat panel appears at the bottom of results
 - [ ] Opening message is pre-populated with the investigation findings
 - [ ] You can type a question and get an AI response
@@ -291,55 +293,57 @@ EXAMPLE QUESTIONS the assessor might ask:
 
 ---
 
-## 🎨 Bonus Challenges: Complete the Product (attempt in order)
+## Bonus Challenges
 
-These challenges are designed to turn your prototype into something that feels like a real production tool. Each one adds a layer of completeness. Work through them in order — each builds on the previous.
+These challenges turn your prototype into something that feels like a real production tool. Work through them in order — each builds on the previous.
 
 ---
 
 ### Bonus 1 — Assessor Sign-Off & Audit Trail (~10 min)
+
 *A real investigation tool needs accountability. Right now, findings just sit on screen. Make them official.*
 
 ```
 Add an assessor sign-off workflow to the results page:
 
 SIGN-OFF PANEL (appears below the 3 agent cards):
-- A text area labelled "Assessor Notes" where the user can type
-  their own observations before finalising
+- A text area labeled "Assessor Notes" where the user can type
+  their own observations before finalizing
 - A dropdown: "Final Decision" with options:
     Approve | Request More Information |
     Refer to SIU | Deny Claim | Override AI Recommendation
 - If "Override AI Recommendation" is selected, show a mandatory
   text field: "Reason for override (required)"
 - An "Assessor Name" text field
-- A "✅ Sign Off & Finalise" button in navy blue
+- A "Sign Off & Finalize" button in navy blue
 
-BEHAVIOUR:
+BEHAVIOR:
 - When signed off, lock the entire results page (make all fields
-  read-only and grey out the buttons)
+  read-only and gray out the buttons)
 - Replace the sign-off panel with a green confirmation banner:
-  "Investigation finalised by [Name] at [timestamp]"
+  "Investigation finalized by [Name] at [timestamp]"
 - Update the Download Report to include the assessor's name,
   decision, notes, and timestamp at the top of the exported file
-- Show a visual "FINALISED" watermark stamp diagonally across
+- Show a visual "FINALIZED" watermark stamp diagonally across
   the results cards
 ```
 
 ---
 
 ### Bonus 2 — Investigation Case File & Session History (~15 min)
+
 *A portal without memory isn't a portal — it's a calculator. Give it persistence within the session.*
 
 ```
 Add a persistent Case File sidebar to the left of the main content
 (collapsible on small screens):
 
-SIDEBAR — "📁 Case File":
+SIDEBAR — "Case File":
 - Show a running list of ALL investigations completed this session
 - For each case show:
     - Case reference number (auto-generated, e.g. FWA-2026-0042)
     - Claimant name and claim type
-    - Risk level badge (colour coded)
+    - Risk level badge (color-coded)
     - Final assessor decision (or "Pending" if not signed off)
     - Timestamp
 - Clicking any case in the list reloads its full results dashboard
@@ -352,7 +356,7 @@ SIDEBAR — "📁 Case File":
     - Cases pending sign-off
 
 SESSION SUMMARY BUTTON:
-- At the bottom of the sidebar, add a "📊 Export Session Summary"
+- At the bottom of the sidebar, add an "Export Session Summary"
   button that downloads a single CSV file containing one row per
   investigation with all key fields:
   Case Ref, Claimant, Type, Amount, Risk Score, Risk Level,
@@ -363,10 +367,11 @@ SESSION SUMMARY BUTTON:
 ---
 
 ### Bonus 3 — Comparator & Benchmark Mode (~15 min)
+
 *The hardest challenge. Turn the portal from a single-case tool into an analytical platform.*
 
 ```
-Add a "⚖️ Compare Cases" mode accessible from the sidebar.
+Add a "Compare Cases" mode accessible from the sidebar.
 
 COMPARE MODE:
 - Allow the assessor to select exactly 2 cases from the session
@@ -392,32 +397,65 @@ BENCHMARK PANEL (below the comparison):
    case, and identify if either case might benefit from being
    reviewed in light of the other."
 - Display this as a short AI-generated analysis paragraph with
-  the title "🔍 AI Comparative Analysis"
-
-This turns your portal into a tool a fraud manager could use to
-spot patterns across cases — not just review them one by one.
+  the title "AI Comparative Analysis"
 ```
 
 ---
 
-## 🆘 If Something Goes Wrong
+## If Something Goes Wrong
+
+Things will break. An agent might return an error. The results panel might be blank. This is completely normal. Here is how to handle it:
+
+### Step 1: Describe the problem
+
+```
+Something is wrong. The agents ran but the results page is blank —
+no cards are showing. The loading indicator completed successfully.
+Can you check the code that parses the API response and displays
+the data?
+```
+
+### Step 2: Let Claude diagnose and fix
+
+Claude will look at the code, identify the issue, and fix it. You do not need to understand what went wrong technically.
+
+### Step 3: If it is still broken, give more context
+
+```
+It's still not working. Here is what I see: [describe exactly what
+you see on screen]. Here is the error message from the browser:
+[paste any error text]. This started happening after [describe
+the last change made].
+```
+
+### Step 3.5: Clear the conversation if Claude is going in circles
+
+If Claude seems to be repeating the same fix, type `/clear` to reset the conversation. This gives Claude a fresh perspective on the current state of your files without the baggage of a long debugging history. Your files on disk are not affected — only the chat history is cleared.
+
+### Step 4: If you are stuck, start a fresh section
+
+```
+Let's rebuild the results dashboard from scratch. Keep the upload
+screen, the agent pipeline, and the investigationResults variable,
+but rewrite everything that displays the results. Use a simpler
+approach this time.
+```
+
+**The golden rule: Do not touch the code.** Describe what you see, what you expected, and when it started. Claude will fix it.
 
 | Problem | What to do |
-|---------|-----------|
-| API not connecting | Check your API key is pasted correctly. Ask the facilitator. |
-| Blank results / no data | Tell Claude: "The agents ran but the results page is blank. Can you check the code that parses the API response and displays the data?" |
-| Layout looks broken | Tell Claude: "The layout looks wrong on my screen — [describe what you see]. Can you fix it?" |
+|---------|------------|
+| API not connecting | Check your API key is pasted correctly at the top of the file. Ask the facilitator. |
+| Blank results / no data | Tell Claude: "The agents ran but the results page is blank. Can you check the code that parses the API response?" |
+| Layout looks broken | Tell Claude: "The layout looks wrong — [describe what you see]. Can you fix it?" |
 | Claude going in circles | Type `/clear` in Claude Code to reset the chat. Your files are safe. |
 | Agent returns error | Tell Claude: "I'm getting this error: [paste error]. Fix it." |
 
-> 💡 **Golden rule:** Don't touch the code. Describe what you see, what you expected, and when it started. Claude will fix it.
-
 ---
 
-## 💡 Key Takeaways
+## Key Takeaways
 
 - You built a **multi-agent AI application** in under an hour — no coding required
 - The skill is **describing outcomes clearly**, not writing code
 - This same approach can build: underwriting tools, client portals, reporting dashboards, triage workflows
 - The agents pattern (sequential AI calls with context passing) is reusable for any investigation workflow
-
