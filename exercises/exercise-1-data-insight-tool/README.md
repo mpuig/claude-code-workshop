@@ -1,4 +1,15 @@
-# Exercise 1: Data-Driven Insight Tool
+# Exercise 2: Data Insight Tool
+
+**Duration:** ~40 minutes  
+**Difficulty:** Beginner to Intermediate
+
+---
+
+## Files
+
+**Download:** [market_penetration.csv](data/market_penetration.csv) | [demographics.csv](data/demographics.csv) | [accident_frequency.csv](data/accident_frequency.csv) | [product_lines.csv](data/product_lines.csv)
+
+---
 
 ## Objective
 
@@ -357,7 +368,7 @@ the initial Chart.js CDN load.
 
 ### Example Final Result (Browser View)
 
-![Exercise 1 final browser result](images/screenshot.jpg)
+![Exercise 2 final browser result](images/screenshot.jpg)
 
 _Example output of the generated interactive visualization page opened in a browser._
 

@@ -1,7 +1,13 @@
-# Exercise 0: Executive Onramp (Zero to One)
+# Exercise 1: Executive Onramp
 
 **Duration:** ~90 minutes  
 **Difficulty:** Beginner to Intermediate  
+
+---
+
+## Files
+
+**Download:** [COMPANY.md](../../company-context/COMPANY.md) | [MARKET.md](../../company-context/MARKET.md) | [PERSONAS.md](../../company-context/PERSONAS.md) | [PRODUCTS.md](../../company-context/PRODUCTS.md)
 
 ---
 
@@ -11,7 +17,7 @@ Get from zero to practical value with Claude Code in one session.
 
 This exercise is designed for senior consulting profiles who are:
 
-- Interested in generative AI and tools like Claude Code or Codex
+- Interested in generative AI and tools like Claude Code 
 - Strong in business judgment but not hands-on with coding
 - Looking for immediate, client-ready outcomes
 
@@ -300,9 +306,9 @@ Constraints:
 
 ---
 
-## Scoring (Simple Executive Rubric)
+## Self-Check Rubric
 
-Score each participant on 4 dimensions, each from 0 to 10 (total score: 40):
+Use this rubric to assess the quality of your prompts and outputs. Score each dimension from 0 to 10 (total score: 40):
 
 | Dimension | What "10" Looks Like |
 |---|---|
@@ -338,20 +344,9 @@ Suggested interpretation:
 
 ---
 
-## Facilitator Notes (Optional)
+## Suggested Outputs to Save
 
-For workshop delivery:
-
-- Run Block A in plenary (fast momentum, shared confidence)
-- Run Block B in pairs (peer critique improves prompt quality)
-- End with 5-minute playback per participant:  
-  "Best prompt I wrote" and "biggest improvement I made"
-
----
-
-## Deliverables to Keep
-
-By the end, each participant should save:
+If you want a reusable starter pack for future executive work, save these outputs:
 
 1. `executive_brief.md`
 2. `three_slide_storyline.md`
@@ -363,7 +358,7 @@ By the end, each participant should save:
 
 ## Next Step
 
-After Exercise 0, continue with:
+After Exercise 1, continue with:
 
 - `exercises/exercise-1-data-insight-tool/` for structured data analysis
 - `exercises/exercise-2-claims-triage/` for rule-driven process automation

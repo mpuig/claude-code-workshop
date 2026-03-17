@@ -1,6 +1,13 @@
-# Exercise 3: Automated Reporting Solution
+# Exercise 4: Automated Reporting
 
-## Mediterranean Insurance Group (MIG) - Quarterly Claims Report Automation
+**Duration:** ~55 minutes  
+**Difficulty:** Intermediate
+
+---
+
+## Files
+
+**Download:** [claims_q1_2025.csv](data/claims_q1_2025.csv) | [claims_q2_2025.csv](data/claims_q2_2025.csv) | [claims_q3_2025.csv](data/claims_q3_2025.csv) | [claims_q4_2025.csv](data/claims_q4_2025.csv) | [report_template.md](data/report_template.md)
 
 ---
 
@@ -16,10 +23,6 @@ By the end of this exercise you will have:
 4. Created an HTML companion with interactive charts.
 5. Simulated a new quarter arriving and regenerated the report effortlessly.
 6. Built a Python automation script Pierre can run every quarter.
-
-**Estimated total time: 55 minutes**
-
----
 
 ## Background
 

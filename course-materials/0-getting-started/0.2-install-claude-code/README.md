@@ -95,5 +95,5 @@ Start in **Edit** mode. You can always switch later.
 
 ## Next Step
 
-For non-technical executive users, start with [Exercise 0: Executive Onramp (Zero to One)](../../../exercises/exercise-0-executive-onramp/README.md).
+For non-technical executive users, start with [Exercise 1: Executive Onramp](../../../exercises/exercise-0-executive-onramp/README.md).
 Then proceed to [Module 1.1: First Steps with Claude Code](../../1-fundamentals/1.1-first-steps/README.md) to learn how to give effective instructions and complete your first insurance tasks.

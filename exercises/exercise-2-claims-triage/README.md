@@ -1,8 +1,13 @@
-# Exercise 2: Claims Triage Prototype
+# Exercise 3: Claims Triage
 
-**Duration:** ~45 minutes
+**Duration:** ~45 minutes  
 **Difficulty:** Intermediate
-**Company:** Mediterranean Insurance Group (MIG)
+
+---
+
+## Files
+
+**Download:** [incoming_claims.csv](data/incoming_claims.csv) | [historical_outcomes.csv](data/historical_outcomes.csv) | [business_rules.json](data/business_rules.json)
 
 ---
 
@@ -335,7 +340,7 @@ The dashboard is a single self-contained HTML file (~108 KB) with no external de
 
 ### Example Final Result (Browser View)
 
-![Exercise 2 final browser result](images/screenshot.png)
+![Exercise 3 final browser result](images/screenshot.png)
 
 _Example output of the generated claims triage dashboard opened in a browser._
 

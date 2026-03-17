@@ -92,28 +92,28 @@ add_frontmatter_and_copy \
 add_frontmatter_and_copy \
   "$REPO_ROOT/exercises/exercise-0-executive-onramp/README.md" \
   "$PAGES_DIR/exercises/executive-onramp.mdx" \
-  "Exercise 0: Executive Onramp (Zero to One)" \
+  "Exercise 1: Executive Onramp" \
   "Zero-to-one onboarding for executive users with copy/paste wins and progressive prompting challenge."
-
-# Exercise 1
-add_frontmatter_and_copy \
-  "$REPO_ROOT/exercises/exercise-1-data-insight-tool/README.md" \
-  "$PAGES_DIR/exercises/data-insight-tool.mdx" \
-  "Exercise 1: Data-Driven Insight Tool" \
-  "Build an end-to-end analytical workflow to identify white space expansion opportunities."
 
 # Exercise 2
 add_frontmatter_and_copy \
-  "$REPO_ROOT/exercises/exercise-2-claims-triage/README.md" \
-  "$PAGES_DIR/exercises/claims-triage.mdx" \
-  "Exercise 2: Claims Triage Prototype" \
-  "Build a claims triage system that classifies, prioritizes, and routes 220 incoming claims."
+  "$REPO_ROOT/exercises/exercise-1-data-insight-tool/README.md" \
+  "$PAGES_DIR/exercises/data-insight-tool.mdx" \
+  "Exercise 2: Data Insight Tool" \
+  "Build an end-to-end analytical workflow to identify white space expansion opportunities."
 
 # Exercise 3
 add_frontmatter_and_copy \
+  "$REPO_ROOT/exercises/exercise-2-claims-triage/README.md" \
+  "$PAGES_DIR/exercises/claims-triage.mdx" \
+  "Exercise 3: Claims Triage" \
+  "Build a claims triage system that classifies, prioritizes, and routes 220 incoming claims."
+
+# Exercise 4
+add_frontmatter_and_copy \
   "$REPO_ROOT/exercises/exercise-3-automated-reporting/README.md" \
   "$PAGES_DIR/exercises/automated-reporting.mdx" \
-  "Exercise 3: Automated Reporting Solution" \
+  "Exercise 4: Automated Reporting" \
   "Automate quarterly claims report generation with data analysis and visualizations."
 
 # Company Context
