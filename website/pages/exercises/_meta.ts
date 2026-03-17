@@ -4,5 +4,7 @@ export default {
   'data-insight-tool': 'Exercise 2: Data Insight Tool',
   'claims-triage': 'Exercise 3: Claims Triage',
   'automated-reporting': 'Exercise 4: Automated Reporting',
-  'data-catalog': 'Data Catalog',
+  'data-catalog': {
+    display: 'hidden',
+  },
 }

@@ -70,7 +70,41 @@ claude-code-training/
     └── package.json                    #   Next.js 14 + Nextra 3
 ```
 
-## Suggested Training Flow
+## Suggested Training Flows
+
+Choose the path that fits the time you have:
+
+### Express (1 to 1.5 hours)
+
+- [Module 0 - Getting Started](course-materials/0-getting-started/)
+- [Module 1.1 - First Steps](course-materials/1-fundamentals/1.1-first-steps/)
+- [Exercise 1 - Executive Onramp](exercises/exercise-1-executive-onramp/)
+
+Best for: a short live introduction where learners need one concrete win quickly.
+
+### Intermediate (2 to 3 hours)
+
+- [Module 0 - Getting Started](course-materials/0-getting-started/)
+- [Module 1.1 - First Steps](course-materials/1-fundamentals/1.1-first-steps/)
+- [Module 1.2 - Project Memory](course-materials/1-fundamentals/1.2-project-memory/)
+- [Module 2 - Guided Workflows](course-materials/2-insurance-workflows/)
+- One exercise from Module 3 in the [`exercises/`](exercises/) folder
+
+Best for: a workshop where learners should move from guided use into one independent task.
+
+### Full (4 to 5 hours)
+
+- [Module 0 - Getting Started](course-materials/0-getting-started/)
+- [Module 1.1 - First Steps](course-materials/1-fundamentals/1.1-first-steps/)
+- [Module 1.2 - Project Memory](course-materials/1-fundamentals/1.2-project-memory/)
+- [Module 2 - Guided Workflows](course-materials/2-insurance-workflows/)
+- Module 3 in the [`exercises/`](exercises/) folder
+- [Module 4 - Vibe Coding](course-materials/3-vibe-coding/)
+- [Course Wrap-Up](course-materials/4-wrap-up/)
+
+Best for: the complete learning journey from first use through independent work and tool building.
+
+## Complete Course Map
 
 | Order | Module | Duration | Description |
 |-------|--------|----------|-------------|
@@ -80,12 +114,22 @@ claude-code-training/
 | 4 | [Module 2.1 - Underwriting Brief](course-materials/2-insurance-workflows/2.1-underwriting-brief/) | 30 min | Commercial property underwriting workflow |
 | 5 | [Module 2.2 - Loss Ratio Analysis](course-materials/2-insurance-workflows/2.2-loss-ratio-analysis/) | 30 min | Motor portfolio analysis with visualizations |
 | 6 | [Module 2.3 - Market Assessment](course-materials/2-insurance-workflows/2.3-market-assessment/) | 30 min | Portugal market entry via web research |
-| 7 | [Module 3 - Vibe Coding](course-materials/3-vibe-coding/) | 45 min | Build a Claims Dashboard app |
+| 7 | Module 3 - Practice Exercises | 40-90 min | Apply the workflows independently with realistic business problems |
+| 8 | [Module 4 - Vibe Coding](course-materials/3-vibe-coding/) | 45 min | Build a Claims Dashboard app |
 | -- | [Advanced Tips](course-materials/5-advanced-tips/) | Reference | Cost management, data security, reading diffs, context window |
 
-**Total guided time: ~3 hours** (modules can be done independently; Advanced Tips are standalone reference material)
+**Full path time: ~4 to 5 hours depending on which practice exercise you choose** (Advanced Tips are standalone reference material)
 
-## Hands-On Exercises
+## How This Course Works
+
+The course moves from guided use to independent use, then to tool building:
+
+- **Module 0:** Get set up and understand what Claude Code is.
+- **Modules 1 and 2 (Guided):** Learn how to work with Claude Code, then apply it in step-by-step insurance workflows.
+- **Module 3 (Independent):** You get the business problem, the files, and the goal. You decide how to solve it.
+- **Module 4 (Creator):** You move beyond using workflows and start building lightweight tools and applications yourself.
+
+## Module 3: Practice Exercises
 
 These are standalone exercises designed for the live session. Each includes step-by-step prompts, realistic context, and practical deliverables.
 
@@ -95,6 +139,15 @@ These are standalone exercises designed for the live session. Each includes step
 | [2 - Data Insight Tool](exercises/exercise-2-data-insight-tool/) | 40 min | Market white space analysis with interactive charts |
 | [3 - Claims Triage](exercises/exercise-3-claims-triage/) | 45 min | Claims classification, prioritization & routing prototype |
 | [4 - Automated Reporting](exercises/exercise-4-automated-reporting/) | 55 min | Quarterly claims report with auto-update capability |
+
+## Reference Material
+
+Use these alongside the course when you need background, datasets, or deeper guidance:
+
+- [`company-context/`](company-context/) -- Shared company, market, product, and persona background used across Modules 2 to 4
+- [`website/public/data/`](website/public/data/) -- Website download files for the exercise datasets used in Exercises 1 to 4
+- [`course-materials/5-advanced-tips/`](course-materials/5-advanced-tips/) -- Practical guidance on cost, data security, diffs, and context-window management
+- [`course-materials/appendix-a-cowork/`](course-materials/appendix-a-cowork/) -- Optional deeper dives into Claude Cowork and related reference topics
 
 ## Prerequisites
 

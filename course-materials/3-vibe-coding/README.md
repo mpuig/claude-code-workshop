@@ -1,6 +1,6 @@
-# Module 3: Vibe Coding
+# Module 4: Vibe Coding
 
-> **Time:** 45–60 minutes | **Prerequisites:** Completion of Modules 1 and 2
+> **Time:** 45–60 minutes | **Prerequisites:** Completion of Modules 1 to 3 recommended
 
 ## What Is Vibe Coding?
 

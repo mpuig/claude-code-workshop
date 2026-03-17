@@ -543,4 +543,4 @@ The key takeaway: **Claude Code handles both research and writing**, which makes
 
 ## Next Step
 
-Proceed to [Module 3: Building an Insurance App with Vibe Coding](../../3-vibe-coding/README.md) to learn how non-technical users can build working applications with Claude Code.
+Proceed to [Exercise 1: Executive Onramp](../../../exercises/exercise-1-executive-onramp/README.md), the first page in Module 3: Practice Exercises, to apply these workflows independently before moving on to custom app building.
