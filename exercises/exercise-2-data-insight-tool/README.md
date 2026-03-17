@@ -39,7 +39,7 @@ Isabel needs someone to combine these sources, find the regions where demand is 
 ## Prerequisites
 
 - Claude Code installed and configured
-- Terminal open in this exercise directory: `exercises/exercise-1-data-insight-tool/`
+- Terminal open in this exercise directory
 - Familiarity with CSV data (no coding experience required)
 
 ---
@@ -481,7 +481,7 @@ By completing this exercise, you will have practiced:
 ## Troubleshooting Tips
 
 ### "Claude Code is not reading the files"
-- Make sure your terminal is in the `exercise-1-data-insight-tool/` directory, or use absolute paths in your prompts
+- Make sure your terminal is in this exercise directory, or use absolute paths in your prompts
 - Try being explicit: *"Read the file at data/market_penetration.csv"*
 
 ### "The join produced fewer rows than expected"
@@ -537,7 +537,7 @@ If you finish early or want to go deeper:
 By the end of this exercise, your directory should contain:
 
 ```text
-exercise-1-data-insight-tool/
+<exercise-folder>/
   README.md                  <-- This file
   data/
     market_penetration.csv   <-- Source data (576 rows)

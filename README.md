@@ -56,12 +56,12 @@ claude-code-training/
 │   └── 5-advanced-tips/               # Cost, security, diffs, context window
 │
 ├── exercises/                          # Hands-on exercises with data
-│   ├── exercise-0-executive-onramp/    # Zero-to-one executive onboarding
-│   ├── exercise-1-data-insight-tool/   # Market white space analysis
+│   ├── exercise-1-executive-onramp/    # Zero-to-one executive onboarding
+│   ├── exercise-2-data-insight-tool/   # Market white space analysis
 │   │   └── data/                       #   4 CSVs: penetration, demographics, accidents, products
-│   ├── exercise-2-claims-triage/       # Claims classification & routing prototype
+│   ├── exercise-3-claims-triage/       # Claims classification & routing prototype
 │   │   └── data/                       #   220 claims, business rules JSON, 160 historical outcomes
-│   └── exercise-3-automated-reporting/ # Quarterly claims report automation
+│   └── exercise-4-automated-reporting/ # Quarterly claims report automation
 │       └── data/                       #   4 quarters of claims data + report template
 │
 └── website/                            # Nextra documentation site
@@ -87,14 +87,14 @@ claude-code-training/
 
 ## Hands-On Exercises
 
-These are standalone exercises designed for the live session. Each includes step-by-step prompts, expected outputs, and rich fake data.
+These are standalone exercises designed for the live session. Each includes step-by-step prompts, realistic context, and practical deliverables.
 
-| Exercise | Persona                   | Duration | What You Build |
-|----------|---------------------------|----------|----------------|
-| [1 - Executive Onramp](exercises/exercise-0-executive-onramp/) | Executives | 90 min | Executive prompting fundamentals with progressive challenge |
-| [2 - Data Insight Tool](exercises/exercise-1-data-insight-tool/) | Isabel Santos (Strategy)  | 40 min | Market white space analysis with interactive charts |
-| [3 - Claims Triage](exercises/exercise-2-claims-triage/) | Ana Martinez (Claims)     | 45 min | Claims classification, prioritization & routing prototype |
-| [4 - Automated Reporting](exercises/exercise-3-automated-reporting/) | Pierre Dupont (Actuarial) | 55 min | Quarterly claims report with auto-update capability |
+| Exercise | Duration | What You Build |
+|----------|----------|----------------|
+| [1 - Executive Onramp](exercises/exercise-1-executive-onramp/) | 90 min | Executive prompting fundamentals with progressive challenge |
+| [2 - Data Insight Tool](exercises/exercise-2-data-insight-tool/) | 40 min | Market white space analysis with interactive charts |
+| [3 - Claims Triage](exercises/exercise-3-claims-triage/) | 45 min | Claims classification, prioritization & routing prototype |
+| [4 - Automated Reporting](exercises/exercise-4-automated-reporting/) | 55 min | Quarterly claims report with auto-update capability |
 
 ## Prerequisites
 
@@ -108,11 +108,11 @@ These are standalone exercises designed for the live session. Each includes step
 # 1. Install Claude Code
 curl -fsSL https://claude.ai/install.sh | bash
 
-# 2. Navigate to an exercise
-cd exercises/exercise-0-executive-onramp
+# 2. Open the training repository
+cd claude-code-training
 
 # 3. Start Claude Code
 claude
 
-# 4. Follow the prompts in the README
+# 4. Open the exercise or module you want to follow
 ```

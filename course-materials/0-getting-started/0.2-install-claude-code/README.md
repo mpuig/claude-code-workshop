@@ -2,7 +2,7 @@
 
 > **Time:** 5 minutes | **Prerequisites:** A laptop with terminal access and a Claude account
 
-For detailed, platform-specific installation guides (including corporate network setup, API key configuration, and troubleshooting), see:
+For detailed, platform-specific installation guides with optional advanced setup for corporate networks and managed environments, see:
 
 - [Mac Installation Guide](install-mac.md)
 - [Windows Installation Guide](install-windows.md)
@@ -95,5 +95,5 @@ Start in **Edit** mode. You can always switch later.
 
 ## Next Step
 
-For non-technical executive users, start with [Exercise 1: Executive Onramp](../../../exercises/exercise-0-executive-onramp/README.md).
+For non-technical executive users, start with [Exercise 1: Executive Onramp](../../../exercises/exercise-1-executive-onramp/README.md).
 Then proceed to [Module 1.1: First Steps with Claude Code](../../1-fundamentals/1.1-first-steps/README.md) to learn how to give effective instructions and complete your first insurance tasks.

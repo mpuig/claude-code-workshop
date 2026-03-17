@@ -41,7 +41,7 @@ Pierre wants to automate this end-to-end. When new quarterly data lands in the `
 ## Prerequisites
 
 - Claude Code CLI installed and configured.
-- A terminal open in this exercise folder (`exercise-3-automated-reporting/`).
+- A terminal open in this exercise folder.
 - Python 3.9+ available (for the final automation script).
 
 ---
@@ -520,7 +520,7 @@ By completing this exercise, you will have practiced:
 ## Troubleshooting Tips
 
 ### "Claude says it cannot read the files"
-Make sure you launched Claude Code from the `exercise-3-automated-reporting/` directory (or its parent). Claude Code needs the files to be within its working context. You can also provide absolute paths in your prompt.
+Make sure you launched Claude Code from this exercise directory (or its parent). Claude Code needs the files to be within its working context. You can also provide absolute paths in your prompt.
 
 ### "The KPI numbers do not match when I spot-check"
 This can happen if Claude misinterprets which column to use. Clarify in your prompt:

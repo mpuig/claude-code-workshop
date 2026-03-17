@@ -437,7 +437,7 @@ By completing this exercise, you will practice:
 ## Troubleshooting Tips
 
 **Claude Code does not find the data files**
-Make sure you launched Claude Code from the exercise folder (`exercises/exercise-2-claims-triage/`), or provide the full path in your prompt: "Read all files in exercises/exercise-2-claims-triage/data/".
+Make sure you launched Claude Code from this exercise folder, or provide the full path to the `data/` directory in your prompt.
 
 **The generated CSV has formatting issues**
 Ask Claude Code to fix it: "The triaged_claims.csv has [describe issue]. Please regenerate it." Claude Code handles CSV quoting, encoding, and special characters well, but descriptions with commas can sometimes cause issues.

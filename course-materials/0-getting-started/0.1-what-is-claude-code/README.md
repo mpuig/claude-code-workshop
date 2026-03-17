@@ -24,17 +24,17 @@ Claude Code is a command-line tool that lets you work with Claude directly in yo
 
 ---
 
-## Beyond individual tasks: how teams use Claude Code
+## Beyond individual tasks: where Claude Code helps
 
-Organizations are using Claude Code to augment entire workflows -- from discovery and planning through delivery and support.
+Teams use Claude Code across planning, analysis, documentation, delivery, and follow-up work. In this course, the focus is practical business use: briefs, research, data analysis, reporting, and lightweight prototypes.
 
-![Claude Code augments your entire SDLC](images/sdlc-overview.png)
+![Claude Code across a full working process](images/sdlc-overview.png)
 
-_Claude Code supports every phase of the software development lifecycle -- from discovery and design through build, deploy, and ongoing support._
+_Claude Code can support a workflow from early scoping through delivery and follow-up._
 
 ![How Anthropic uses Claude Code internally](images/anthropic-internal-use.png)
 
-_Anthropic uses Claude Code across all departments -- from data infrastructure and product development to sales, legal, and finance._
+_Anthropic uses Claude Code across many functions, not only engineering teams._
 
 ---
 

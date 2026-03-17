@@ -360,6 +360,6 @@ If you want a reusable starter pack for future executive work, save these output
 
 After Exercise 1, continue with:
 
-- `exercises/exercise-1-data-insight-tool/` for structured data analysis
-- `exercises/exercise-2-claims-triage/` for rule-driven process automation
-- `exercises/exercise-3-automated-reporting/` for full reporting automation
+- [Exercise 2: Data Insight Tool](../exercise-2-data-insight-tool/README.md) for structured data analysis
+- [Exercise 3: Claims Triage](../exercise-3-claims-triage/README.md) for rule-driven process automation
+- [Exercise 4: Automated Reporting](../exercise-4-automated-reporting/README.md) for full reporting automation
