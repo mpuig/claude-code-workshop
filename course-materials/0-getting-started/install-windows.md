@@ -1,8 +1,3 @@
----
-title: "Install Claude Code on Windows"
-description: "Step-by-step guide to install Claude Code on Windows."
----
-
 # Claude Code Installation Guide for Windows
 
 > **Time:** ~10 to 20 minutes | **Prerequisites:** Windows 10 or later, permission to install apps
@@ -13,7 +8,7 @@ description: "Step-by-step guide to install Claude Code on Windows."
 2. Download **Git for Windows**
 3. Run the installer — on the **Select Components** screen, make sure **"Add a Git Bash Profile to Windows Terminal"** is checked (it is unchecked by default)
 
-![Git installer Select Components screen — check "Add a Git Bash Profile to Windows Terminal"](./images/git-windows-components.png)
+![Git installer Select Components screen — check "Add a Git Bash Profile to Windows Terminal"](../../website/pages/getting-started/images/git-windows-components.png)
 
 ### Step 2: Open PowerShell
 

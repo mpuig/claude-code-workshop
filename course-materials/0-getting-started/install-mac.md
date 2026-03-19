@@ -1,8 +1,3 @@
----
-title: "Install Claude Code on Mac"
-description: "Step-by-step guide to install Claude Code on macOS."
----
-
 # Claude Code Installation Guide for Mac
 
 > **Time:** ~10 to 15 minutes | **Prerequisites:** macOS 10.15 (Catalina) or later

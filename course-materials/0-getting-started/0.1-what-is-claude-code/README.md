@@ -40,4 +40,4 @@ _Anthropic uses Claude Code across many functions, not only engineering teams._
 
 ## Next Step
 
-Proceed to [Install Claude Code](../0.2-install-claude-code/README.md) to set up your environment.
+Install Claude Code to set up your environment: [Mac](../install-mac.md) | [Windows](../install-windows.md)
