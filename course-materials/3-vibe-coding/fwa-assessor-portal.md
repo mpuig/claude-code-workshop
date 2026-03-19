@@ -15,6 +15,7 @@ A web application where an insurance assessor can upload a claim document, run a
 - Claude Code installed and running
 - An API key *(will be provided by the facilitator at the start of the session)*
 - A browser (Chrome, Safari, or Edge)
+- A sample claim document to test with: [Download Sample Claim Form (PDF)](../../website/public/sample-claim-form-CLM-2024-08821.pdf)
 
 **How this works:**
 You will copy and paste prompts into Claude Code. Claude will build the app. You review it, ask for changes, and iterate — just like a PM briefing a developer.
