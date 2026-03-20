@@ -1,7 +1,7 @@
 export default {
   index: 'Overview',
-  'claims-dashboard': 'Exercise: MIG Claims Dashboard',
-  'fwa-assessor-portal': 'Exercise: FWA Assessor Portal',
   'plan-first-workflow': 'The Plan First Workflow',
+  'claims-dashboard': 'Exercise: MIG Claims Dashboard',
   'building-skills': 'Building Skills',
+  'fwa-assessor-portal': 'Bonus: FWA Assessor Portal',
 }
