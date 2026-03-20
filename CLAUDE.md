@@ -2,7 +2,7 @@
 
 ## What This Is
 
-Training materials for consultancy teams on using Claude Code for insurance workflows. All content uses a fictional company context: **Mediterranean Insurance Group (MIG)**, a mid-size European insurer headquartered in Barcelona.
+Training materials for non-technical professionals on using Claude Code for insurance workflows. All content uses a fictional company context: **Mediterranean Insurance Group (MIG)**, a mid-size European insurer headquartered in Barcelona.
 
 ## Company Context: Mediterranean Insurance Group (MIG)
 

@@ -2,7 +2,7 @@
 
 > **Type:** Reference | **Prerequisites:** [Building an Insurance App](README.md)
 
-In the [previous section](README.md) you used `Shift+Tab` to switch to Plan mode -- a quick way to ask Claude to show its approach before acting. That works well for focused tasks like "add a filter to the dashboard."
+In the [previous section](README.md) you used `Shift+Tab` to switch to Plan mode -- a quick way to ask Claude Code to show its approach before acting. That works well for focused tasks like "add a filter to the dashboard."
 
 For larger projects, Plan mode alone is not enough. Building a claims triage tool from scratch, adding a full reporting section, or restructuring a multi-page dashboard needs a stricter workflow so you stay in control of key decisions.
 
@@ -20,7 +20,7 @@ A common pattern is to describe what you want, wait for the result, discover it 
 
 ### Phase 1: Research
 
-Before making any changes, ask Claude to study the relevant parts of your project and write up its findings.
+Before making any changes, ask Claude Code to study the relevant parts of your project and write up its findings.
 
 **Sample Prompt:**
 > "Read the entire dashboard project in depth. Understand how the charts, filters, and data flow work. When you are done, write a detailed report of your findings in `research.md`."
@@ -50,7 +50,7 @@ Repeat this 1 to 3 times until the plan matches your expectations. The markdown 
 
 ### The Todo List
 
-Before implementation begins, ask Claude to add a checklist:
+Before implementation begins, ask Claude Code to add a checklist:
 
 > "Add a detailed todo list to the plan, with all the phases and individual tasks necessary to complete the plan. Do not implement yet."
 

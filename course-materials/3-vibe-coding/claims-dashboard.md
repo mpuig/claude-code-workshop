@@ -71,22 +71,22 @@ best for a simple, self-contained dashboard that I can run locally.
 
 ---
 
-## Step 2: Let Claude Build It
+## Step 2: Let Claude Code Build It
 
-After you submit your requirements, Claude will:
+After you submit your requirements, Claude Code will:
 
 1. Choose an appropriate technology (likely a simple HTML/CSS/JavaScript app, or a Next.js project)
 2. Create the project files
 3. Generate the sample data
 4. Build the dashboard with charts and layout
 
-This may take a minute or two. Claude will explain what it is doing as it works.
+This may take a minute or two. Claude Code will explain what it is doing as it works.
 
 ### What to expect:
 
-Claude will create several files and may ask you to confirm before proceeding. If you are in **Auto-accept** mode (Shift+Tab), it will proceed without asking.
+Claude Code will create several files and may ask you to confirm before proceeding. If you are in **Auto-accept** mode (Shift+Tab), it will proceed without asking.
 
-When Claude finishes, it will tell you how to view the dashboard. Typically:
+When Claude Code finishes, it will tell you how to view the dashboard. Typically:
 
 ```text
 Open the file dashboard.html in your browser, or run the following
@@ -194,7 +194,7 @@ never created a repository from the command line. Walk me through it
 step by step.
 ```
 
-Claude will guide you through:
+Claude Code will guide you through:
 1. Initializing a git repository
 2. Creating a `.gitignore` file
 3. Making your first commit
@@ -205,7 +205,7 @@ Claude will guide you through:
 
 ## Step 6: Deploy (Optional)
 
-If you want your dashboard accessible via a URL (so colleagues can view it without installing anything), Claude can help you deploy it.
+If you want your dashboard accessible via a URL (so colleagues can view it without installing anything), Claude Code can help you deploy it.
 
 ### Sample prompt:
 
@@ -215,7 +215,7 @@ installing anything. What is the simplest way to deploy this as a
 website they can access via a URL? I want free or very cheap hosting.
 ```
 
-Claude will likely suggest options like:
+Claude Code will likely suggest options like:
 
 - **GitHub Pages** (free, good for static HTML dashboards)
 - **Vercel** (free tier, good for Next.js apps)
@@ -239,7 +239,7 @@ to "All". Can you fix it?
 
 ### Step 2: Let Claude diagnose and fix
 
-Claude will look at the code, identify the issue, and fix it. You do not need to understand what went wrong technically.
+Claude Code will look at the code, identify the issue, and fix it. You do not need to understand what went wrong technically.
 
 ### Step 3: If it is still broken, give more context
 
@@ -262,7 +262,7 @@ the summary cards at the top, but rebuild the chart section. Use a
 simpler approach this time.
 ```
 
-**The golden rule: Do not try to debug the code yourself.** Describe what you see, what you expected, and when it started. Let Claude handle the rest.
+**The golden rule: Do not try to debug the code yourself.** Describe what you see, what you expected, and when it started. Let Claude Code handle the rest.
 
 ---
 
@@ -276,5 +276,5 @@ In this exercise you learned to:
 - Handle errors and breakages without technical knowledge
 - Optionally save and deploy your application
 
-The key takeaway: **You do not need to be a developer to build useful tools.** With Claude Code, the skill that matters is clearly describing what you need -- which is exactly what you do as a consultant every day.
+The key takeaway: **You do not need to be a developer to build useful tools.** With Claude Code, the skill that matters is clearly describing what you need -- which is exactly what you do as a professional every day.
 

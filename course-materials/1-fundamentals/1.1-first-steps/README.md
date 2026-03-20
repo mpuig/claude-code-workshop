@@ -35,7 +35,7 @@ When you want Claude to read a file on your computer, use the `@` symbol followe
 Summarize the key findings in @/Users/yourname/Documents/mig-claims-q3-2024.csv
 ```
 
-Claude will read the file and work with its contents. This works with:
+Claude Code will read the file and work with its contents. This works with:
 
 - CSV and Excel exports
 - PDF documents
@@ -54,7 +54,7 @@ Create a file called renewal-summary.md with a structured summary of the
 key renewal terms for our marine cargo portfolio.
 ```
 
-Claude will write the file and tell you where it saved it.
+Claude Code will write the file and tell you where it saved it.
 
 ---
 
@@ -80,7 +80,7 @@ Read @/path/to/claims-report.pdf and give me a structured summary with:
 Format it as a brief I can scan in 2 minutes.
 ```
 
-If you do not have a file handy, ask Claude to work with a hypothetical:
+If you do not have a file handy, ask Claude Code to work with a hypothetical:
 
 ```text
 I'm going to describe a claims scenario. Pretend this is a quarterly claims
@@ -177,13 +177,13 @@ This back-and-forth is how you get the best results. Think of it as editing draf
 
 ## Tips for Effective Prompting
 
-1. **Be specific about format.** Say "create a table" or "use bullet points" or "write it as an executive summary under 200 words." Claude will match whatever format you request.
+1. **Be specific about format.** Say "create a table" or "use bullet points" or "write it as an executive summary under 200 words." Claude Code will match whatever format you request.
 
 2. **Provide context.** Claude does not know about your specific projects unless you tell it. Spend a sentence or two explaining the situation.
 
 3. **Iterate freely.** Your first prompt rarely produces the perfect result. Follow up with refinements. This is normal and expected.
 
-4. **Use Claude as a thinking partner.** Do not just ask Claude to write -- ask it to challenge your assumptions, identify what you might be missing, or suggest alternatives.
+4. **Use Claude Code as a thinking partner.** Do not just ask Claude to write -- ask it to challenge your assumptions, identify what you might be missing, or suggest alternatives.
 
 5. **Check the output.** Claude is powerful but not infallible. Always review numbers, regulatory references, and client-facing communications before using them.
 

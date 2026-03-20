@@ -1,6 +1,6 @@
 # Claude Code Workshop - Training Materials
 
-Practical training for consultancy teams on using Claude Code to build solutions without writing code.
+Practical training for non-technical professionals on using Claude Code to build solutions without writing code.
 
 ## Who Is This For?
 

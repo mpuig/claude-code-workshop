@@ -60,7 +60,7 @@ Save this as portugal-market-overview.md
 
 > **Tip:** When presenting market data to stakeholders, exact URLs let them verify your numbers independently. Always ask Claude to include source URLs in research output.
 
-> **Important:** Web data may not always be perfectly current. Claude will do its best to find recent figures and will flag when data is from an older source. Always verify critical numbers independently before including them in a client deliverable.
+> **Important:** Web data may not always be perfectly current. Claude Code will do its best to find recent figures and will flag when data is from an older source. Always verify critical numbers independently before including them in a client deliverable.
 
 ### Follow up for more depth:
 
@@ -519,9 +519,9 @@ When Claude searches the web for market data, keep these points in mind:
 
 1. **Verify critical numbers.** Web search gives you a strong starting point, but always cross-check key figures (market size, competitor shares) against authoritative sources like ASF annual reports or Swiss Re sigma studies.
 
-2. **Check the dates.** Market data can be 1-2 years old. Claude will try to flag this, but always confirm you are working with the most recent available data.
+2. **Check the dates.** Market data can be 1-2 years old. Claude Code will try to flag this, but always confirm you are working with the most recent available data.
 
-3. **Distinguish fact from estimate.** Claude will sometimes need to estimate (e.g., market share for smaller players). It should flag these, but review critically.
+3. **Distinguish fact from estimate.** Claude Code will sometimes need to estimate (e.g., market share for smaller players). It should flag these, but review critically.
 
 4. **Regulatory details require expert review.** Use Claude's research as a starting point, but have your legal or compliance team validate any regulatory conclusions before acting on them.
 
