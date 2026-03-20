@@ -14,10 +14,10 @@ Non-technical professionals are building real, functional applications this way.
 
 ## Exercises
 
-| Exercise | What You'll Build | Time |
-|----------|------------------|------|
-| [MIG Claims Dashboard](claims-dashboard.md) | A data dashboard with charts, filters, and a claims table for Mediterranean Insurance Group | 45 min |
-| [FWA Assessor Portal](fwa-assessor-portal.md) | A multi-agent AI investigation portal for Fraud, Waste & Abuse claim review | 60 min |
+| Exercise | Time | What You'll Build |
+|----------|------|------------------|
+| [MIG Claims Dashboard](claims-dashboard.md) | 45 min | A data dashboard with charts, filters, and a claims table for Mediterranean Insurance Group |
+| [FWA Assessor Portal](fwa-assessor-portal.md) | 60 min | A multi-agent AI investigation portal for Fraud, Waste & Abuse claim review |
 
 Pick whichever fits your available time and interest. If you finish early, try the other one.
 

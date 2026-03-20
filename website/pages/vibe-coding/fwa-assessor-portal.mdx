@@ -20,7 +20,6 @@ A web application where an insurance assessor can upload a claim document, run a
 
 **What you need:**
 - Claude Code installed and running
-- An API key *(will be provided by the facilitator at the start of the session)*
 - A browser (Chrome, Safari, or Edge)
 
 **How this works:**
@@ -40,14 +39,6 @@ You will copy and paste prompts into Claude Code. Claude Code will build the app
 
 ---
 
-## API Key Setup
-
-> The facilitator will share the API key at the start of the session. When you receive it, paste it into Claude Code when prompted, or keep it handy — you will include it in your first prompt below.
-
-> **Security note:** For this workshop the key is stored directly in the app file for simplicity. Never commit a real API key to a shared repository or send it over email.
-
----
-
 ## Step 1: Project Setup & Claim Upload Screen (10 min)
 
 ### What you're building
@@ -60,10 +51,8 @@ I want to build an Insurance FWA (Fraud, Waste & Abuse) Assessor Portal
 as a self-contained web application (single HTML file with CSS and JavaScript).
 I have no coding experience — you will handle all technical work.
 
-IMPORTANT: This app will call the Anthropic API. The API key is:
-[PASTE YOUR API KEY HERE]
-Store it as a constant at the top of the JavaScript so I can easily find
-and update it later.
+This is a prototype — it will use simulated AI responses, not a real API.
+No API keys are needed.
 
 STEP 1 — Build the Claim Upload Screen:
 
@@ -106,8 +95,8 @@ Make this a single HTML file I can open in my browser.
 ## Step 2: Wire Up the Three AI Agents (15 min)
 
 ### What you're building
-Three AI agents that run in sequence when the assessor clicks "Run FWA Investigation":
-1. **Medical Necessity Agent** — checks if the treatment/claim is clinically justified
+Three simulated AI agents that run in sequence when the assessor clicks "Run FWA Investigation":
+1. **Claim Validity Agent** — checks if the claim is justified and consistent with the policy type
 2. **Risk Scoring Agent** — scores the claim from 0–100 for fraud risk
 3. **Action Recommendation Agent** — recommends what the assessor should do next
 
@@ -115,60 +104,50 @@ Three AI agents that run in sequence when the assessor clicks "Run FWA Investiga
 
 ```text
 Now wire up the AI agent pipeline. When the user clicks
-"Run FWA Investigation", the app should:
+"Run FWA Investigation", the app should SIMULATE three agents
+running in sequence. No real API calls — generate realistic
+mock responses based on the claim details the user entered.
 
-1. Read the uploaded file and convert it to base64
-2. Run THREE agents in sequence using the Anthropic API
-   (model: claude-sonnet-4-20250514), passing the document and
-   claim details to each one
+1. Read the uploaded filename and the claim form fields
+2. Run THREE simulated agents in sequence, each with a
+   short delay (1-2 seconds) to feel realistic
 
-AGENT 1 — Medical Necessity Check Agent
-System prompt:
-"You are a senior medical reviewer for an insurance company specializing
-in FWA detection. Your job is to assess whether a submitted claim is
-medically necessary and clinically justified."
-
-Ask it to return a JSON object with:
-- necessity_verdict: "Justified" | "Questionable" | "Unjustified"
+AGENT 1 — Claim Validity Agent
+Generate a realistic JSON response based on the claim type and amount:
+- validity_verdict: "Justified" | "Questionable" | "Unjustified"
+  (vary based on claim amount — higher amounts more likely questionable)
 - confidence: a percentage (0-100)
-- key_findings: array of 3-5 bullet points (strings)
-- red_flags: array of concerns (can be empty)
+- key_findings: array of 3-5 bullet points (strings) relevant to the
+  claim type
+- red_flags: array of concerns (can be empty for small claims,
+  1-3 items for larger ones)
 
 AGENT 2 — Risk Scoring Agent
-System prompt:
-"You are an insurance fraud risk analyst. Based on the claim document
-and any findings from the medical necessity review, assign a fraud,
-waste and abuse risk score."
-
-Pass it the document AND Agent 1's findings. Ask it to return JSON:
-- risk_score: number 0-100
+Generate a JSON response that considers Agent 1's findings:
+- risk_score: number 0-100 (correlate with claim amount and
+  Agent 1 findings)
 - risk_level: "Low" | "Medium" | "High" | "Critical"
 - risk_factors: array of contributing factors (strings)
 - anomalies: array of specific anomalies detected (can be empty)
 
 AGENT 3 — Action Recommendation Agent
-System prompt:
-"You are an experienced FWA case manager. Based on the claim,
-the medical necessity review, and the risk score, recommend the
-appropriate next action for the assessor."
-
-Pass it all previous findings. Ask it to return JSON:
+Generate a JSON response based on all previous findings:
 - recommended_action: one of "Approve", "Request More Information",
   "Refer to Special Investigations Unit", "Deny Claim"
 - action_rationale: 2-3 sentence explanation (string)
 - next_steps: array of 3-5 concrete steps for the assessor (strings)
 - priority: "Routine" | "Urgent" | "Immediate"
 
+Make the simulated responses internally consistent — if Agent 1 finds
+red flags, Agent 2 should give a higher risk score, and Agent 3 should
+recommend investigation.
+
 LOADING EXPERIENCE:
 - Show a step-by-step progress indicator as each agent runs:
-  "Agent 1: Checking medical necessity..."
+  "Agent 1: Checking claim validity..."
   "Agent 2: Calculating risk score..."
   "Agent 3: Generating recommendations..."
 - Each step should visually tick off when complete
-
-ERROR HANDLING:
-- If the API call fails, show a clear error message:
-  "API connection failed. Please check your API key with the facilitator."
 
 Keep all results in a JavaScript variable called investigationResults
 so we can display them in the next step.
@@ -272,14 +251,14 @@ CHAT UI:
 - A "Send" button in amber
 
 CHAT BEHAVIOR:
-- When the assessor sends a message, call the Anthropic API with:
-    - A system prompt that includes ALL investigation findings as
-      context, so the assistant can answer specific questions
-    - The full conversation history (so it remembers previous messages)
-    - Instructions to respond as an expert FWA assistant, staying
-      focused on this specific claim
-- Show a typing indicator ("Assistant is thinking...") while waiting
+- When the assessor sends a message, generate a simulated assistant
+  response based on the investigation findings already in memory.
+  The response should be relevant to the question asked and reference
+  specific data from the investigation results.
+- Show a typing indicator ("Assistant is thinking...") with a
+  1-2 second delay to feel realistic
 - Display the assistant's response in the chat window
+- Keep conversation history so responses stay consistent
 - Style user messages aligned right (navy background, white text)
   and assistant messages aligned left (light gray background)
 
@@ -451,11 +430,10 @@ approach this time.
 
 | Problem | What to do |
 |---------|------------|
-| API not connecting | Check your API key is pasted correctly at the top of the file. Ask the facilitator. |
-| Blank results / no data | Tell Claude: "The agents ran but the results page is blank. Can you check the code that parses the API response?" |
-| Layout looks broken | Tell Claude: "The layout looks wrong — [describe what you see]. Can you fix it?" |
-| Claude going in circles | Type `/clear` in Claude Code to reset the chat. Your files are safe. |
-| Agent returns error | Tell Claude: "I'm getting this error: [paste error]. Fix it." |
+| Blank results / no data | Tell Claude Code: "The agents ran but the results page is blank. Can you check the code that generates the simulated responses?" |
+| Layout looks broken | Tell Claude Code: "The layout looks wrong — [describe what you see]. Can you fix it?" |
+| Claude Code going in circles | Type `/clear` in Claude Code to reset the chat. Your files are safe. |
+| Agent returns error | Tell Claude Code: "I'm getting this error: [paste error]. Fix it." |
 
 ---
 
