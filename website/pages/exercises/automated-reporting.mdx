@@ -10,9 +10,22 @@ description: "Automate quarterly claims report generation with data analysis and
 
 ---
 
-## Files
+## Setup
 
-**Download:** [claims_q1_2025.csv](../data/exercise-4/claims_q1_2025.csv) | [claims_q2_2025.csv](../data/exercise-4/claims_q2_2025.csv) | [claims_q3_2025.csv](../data/exercise-4/claims_q3_2025.csv) | [claims_q4_2025.csv](../data/exercise-4/claims_q4_2025.csv) | <a href="../data/exercise-4/report_template.md" download>report_template.md</a>
+1. Create a folder for this exercise (e.g. `automated-reporting/`) and inside it create a subfolder called `data/`
+2. Download all five files into the `data/` folder:
+   - [claims_q1_2025.csv](../data/exercise-4/claims_q1_2025.csv) | [claims_q2_2025.csv](../data/exercise-4/claims_q2_2025.csv) | [claims_q3_2025.csv](../data/exercise-4/claims_q3_2025.csv) | [claims_q4_2025.csv](../data/exercise-4/claims_q4_2025.csv) | <a href="../data/exercise-4/report_template.md" download>report_template.md</a>
+3. Open your terminal in the `automated-reporting/` folder and start Claude Code
+
+```text
+automated-reporting/
+└── data/
+    ├── claims_q1_2025.csv
+    ├── claims_q2_2025.csv
+    ├── claims_q3_2025.csv
+    ├── claims_q4_2025.csv
+    └── report_template.md
+```
 
 ---
 
@@ -45,9 +58,8 @@ Pierre wants to automate this end-to-end. When new quarterly data lands in the `
 
 ## Prerequisites
 
-- Claude Code CLI installed and configured.
-- A terminal open in this exercise folder.
-- Python 3.9+ available (for the final automation script).
+- Claude Code installed and configured
+- Python 3.9+ available (for the final automation script)
 
 ---
 

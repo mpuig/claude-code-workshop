@@ -156,6 +156,27 @@ Once downloaded, you can reference them from your CLAUDE.md:
 
 Claude Code will read these files when it needs deeper context about MIG.
 
+### Organizing Context for Different Work
+
+The same pattern works for any project. Keep context files in folders that match your work:
+
+```text
+your-project/
+├── CLAUDE.md
+├── company-context/          # Who the company is
+│   ├── COMPANY.md
+│   └── PRODUCTS.md
+├── case-context/             # Specific case or engagement
+│   ├── scope.md
+│   ├── stakeholders.md
+│   └── constraints.md
+└── data/                     # Working files
+    ├── claims-q4-2025.csv
+    └── portfolio-summary.xlsx
+```
+
+Then reference the relevant folders in your CLAUDE.md. Claude Code will navigate the files as needed — you don't have to feed them all at once.
+
 ---
 
 ## How It Works in Practice

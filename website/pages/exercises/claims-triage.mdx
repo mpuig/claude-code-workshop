@@ -10,9 +10,20 @@ description: "Build a claims triage system that classifies, prioritizes, and rou
 
 ---
 
-## Files
+## Setup
 
-**Download:** [incoming_claims.csv](../data/exercise-3/incoming_claims.csv) | [historical_outcomes.csv](../data/exercise-3/historical_outcomes.csv) | [business_rules.json](../data/exercise-3/business_rules.json)
+1. Create a folder for this exercise (e.g. `claims-triage/`) and inside it create a subfolder called `data/`
+2. Download the three data files into the `data/` folder:
+   - [incoming_claims.csv](../data/exercise-3/incoming_claims.csv) | [historical_outcomes.csv](../data/exercise-3/historical_outcomes.csv) | [business_rules.json](../data/exercise-3/business_rules.json)
+3. Open your terminal in the `claims-triage/` folder and start Claude Code
+
+```text
+claims-triage/
+└── data/
+    ├── incoming_claims.csv
+    ├── historical_outcomes.csv
+    └── business_rules.json
+```
 
 ---
 
@@ -57,12 +68,6 @@ All data files are in the `data/` folder:
 ### Step 1: Understand the Data (~5 minutes)
 
 Start by asking Claude Code to explore and summarize all the data files. This gives you a foundation before building anything.
-
-**Open your terminal in the exercise folder, then type:**
-
-```bash
-claude
-```
 
 Once Claude Code is running, enter this prompt:
 
