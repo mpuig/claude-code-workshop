@@ -20,11 +20,17 @@ You will build a web application for Mediterranean Insurance Group that:
 
 By the end of this exercise, you will have a working app running on your computer.
 
+<a href="/data/claims-dashboard-example.html" target="_blank">
+<img src="/images/vibe-coding/claims-dashboard-top.png" alt="Claims Dashboard example — cards, charts, and filters" style={{width: '100%', borderRadius: '8px', border: '1px solid #e0e0e0', marginTop: '1rem'}} />
+</a>
+
+_Click to preview the finished dashboard. Yours will look similar._
+
 ---
 
 ## Step 1: Define Requirements
 
-Start by telling Claude exactly what you want. Think like a product owner writing a brief.
+Start by telling Claude Code exactly what you want. Think like a product owner writing a brief.
 
 ### Sample prompt:
 
@@ -74,6 +80,24 @@ best for a simple, self-contained dashboard that I can run locally.
 
 > **Tip:** Be thorough in your initial requirements. The more specific you are, the better the first version will be. But do not worry about getting everything perfect -- you will iterate.
 
+<details>
+<summary>What Claude Code will do</summary>
+
+Claude Code will typically:
+
+1. **Create a single HTML file** (e.g. `dashboard.html`) with embedded CSS and JavaScript
+2. **Generate 200 realistic claims** as a JavaScript array inside the file, with realistic distributions (more Motor claims, Andalusia with higher incurred amounts, etc.)
+3. **Add Chart.js** from a CDN for the charts
+4. **Build the layout** with summary cards at the top, two rows of charts, filter dropdowns, and a data table at the bottom
+
+When it finishes, it will say something like:
+
+> I've created `dashboard.html` with the MIG Claims Dashboard. Open it in your browser to see the dashboard. The file is self-contained — no server or installation needed.
+
+Open the file by double-clicking it or dragging it into your browser.
+
+</details>
+
 ---
 
 ## Step 2: Let Claude Code Build It
@@ -98,7 +122,24 @@ Open the file dashboard.html in your browser, or run the following
 command to start a local server...
 ```
 
-**Open the file in your browser** and take a look at what Claude built.
+**Open the file in your browser** and take a look at what Claude Code built.
+
+<details>
+<summary>What you should see</summary>
+
+Your first version should have:
+
+- **Header** with "Mediterranean Insurance Group" in navy blue
+- **4 summary cards** showing Total Claims (200), Total Incurred (EUR ~14-15M), Average Claim Size (EUR ~70-75K), and Open Claims percentage (~20-25%)
+- **Bar chart** of claims count by region — Catalonia and Andalusia should have the most
+- **Donut chart** of claims by status — Settled should be the largest slice
+- **Bar chart** of total incurred by product line — Motor should be highest
+- **Line chart** of monthly claims trend — should show some seasonal variation
+- **Data table** at the bottom listing individual claims
+
+It will probably look rough — colours might not match, spacing may be off, numbers might not have EUR formatting. That's normal. Step 3 is where you polish it.
+
+</details>
 
 ---
 
@@ -161,6 +202,15 @@ Add a new section below the existing charts with:
    EUR 150M earned premium.
 ```
 
+<details>
+<summary>What these additions look like</summary>
+
+- **Heatmap table:** A grid with regions as rows and product lines as columns. Each cell shows the average claim size with background colour ranging from green (low, e.g. EUR 30K) through yellow to red (high, e.g. EUR 150K+). This makes it immediately obvious where the expensive claims cluster.
+- **Top 10 claims bar chart:** A horizontal bar chart listing the 10 largest claims by ID, with amounts. Useful for spotting outliers.
+- **Combined ratio card:** A single KPI card showing the estimated combined ratio (e.g. 109,8%) calculated as `(Total Incurred + Expenses) / Earned Premium`. Highlighted in red if above 100%.
+
+</details>
+
 ### Add interactivity:
 
 ```text
@@ -189,7 +239,7 @@ update.
 
 ## Step 5: Save to GitHub (Optional)
 
-If you want to save your project and share it with colleagues, Claude can help you set up a GitHub repository.
+If you want to save your project and share it with colleagues, Claude Code can help you set up a GitHub repository.
 
 ### Sample prompt:
 
@@ -242,7 +292,7 @@ any data. The other charts work fine. The filter dropdowns are all set
 to "All". Can you fix it?
 ```
 
-### Step 2: Let Claude diagnose and fix
+### Step 2: Let Claude Code diagnose and fix
 
 Claude Code will look at the code, identify the issue, and fix it. You do not need to understand what went wrong technically.
 
@@ -255,9 +305,9 @@ region filter dropdown does show all 6 regions correctly. This
 started happening after you added the heat map in the last change.
 ```
 
-### Step 3.5: Clear the conversation if Claude is going in circles
+### Step 3.5: Clear the conversation if Claude Code is going in circles
 
-If Claude seems to be repeating the same fix or going in circles, type `/clear` to reset the conversation. This gives Claude a fresh perspective on the current state of your files without the baggage of a long debugging history. Your files on disk are not affected -- only the chat history is cleared. (Your CLAUDE.md rules are automatically reloaded.)
+If Claude Code seems to be repeating the same fix or going in circles, type `/clear` to reset the conversation. This gives Claude Code a fresh perspective on the current state of your files without the baggage of a long debugging history. Your files on disk are not affected -- only the chat history is cleared. (Your CLAUDE.md rules are automatically reloaded.)
 
 ### Step 4: If you are stuck, start a fresh section
 
@@ -276,7 +326,7 @@ simpler approach this time.
 In this exercise you learned to:
 
 - Describe a software application in natural language
-- Let Claude handle all technical implementation
+- Let Claude Code handle all technical implementation
 - Iterate on design, functionality, and features through conversation
 - Handle errors and breakages without technical knowledge
 - Optionally save and deploy your application
