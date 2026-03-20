@@ -82,7 +82,7 @@ Read all the CSV files in the data/ folder and give me a summary of what data we
 - It may flag observations like: uneven product coverage across regions, year-over-year data available only for market penetration, or regions with very small policy counts
 
 **What to look for in the output:**
-- Does Claude identify that `region_code` is the join key across files?
+- Does Claude Code identify that `region_code` is the join key across files?
 - Does it note that `market_penetration.csv` has multiple rows per region (by product line and year)?
 - Does it highlight the difference in granularity between files?
 
@@ -169,7 +169,7 @@ Read all the CSV files in the data/ folder and give me a summary of what data we
 **What to look for:**
 - Does the join produce 68 rows (one per region)?
 - Are the calculated columns sensible? (Spain/Portugal should show higher penetration; Italy/France lower)
-- Does Claude handle the aggregation from product-line level to region level correctly?
+- Does Claude Code handle the aggregation from product-line level to region level correctly?
 
 > **Tip:** If you want to keep product-line detail, try: *"Actually, keep the product_line breakdown in the combined dataset too -- I want to see penetration by region AND product line."*
 
@@ -244,9 +244,9 @@ Analyze the combined dataset to find white spaces - regions where there is high 
 **What to look for:**
 - Does the scoring methodology make business sense?
 - Are the top regions plausible? (Expect large Italian regions like Lombardy, Lazio, Campania and French regions like Ile-de-France, Provence-Alpes-Cote d'Azur)
-- Does Claude explain its methodology, or does it just present numbers?
+- Does Claude Code explain its methodology, or does it just present numbers?
 
-> **Tip:** Push Claude to refine the analysis: *"Weight the opportunity score more heavily toward regions where MIG already has some presence (market share > 0.1%) -- pure greenfield markets may be too risky."*
+> **Tip:** Push Claude Code to refine the analysis: *"Weight the opportunity score more heavily toward regions where MIG already has some presence (market share > 0.1%) -- pure greenfield markets may be too risky."*
 
 <details>
 <summary>Example output from this step</summary>
@@ -490,15 +490,15 @@ By completing this exercise, you will have practiced:
 - Try being explicit: *"Read the file at data/market_penetration.csv"*
 
 ### "The join produced fewer rows than expected"
-- Check if Claude is filtering to a single year. The `market_penetration.csv` file has data for both 2024 and 2025. Ask Claude: *"How many rows does the merged dataset have? I expected 68 regions."*
+- Check if Claude Code is filtering to a single year. The `market_penetration.csv` file has data for both 2024 and 2025. Ask Claude: *"How many rows does the merged dataset have? I expected 68 regions."*
 
 ### "The opportunity score does not make sense"
-- Ask Claude to explain its methodology: *"Walk me through how you calculated the opportunity score. What weight did you give each factor?"*
+- Ask Claude Code to explain its methodology: *"Walk me through how you calculated the opportunity score. What weight did you give each factor?"*
 - Then adjust: *"Increase the weight of population growth and decrease the weight of GDP per capita."*
 
 ### "The HTML charts are not rendering"
 - Open the file directly in Chrome, Firefox, or Safari (not by double-clicking -- use File > Open or drag into the browser)
-- Check if Claude used a CDN link for Chart.js. If you are offline, ask: *"Inline the Chart.js library directly in the HTML file instead of using a CDN."*
+- Check if Claude Code used a CDN link for Chart.js. If you are offline, ask: *"Inline the Chart.js library directly in the HTML file instead of using a CDN."*
 
 ### "The output is too long / too short"
 - Claude Code responds to length guidance. Try: *"Keep the executive summary to one page maximum"* or *"Give me a more detailed breakdown with numbers for every region."*

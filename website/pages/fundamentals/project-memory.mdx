@@ -125,21 +125,33 @@ composite insurer headquartered in Barcelona, Spain.
 
 ## MIG Context Files
 
-For this course, a set of detailed company context files are available. Download them into your project folder so your CLAUDE.md can reference them:
+For this course, a set of detailed company context files are available. Create a `company-context/` folder inside your project folder and download these files into it:
 
 - <a href="/data/COMPANY.md" download>COMPANY.md</a> — MIG overview, financials, strategy
 - <a href="/data/PRODUCTS.md" download>PRODUCTS.md</a> — Insurance product lines and metrics
 - <a href="/data/PERSONAS.md" download>PERSONAS.md</a> — Key stakeholder profiles
 - <a href="/data/MARKET.md" download>MARKET.md</a> — Southern European insurance market landscape
 
+Your folder should look like this:
+
+```text
+your-project/
+├── CLAUDE.md
+└── company-context/
+    ├── COMPANY.md
+    ├── MARKET.md
+    ├── PERSONAS.md
+    └── PRODUCTS.md
+```
+
 Once downloaded, you can reference them from your CLAUDE.md:
 
 ```markdown
 ## Reference Files
-- See COMPANY.md for MIG overview and financials
-- See PRODUCTS.md for product line details
-- See PERSONAS.md for stakeholder profiles
-- See MARKET.md for market context
+- See company-context/COMPANY.md for MIG overview and financials
+- See company-context/PRODUCTS.md for product line details
+- See company-context/PERSONAS.md for stakeholder profiles
+- See company-context/MARKET.md for market context
 ```
 
 Claude Code will read these files when it needs deeper context about MIG.
