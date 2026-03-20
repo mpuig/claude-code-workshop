@@ -4,7 +4,11 @@
 
 Claude Code is a command-line tool that lets you work with Claude directly in your terminal using natural language. You type instructions in plain English (or Spanish, or any language), and Claude reads your files, writes documents, searches the web, and runs tasks for you.
 
-**You do not need to know how to code.** You give instructions. Claude does the work.
+**You do not need to know how to code.** You give instructions. Claude Code does the work.
+
+![Claude Code running in the terminal](images/claude-code-terminal.jpg)
+
+_Claude Code running in a terminal session._
 
 ---
 

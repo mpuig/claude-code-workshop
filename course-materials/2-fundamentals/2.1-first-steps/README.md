@@ -68,7 +68,7 @@ Claude Code will write the file and tell you where it saved it.
 
 ### Try it:
 
-If you have a claims document available, reference it directly:
+Download the sample report from the website (`/data/claims-report.pdf`), or use any claims document you have. Then reference it in Claude Code:
 
 ```text
 Read @/path/to/claims-report.pdf and give me a structured summary with:
@@ -80,18 +80,36 @@ Read @/path/to/claims-report.pdf and give me a structured summary with:
 Format it as a brief I can scan in 2 minutes.
 ```
 
-If you do not have a file handy, ask Claude Code to work with a hypothetical:
+<details>
+<summary>Example output</summary>
 
-```text
-I'm going to describe a claims scenario. Pretend this is a quarterly claims
-report for MIG's commercial property line in Catalonia.
+**Claims Brief — Commercial Property, Catalonia Q4 2025**
 
-We had 47 claims this quarter, total incurred EUR 3.2M. The largest was a
-warehouse fire in Tarragona at EUR 890K. There were 12 water damage claims
-averaging EUR 45K each, which is up 30% from last quarter.
+**Overview**
 
-Summarize this as a structured claims brief for our underwriting committee.
-```
+| Metric | Value |
+|--------|-------|
+| Total claims | 47 (up 14% vs Q3) |
+| Total incurred | EUR 3.247.680 (up 22% vs Q3) |
+| Average claim size | EUR 69.099 |
+| Open claims | 18 |
+
+**Top 3 Claims by Value**
+
+1. **CP-2025-4471 — EUR 890.000** (Open, SIU referral). Warehouse fire in Tarragona (Logística del Mediterráneo S.L.). Referred to Special Investigations Unit due to delayed notification and recent premium change. Loss adjuster report pending.
+2. **CP-2025-4523 — EUR 214.000** (Under review). Kitchen fire at Hotel Rambla Palace, Barcelona.
+3. **CP-2025-4387 — EUR 178.500** (Settled). Electrical damage to lab equipment at Farmacèutica Vallès S.A., Sabadell.
+
+**Notable Trends and Red Flags**
+
+- **Water damage spike:** 12 claims (EUR 541.200), up 71% QoQ. Linked to exceptional November rainfall (187% of normal). Eight claims reported within a two-week window.
+- **Fire dominates incurred costs:** 5 fire claims account for 38% of total incurred (EUR 1.234.000), driven by the Tarragona warehouse loss.
+- **Frequency above target:** Q4 frequency at 3,66% exceeds the 3,20% annual target.
+- **SIU referral on largest claim:** Delayed notification (3-day gap) and recent coverage changes on CP-2025-4471 warrant close monitoring.
+- **Reinsurance recovery in progress:** Tarragona loss breached the EUR 500.000 facultative attachment point.
+
+</details>
+
 
 **What to look for:** Claude should produce a clean, organized summary with sections, not a wall of text.
 

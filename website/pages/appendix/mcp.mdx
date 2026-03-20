@@ -128,7 +128,7 @@ MCP servers can be configured via CLI commands or by editing JSON files directly
 | File | Scope | Shared with team? | Use case |
 |------|-------|--------------------|----------|
 | `.mcp.json` | Current project | Yes (commit to repo) | Team-shared servers |
-| `~/.claude.json` | All your projects | No (local) | Personal servers across projects |
+| `~/.claude.json` (Mac/Linux) or `%USERPROFILE%\.claude.json` (Windows) | All your projects | No (local) | Personal servers across projects |
 
 ### `.mcp.json` Format (Project Scope)
 
@@ -162,9 +162,9 @@ When adding via CLI, use `--scope` to control where the server is stored:
 
 | Scope | Flag | Storage | Visibility |
 |-------|------|---------|------------|
-| **Local** (default) | `--scope local` | `~/.claude.json` under project path | You only, this project only |
+| **Local** (default) | `--scope local` | `~/.claude.json` (`%USERPROFILE%\.claude.json` on Windows) under project path | You only, this project only |
 | **Project** | `--scope project` | `.mcp.json` in project root | Entire team via version control |
-| **User** | `--scope user` | `~/.claude.json` globally | You only, all projects |
+| **User** | `--scope user` | `~/.claude.json` (`%USERPROFILE%\.claude.json` on Windows) globally | You only, all projects |
 
 If the same server name exists at multiple scopes, local overrides project, which overrides user.
 
@@ -264,9 +264,9 @@ Adding an MCP server in one Claude tool does **not** make it available in others
 | Configuration | Available in |
 |---------------|-------------|
 | `claude_desktop_config.json` | Chat, Cowork, Code Tab |
-| `~/.claude.json` | Code CLI (+ Code Tab) |
+| `~/.claude.json` (`%USERPROFILE%\.claude.json` on Windows) | Code CLI (+ Code Tab) |
 | `.mcp.json` (project) | Code CLI only |
-| `claude mcp add` | Code CLI only (stored in `~/.claude.json` or `.mcp.json`) |
+| `claude mcp add` | Code CLI only (stored in `~/.claude.json` / `%USERPROFILE%\.claude.json` or `.mcp.json`) |
 
 If you need the same MCP in both Desktop and CLI, configure it in both places.
 

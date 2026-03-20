@@ -60,7 +60,7 @@ Hooks are defined in JSON settings files. You can configure them at two levels:
 | File | Scope | Shared with team? |
 |------|-------|--------------------|
 | `.claude/settings.json` | Current project | Yes (commit to version control) |
-| `~/.claude/settings.json` | All your projects | No (local to your machine) |
+| `~/.claude/settings.json` (Mac/Linux) or `%USERPROFILE%\.claude\settings.json` (Windows) | All your projects | No (local to your machine) |
 
 ### JSON Structure
 
@@ -304,7 +304,7 @@ Common issues:
 
 - Hooks provide **deterministic** control -- shell scripts that always run, unlike prompts that can be ignored
 - `PreToolUse` hooks can **block** actions before they happen (exit code 2); `PostToolUse` hooks can automate follow-up actions
-- Configure hooks in `.claude/settings.json` (project, shared) or `~/.claude/settings.json` (personal, all projects)
+- Configure hooks in `.claude/settings.json` (project, shared) or `~/.claude/settings.json` (`%USERPROFILE%\.claude\settings.json` on Windows) for personal, all-project hooks
 - For insurance workflows, hooks are valuable for protecting production models, enforcing formatting standards, logging commands for audit, and blocking destructive database operations
 - Hooks receive JSON on stdin with event context; use `jq` to extract fields like `tool_input.file_path`
 - Start with one or two simple hooks (auto-format + file protection) and add more as you identify patterns worth automating
