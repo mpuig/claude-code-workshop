@@ -297,23 +297,37 @@ Make them clean and professional -- these will go into a presentation
 for the CUO.
 ```
 
-> **Note:** Claude will likely create these as HTML files with embedded JavaScript charts (using a library like Chart.js). You can open them in any web browser by double-clicking the file.
+> **Note:** Claude Code will likely create these as HTML files with embedded JavaScript charts (using a library like Chart.js). You can open them in any web browser by double-clicking the file.
+
+<div style={{display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1rem', margin: '1.5rem 0'}}>
+<div style={{textAlign: 'center'}}>
+<a href="/data/loss-ratio-visualizations/loss-ratio-by-region.html" target="_blank">
+<img src="/images/insurance-workflows/loss-ratio-by-region.png" alt="Loss ratio by region bar chart" style={{width: '100%', borderRadius: '4px', border: '1px solid #e0e0e0'}} />
+</a>
+<p style={{fontSize: '0.85rem', marginTop: '0.5rem'}}><a href="/data/loss-ratio-visualizations/loss-ratio-by-region.html" target="_blank">Loss Ratio by Region</a></p>
+</div>
+<div style={{textAlign: 'center'}}>
+<a href="/data/loss-ratio-visualizations/quarterly-trend-worst-regions.html" target="_blank">
+<img src="/images/insurance-workflows/quarterly-trend-worst-regions.png" alt="Quarterly trend line chart" style={{width: '100%', borderRadius: '4px', border: '1px solid #e0e0e0'}} />
+</a>
+<p style={{fontSize: '0.85rem', marginTop: '0.5rem'}}><a href="/data/loss-ratio-visualizations/quarterly-trend-worst-regions.html" target="_blank">Quarterly Trends</a></p>
+</div>
+<div style={{textAlign: 'center'}}>
+<a href="/data/loss-ratio-visualizations/loss-ratio-heatmap.html" target="_blank">
+<img src="/images/insurance-workflows/loss-ratio-heatmap.png" alt="Loss ratio heatmap by region and segment" style={{width: '100%', borderRadius: '4px', border: '1px solid #e0e0e0'}} />
+</a>
+<p style={{fontSize: '0.85rem', marginTop: '0.5rem'}}><a href="/data/loss-ratio-visualizations/loss-ratio-heatmap.html" target="_blank">Heatmap by Segment</a></p>
+</div>
+</div>
 
 <details>
-<summary>Example output from this step</summary>
-
-Claude creates three HTML files with Chart.js visualizations:
+<summary>Detailed description of each visualization</summary>
 
 **1. loss-ratio-by-region.html** — Bar chart showing 2025 loss ratios by region. Andalusia (91,1%) and Valencia (83,1%) are highlighted in red and yellow respectively, clearly exceeding the 70% target line and 85% critical threshold line. Catalonia, Madrid, Basque Country, and Galicia all appear in green below the target.
-[Preview](/data/loss-ratio-visualizations/loss-ratio-by-region.html)
 
 **2. quarterly-trend-worst-regions.html** — Line chart tracking quarterly loss ratios for Andalusia (red line), Valencia (orange line), and the portfolio average (blue dashed line) across 12 quarters from 2023 Q1 to 2025 Q4. Both Andalusia and Valencia show significant volatility quarter-to-quarter but a clear upward trend, consistently above the 70% target line.
-[Preview](/data/loss-ratio-visualizations/quarterly-trend-worst-regions.html)
 
 **3. loss-ratio-heatmap.html** — Color-coded table with regions as rows and segments as columns. The heatmap makes it immediately clear that all three segments in Andalusia are red (&gt;80%), and Commercial Fleet is the worst-performing segment across regions. Basque Country and Galicia are uniformly green.
-[Preview](/data/loss-ratio-visualizations/loss-ratio-heatmap.html)
-
-Open any of these files in a browser to view the interactive charts. They use Chart.js loaded from a CDN, so an internet connection is needed.
 
 </details>
 
