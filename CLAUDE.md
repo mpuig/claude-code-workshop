@@ -15,8 +15,8 @@ Training materials for consultancy teams on using Claude Code for insurance work
 
 ## Repository Structure
 
-- `course-materials/` -- Training modules (0-Getting Started through 4-Vibe Coding)
-- `exercises/` -- Three hands-on exercises with CSV/JSON data files
+- `course-materials/` -- Training modules (0-Getting Started through 5-Advanced Tips)
+- `exercises/` -- Four hands-on exercises with CSV/JSON data files
 - `company-context/` -- Detailed MIG company docs (COMPANY.md, PRODUCTS.md, PERSONAS.md, MARKET.md)
 - `website/` -- Nextra-based documentation site (Next.js 14 + nextra-theme-docs)
 

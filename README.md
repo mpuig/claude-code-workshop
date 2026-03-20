@@ -43,7 +43,7 @@ claude-code-training/
 │   └── MARKET.md                       # Southern European insurance market
 │
 ├── course-materials/                   # Training modules
-│   ├── 0-getting-started/              # Installation and first run
+│   ├── 0-getting-started/              # Installation guides (Mac, Windows)
 │   ├── 1-fundamentals/                 # Core Claude Code skills
 │   │   ├── 1.1-first-steps/           #   Natural language instructions, file ops
 │   │   └── 1.2-project-memory/        #   CLAUDE.md for persistent context
@@ -51,7 +51,7 @@ claude-code-training/
 │   │   ├── 2.1-underwriting-brief/    #   Commercial property underwriting
 │   │   ├── 2.2-loss-ratio-analysis/   #   Motor portfolio loss ratio analysis
 │   │   └── 2.3-market-assessment/     #   Portugal market entry assessment
-│   ├── 3-vibe-coding/                 # Building a Claims Dashboard app
+│   ├── 3-vibe-coding/                 # Claims Dashboard + FWA Assessor Portal
 │   ├── 4-wrap-up/                     # Course wrap-up and next steps
 │   └── 5-advanced-tips/               # Cost, security, diffs, context window
 │
@@ -115,7 +115,7 @@ Best for: the complete learning journey from first use through independent work 
 | 5 | [Module 2.2 - Loss Ratio Analysis](course-materials/2-insurance-workflows/2.2-loss-ratio-analysis/) | 30 min | Motor portfolio analysis with visualizations |
 | 6 | [Module 2.3 - Market Assessment](course-materials/2-insurance-workflows/2.3-market-assessment/) | 30 min | Portugal market entry via web research |
 | 7 | Module 3 - Practice Exercises | 40-90 min | Apply the workflows independently with realistic business problems |
-| 8 | [Module 4 - Vibe Coding](course-materials/3-vibe-coding/) | 45 min | Build a Claims Dashboard app |
+| 8 | [Module 4 - Vibe Coding](course-materials/3-vibe-coding/) | 45–60 min | Build a Claims Dashboard or FWA Assessor Portal |
 | -- | [Advanced Tips](course-materials/5-advanced-tips/) | Reference | Cost management, data security, reading diffs, context window |
 
 **Full path time: ~4 to 5 hours depending on which practice exercise you choose** (Advanced Tips are standalone reference material)
@@ -155,17 +155,3 @@ Use these alongside the course when you need background, datasets, or deeper gui
 - A terminal (macOS Terminal, Windows PowerShell, or WSL)
 - No programming knowledge required
 
-## Quick Start
-
-```bash
-# 1. Install Claude Code
-curl -fsSL https://claude.ai/install.sh | bash
-
-# 2. Open the training repository
-cd claude-code-training
-
-# 3. Start Claude Code
-claude
-
-# 4. Open the exercise or module you want to follow
-```
