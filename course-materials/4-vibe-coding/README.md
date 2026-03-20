@@ -4,7 +4,7 @@
 
 ## What Is Vibe Coding?
 
-Vibe coding is building software by describing what you want in natural language. You are the product owner. Claude is the developer. You do not write a single line of code -- you describe features, review results, and iterate.
+Vibe coding is building software by describing what you want in natural language. You are the product owner. Claude Code is the developer. You do not write a single line of code -- you describe features, review results, and iterate.
 
 Non-technical professionals are building real, functional applications this way. In this module, you will choose one (or both) of the exercises below and build a working insurance application from scratch.
 
@@ -33,7 +33,7 @@ Pick whichever fits your available time and interest. If you finish early, try t
 | "I want users to be able to drill down into a region" | "Add an onClick event handler to each bar element" |
 | "Something broke, the chart isn't showing" | (Panic) |
 
-**You describe the what. Claude handles the how.**
+**You describe the what. Claude Code handles the how.**
 
 ---
 

@@ -54,7 +54,7 @@ I want to build an Insurance FWA (Fraud, Waste & Abuse) Assessor Portal
 as a self-contained web application (single HTML file with CSS and JavaScript).
 I have no coding experience — you will handle all technical work.
 
-IMPORTANT: This app will call the OpenAI API. The API key is:
+IMPORTANT: This app will call the Anthropic API. The API key is:
 [PASTE YOUR API KEY HERE]
 Store it as a constant at the top of the JavaScript so I can easily find
 and update it later.
@@ -112,8 +112,8 @@ Now wire up the AI agent pipeline. When the user clicks
 "Run FWA Investigation", the app should:
 
 1. Read the uploaded file and convert it to base64
-2. Run THREE agents in sequence using the OpenAI API
-   (model: gpt-4o), passing the document and
+2. Run THREE agents in sequence using the Anthropic API
+   (model: claude-sonnet-4-20250514), passing the document and
    claim details to each one
 
 AGENT 1 — Medical Necessity Check Agent
@@ -266,7 +266,7 @@ CHAT UI:
 - A "Send" button in amber
 
 CHAT BEHAVIOR:
-- When the assessor sends a message, call the OpenAI API with:
+- When the assessor sends a message, call the Anthropic API with:
     - A system prompt that includes ALL investigation findings as
       context, so the assistant can answer specific questions
     - The full conversation history (so it remembers previous messages)

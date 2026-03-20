@@ -1,4 +1,4 @@
-# Building Skills for Claude
+# Building Skills for Claude Code
 
 > **Type:** Reference | **Prerequisites:** [Building an Insurance App](README.md)
 
