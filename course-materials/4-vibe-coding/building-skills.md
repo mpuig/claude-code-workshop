@@ -174,4 +174,4 @@ For more on how skills work across Claude's different interfaces, see [Appendix 
 
 ## Next Step
 
-Proceed to the [Course Wrap-Up](../4-wrap-up/README.md) for a summary of what you have learned and what to do next.
+Proceed to the [Course Wrap-Up](../5-wrap-up/README.md) for a summary of what you have learned and what to do next.

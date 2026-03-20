@@ -1,6 +1,6 @@
-# Module 1.1: First Steps with Claude Code
+# Module 2.1: First Steps with Claude Code
 
-> **Time:** 30 minutes | **Prerequisites:** Claude Code installed and authenticated ([Getting Started](../../0-getting-started/README.md))
+> **Time:** 30 minutes | **Prerequisites:** Claude Code installed and authenticated ([Getting Started](../../1-getting-started/README.md))
 
 ## What You Will Learn
 
@@ -205,4 +205,4 @@ For these exercises, **Edit** mode is recommended so you can see what Claude doe
 
 ## Next Step
 
-Proceed to [Module 1.2: Project Memory with CLAUDE.md](../1.2-project-memory/README.md) to learn how to give Claude Code persistent context about your projects and preferences.
+Proceed to [Module 2.2: Project Memory with CLAUDE.md](../2.2-project-memory/README.md) to learn how to give Claude Code persistent context about your projects and preferences.

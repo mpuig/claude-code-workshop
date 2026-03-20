@@ -43,17 +43,17 @@ claude-code-training/
 │   └── MARKET.md                       # Southern European insurance market
 │
 ├── course-materials/                   # Training modules
-│   ├── 0-getting-started/              # Installation guides (Mac, Windows)
-│   ├── 1-fundamentals/                 # Core Claude Code skills
-│   │   ├── 1.1-first-steps/           #   Natural language instructions, file ops
-│   │   └── 1.2-project-memory/        #   CLAUDE.md for persistent context
-│   ├── 2-insurance-workflows/          # Insurance-specific workflows
-│   │   ├── 2.1-underwriting-brief/    #   Commercial property underwriting
-│   │   ├── 2.2-loss-ratio-analysis/   #   Motor portfolio loss ratio analysis
-│   │   └── 2.3-market-assessment/     #   Portugal market entry assessment
-│   ├── 3-vibe-coding/                 # Claims Dashboard + FWA Assessor Portal
-│   ├── 4-wrap-up/                     # Course wrap-up and next steps
-│   └── 5-advanced-tips/               # Cost, security, diffs, context window
+│   ├── 1-getting-started/              # Installation guides (Mac, Windows)
+│   ├── 2-fundamentals/                 # Core Claude Code skills
+│   │   ├── 2.1-first-steps/           #   Natural language instructions, file ops
+│   │   └── 2.2-project-memory/        #   CLAUDE.md for persistent context
+│   ├── 3-insurance-workflows/          # Insurance-specific workflows
+│   │   ├── 3.1-underwriting-brief/    #   Commercial property underwriting
+│   │   ├── 3.2-loss-ratio-analysis/   #   Motor portfolio loss ratio analysis
+│   │   └── 3.3-market-assessment/     #   Portugal market entry assessment
+│   ├── 4-vibe-coding/                 # Claims Dashboard + FWA Assessor Portal
+│   ├── 5-wrap-up/                     # Course wrap-up and next steps
+│   └── 6-advanced-tips/               # Cost, security, diffs, context window
 │
 ├── exercises/                          # Hands-on exercises with data
 │   ├── exercise-1-executive-onramp/    # Zero-to-one executive onboarding
@@ -76,31 +76,31 @@ Choose the path that fits the time you have:
 
 ### Express (1 to 1.5 hours)
 
-- [Module 0 - Getting Started](course-materials/0-getting-started/)
-- [Module 1.1 - First Steps](course-materials/1-fundamentals/1.1-first-steps/)
+- [Module 1 - Getting Started](course-materials/1-getting-started/)
+- [Module 2.1 - First Steps](course-materials/2-fundamentals/2.1-first-steps/)
 - [Exercise 1 - Executive Onramp](exercises/exercise-1-executive-onramp/)
 
 Best for: a short live introduction where learners need one concrete win quickly.
 
 ### Intermediate (2 to 3 hours)
 
-- [Module 0 - Getting Started](course-materials/0-getting-started/)
-- [Module 1.1 - First Steps](course-materials/1-fundamentals/1.1-first-steps/)
-- [Module 1.2 - Project Memory](course-materials/1-fundamentals/1.2-project-memory/)
-- [Module 2 - Guided Workflows](course-materials/2-insurance-workflows/)
-- One exercise from Module 3 in the [`exercises/`](exercises/) folder
+- [Module 1 - Getting Started](course-materials/1-getting-started/)
+- [Module 2.1 - First Steps](course-materials/2-fundamentals/2.1-first-steps/)
+- [Module 2.2 - Project Memory](course-materials/2-fundamentals/2.2-project-memory/)
+- [Module 3 - Guided Workflows](course-materials/3-insurance-workflows/)
+- One exercise from Module 4 in the [`exercises/`](exercises/) folder
 
 Best for: a workshop where learners should move from guided use into one independent task.
 
 ### Full (4 to 5 hours)
 
-- [Module 0 - Getting Started](course-materials/0-getting-started/)
-- [Module 1.1 - First Steps](course-materials/1-fundamentals/1.1-first-steps/)
-- [Module 1.2 - Project Memory](course-materials/1-fundamentals/1.2-project-memory/)
-- [Module 2 - Guided Workflows](course-materials/2-insurance-workflows/)
-- Module 3 in the [`exercises/`](exercises/) folder
-- [Module 4 - Vibe Coding](course-materials/3-vibe-coding/)
-- [Course Wrap-Up](course-materials/4-wrap-up/)
+- [Module 1 - Getting Started](course-materials/1-getting-started/)
+- [Module 2.1 - First Steps](course-materials/2-fundamentals/2.1-first-steps/)
+- [Module 2.2 - Project Memory](course-materials/2-fundamentals/2.2-project-memory/)
+- [Module 3 - Guided Workflows](course-materials/3-insurance-workflows/)
+- Module 4 in the [`exercises/`](exercises/) folder
+- [Module 5 - Vibe Coding](course-materials/4-vibe-coding/)
+- [Course Wrap-Up](course-materials/5-wrap-up/)
 
 Best for: the complete learning journey from first use through independent work and tool building.
 
@@ -108,15 +108,15 @@ Best for: the complete learning journey from first use through independent work 
 
 | Order | Module | Duration | Description |
 |-------|--------|----------|-------------|
-| 1 | [Module 0 - Getting Started](course-materials/0-getting-started/) | 10 min | Install Claude Code, authenticate, first session |
-| 2 | [Module 1.1 - First Steps](course-materials/1-fundamentals/1.1-first-steps/) | 30 min | Natural language instructions, file operations, 3 scenarios |
-| 3 | [Module 1.2 - Project Memory](course-materials/1-fundamentals/1.2-project-memory/) | 15 min | CLAUDE.md for consistent insurance context |
-| 4 | [Module 2.1 - Underwriting Brief](course-materials/2-insurance-workflows/2.1-underwriting-brief/) | 30 min | Commercial property underwriting workflow |
-| 5 | [Module 2.2 - Loss Ratio Analysis](course-materials/2-insurance-workflows/2.2-loss-ratio-analysis/) | 30 min | Motor portfolio analysis with visualizations |
-| 6 | [Module 2.3 - Market Assessment](course-materials/2-insurance-workflows/2.3-market-assessment/) | 30 min | Portugal market entry via web research |
-| 7 | Module 3 - Practice Exercises | 40-90 min | Apply the workflows independently with realistic business problems |
-| 8 | [Module 4 - Vibe Coding](course-materials/3-vibe-coding/) | 45–60 min | Build a Claims Dashboard or FWA Assessor Portal |
-| -- | [Advanced Tips](course-materials/5-advanced-tips/) | Reference | Cost management, data security, reading diffs, context window |
+| 1 | [Module 1 - Getting Started](course-materials/1-getting-started/) | 10 min | Install Claude Code, authenticate, first session |
+| 2 | [Module 2.1 - First Steps](course-materials/2-fundamentals/2.1-first-steps/) | 30 min | Natural language instructions, file operations, 3 scenarios |
+| 3 | [Module 2.2 - Project Memory](course-materials/2-fundamentals/2.2-project-memory/) | 15 min | CLAUDE.md for consistent insurance context |
+| 4 | [Module 3.1 - Underwriting Brief](course-materials/3-insurance-workflows/3.1-underwriting-brief/) | 30 min | Commercial property underwriting workflow |
+| 5 | [Module 3.2 - Loss Ratio Analysis](course-materials/3-insurance-workflows/3.2-loss-ratio-analysis/) | 30 min | Motor portfolio analysis with visualizations |
+| 6 | [Module 3.3 - Market Assessment](course-materials/3-insurance-workflows/3.3-market-assessment/) | 30 min | Portugal market entry via web research |
+| 7 | Module 4 - Practice Exercises | 40-90 min | Apply the workflows independently with realistic business problems |
+| 8 | [Module 5 - Vibe Coding](course-materials/4-vibe-coding/) | 45–60 min | Build a Claims Dashboard or FWA Assessor Portal |
+| -- | [Advanced Tips](course-materials/6-advanced-tips/) | Reference | Cost management, data security, reading diffs, context window |
 
 **Full path time: ~4 to 5 hours depending on which practice exercise you choose** (Advanced Tips are standalone reference material)
 
@@ -124,12 +124,12 @@ Best for: the complete learning journey from first use through independent work 
 
 The course moves from guided use to independent use, then to tool building:
 
-- **Module 0:** Get set up and understand what Claude Code is.
-- **Modules 1 and 2 (Guided):** Learn how to work with Claude Code, then apply it in step-by-step insurance workflows.
-- **Module 3 (Independent):** You get the business problem, the files, and the goal. You decide how to solve it.
-- **Module 4 (Creator):** You move beyond using workflows and start building lightweight tools and applications yourself.
+- **Module 1:** Get set up and understand what Claude Code is.
+- **Modules 2 and 3 (Guided):** Learn how to work with Claude Code, then apply it in step-by-step insurance workflows.
+- **Module 4 (Independent):** You get the business problem, the files, and the goal. You decide how to solve it.
+- **Module 5 (Creator):** You move beyond using workflows and start building lightweight tools and applications yourself.
 
-## Module 3: Practice Exercises
+## Module 4: Practice Exercises
 
 These are standalone exercises designed for the live session. Each includes step-by-step prompts, realistic context, and practical deliverables.
 
@@ -144,9 +144,9 @@ These are standalone exercises designed for the live session. Each includes step
 
 Use these alongside the course when you need background, datasets, or deeper guidance:
 
-- [`company-context/`](company-context/) -- Shared company, market, product, and persona background used across Modules 2 to 4
+- [`company-context/`](company-context/) -- Shared company, market, product, and persona background used across Modules 3 to 5
 - [`website/public/data/`](website/public/data/) -- Website download files for the exercise datasets used in Exercises 1 to 4
-- [`course-materials/5-advanced-tips/`](course-materials/5-advanced-tips/) -- Practical guidance on cost, data security, diffs, and context-window management
+- [`course-materials/6-advanced-tips/`](course-materials/6-advanced-tips/) -- Practical guidance on cost, data security, diffs, and context-window management
 - [`course-materials/appendix-a-cowork/`](course-materials/appendix-a-cowork/) -- Optional deeper dives into Claude Cowork and related reference topics
 
 ## Prerequisites

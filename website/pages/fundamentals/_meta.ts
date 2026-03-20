@@ -1,4 +1,4 @@
 export default {
-  'first-steps': '1.1: First Steps',
-  'project-memory': '1.2: Project Memory',
+  'first-steps': '2.1: First Steps',
+  'project-memory': '2.2: Project Memory',
 }

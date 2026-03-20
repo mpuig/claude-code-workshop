@@ -1,6 +1,6 @@
 # Exercise: MIG Claims Dashboard
 
-> **Time:** 45 minutes | **Prerequisites:** Completion of Modules 1 and 2
+> **Time:** 45 minutes | **Prerequisites:** Completion of Modules 2 and 3
 
 ---
 

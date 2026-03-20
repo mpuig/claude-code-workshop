@@ -1,6 +1,6 @@
-# Module 2.3: Market Entry Assessment with Claude Code
+# Module 3.3: Market Entry Assessment with Claude Code
 
-> **Time:** 30 minutes | **Prerequisites:** [Module 2.2: Loss Ratio Analysis](../2.2-loss-ratio-analysis/README.md)
+> **Time:** 30 minutes | **Prerequisites:** [Module 3.2: Loss Ratio Analysis](../3.2-loss-ratio-analysis/README.md)
 
 ## The Scenario
 
@@ -543,4 +543,4 @@ The key takeaway: **Claude Code handles both research and writing**, which makes
 
 ## Next Step
 
-Proceed to [Exercise 1: Executive Onramp](../../../exercises/exercise-1-executive-onramp/README.md), the first page in Module 3: Practice Exercises, to apply these workflows independently before moving on to custom app building.
+Proceed to [Exercise 1: Executive Onramp](../../../exercises/exercise-1-executive-onramp/README.md), the first page in Module 4: Practice Exercises, to apply these workflows independently before moving on to custom app building.

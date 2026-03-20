@@ -1,6 +1,6 @@
-# Module 1.2: Project Memory with CLAUDE.md
+# Module 2.2: Project Memory with CLAUDE.md
 
-> **Time:** 15 minutes | **Prerequisites:** [Module 1.1: First Steps](../1.1-first-steps/README.md)
+> **Time:** 15 minutes | **Prerequisites:** [Module 2.1: First Steps](../2.1-first-steps/README.md)
 
 ## The Problem
 
@@ -189,4 +189,4 @@ if you need more detail.
 
 ## Next Step
 
-Proceed to [Module 2.1: Writing an Underwriting Brief](../../2-insurance-workflows/2.1-underwriting-brief/README.md) to apply what you have learned to a real insurance workflow.
+Proceed to [Module 3.1: Writing an Underwriting Brief](../../3-insurance-workflows/3.1-underwriting-brief/README.md) to apply what you have learned to a real insurance workflow.

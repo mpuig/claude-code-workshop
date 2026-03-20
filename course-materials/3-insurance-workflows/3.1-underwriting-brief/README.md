@@ -1,6 +1,6 @@
-# Module 2.1: Writing an Underwriting Brief with Claude Code
+# Module 3.1: Writing an Underwriting Brief with Claude Code
 
-> **Time:** 30 minutes | **Prerequisites:** [Module 1.2: Project Memory](../../1-fundamentals/1.2-project-memory/README.md)
+> **Time:** 30 minutes | **Prerequisites:** [Module 2.2: Project Memory](../../2-fundamentals/2.2-project-memory/README.md)
 
 ## The Scenario
 
@@ -398,4 +398,4 @@ The key takeaway: **give Claude the data, tell it what structure you want, and t
 
 ## Next Step
 
-Proceed to [Module 2.2: Loss Ratio Analysis](../2.2-loss-ratio-analysis/README.md) to work with claims and premium data in a quantitative workflow.
+Proceed to [Module 3.2: Loss Ratio Analysis](../3.2-loss-ratio-analysis/README.md) to work with claims and premium data in a quantitative workflow.

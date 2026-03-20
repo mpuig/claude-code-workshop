@@ -1,6 +1,6 @@
-# Module 4: Vibe Coding
+# Module 5: Vibe Coding
 
-> **Time:** 45–60 minutes | **Prerequisites:** Completion of Modules 1 to 3 recommended
+> **Time:** 45–60 minutes | **Prerequisites:** Completion of Modules 2 to 4 recommended
 
 ## What Is Vibe Coding?
 
@@ -57,4 +57,4 @@ For medium and advanced projects, consider the [Plan First workflow](plan-first-
 
 ## Next Step
 
-Proceed to the [Course Wrap-Up](../4-wrap-up/README.md) for a summary of what you have learned and what to do next.
+Proceed to the [Course Wrap-Up](../5-wrap-up/README.md) for a summary of what you have learned and what to do next.
