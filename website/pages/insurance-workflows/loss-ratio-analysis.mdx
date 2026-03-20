@@ -3,6 +3,10 @@ title: "Module 3.2: Loss Ratio Analysis"
 description: "Analyze motor portfolio loss ratios across Spanish regions with Claude Code."
 ---
 
+import imgByRegion from './images/loss-ratio-by-region.png'
+import imgTrend from './images/quarterly-trend-worst-regions.png'
+import imgHeatmap from './images/loss-ratio-heatmap.png'
+
 # Module 3.2: Loss Ratio Analysis with Claude Code
 
 > **Time:** 30 minutes | **Prerequisites:** [Module 3.1: Underwriting Brief](../2.1-underwriting-brief/README.md)
@@ -301,22 +305,22 @@ for the CUO.
 
 <div style={{display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1rem', margin: '1.5rem 0'}}>
 <div style={{textAlign: 'center'}}>
-<a href="/data/loss-ratio-visualizations/loss-ratio-by-region.html" target="_blank">
-<img src="/images/insurance-workflows/loss-ratio-by-region.png" alt="Loss ratio by region bar chart" style={{width: '100%', borderRadius: '4px', border: '1px solid #e0e0e0'}} />
+<a href="../data/loss-ratio-visualizations/loss-ratio-by-region.html" target="_blank">
+<img src={imgByRegion.src} alt="Loss ratio by region bar chart" style={{width: '100%', borderRadius: '4px', border: '1px solid #e0e0e0'}} />
 </a>
-<p style={{fontSize: '0.85rem', marginTop: '0.5rem'}}><a href="/data/loss-ratio-visualizations/loss-ratio-by-region.html" target="_blank">Loss Ratio by Region</a></p>
+<p style={{fontSize: '0.85rem', marginTop: '0.5rem'}}><a href="../data/loss-ratio-visualizations/loss-ratio-by-region.html" target="_blank">Loss Ratio by Region</a></p>
 </div>
 <div style={{textAlign: 'center'}}>
-<a href="/data/loss-ratio-visualizations/quarterly-trend-worst-regions.html" target="_blank">
-<img src="/images/insurance-workflows/quarterly-trend-worst-regions.png" alt="Quarterly trend line chart" style={{width: '100%', borderRadius: '4px', border: '1px solid #e0e0e0'}} />
+<a href="../data/loss-ratio-visualizations/quarterly-trend-worst-regions.html" target="_blank">
+<img src={imgTrend.src} alt="Quarterly trend line chart" style={{width: '100%', borderRadius: '4px', border: '1px solid #e0e0e0'}} />
 </a>
-<p style={{fontSize: '0.85rem', marginTop: '0.5rem'}}><a href="/data/loss-ratio-visualizations/quarterly-trend-worst-regions.html" target="_blank">Quarterly Trends</a></p>
+<p style={{fontSize: '0.85rem', marginTop: '0.5rem'}}><a href="../data/loss-ratio-visualizations/quarterly-trend-worst-regions.html" target="_blank">Quarterly Trends</a></p>
 </div>
 <div style={{textAlign: 'center'}}>
-<a href="/data/loss-ratio-visualizations/loss-ratio-heatmap.html" target="_blank">
-<img src="/images/insurance-workflows/loss-ratio-heatmap.png" alt="Loss ratio heatmap by region and segment" style={{width: '100%', borderRadius: '4px', border: '1px solid #e0e0e0'}} />
+<a href="../data/loss-ratio-visualizations/loss-ratio-heatmap.html" target="_blank">
+<img src={imgHeatmap.src} alt="Loss ratio heatmap by region and segment" style={{width: '100%', borderRadius: '4px', border: '1px solid #e0e0e0'}} />
 </a>
-<p style={{fontSize: '0.85rem', marginTop: '0.5rem'}}><a href="/data/loss-ratio-visualizations/loss-ratio-heatmap.html" target="_blank">Heatmap by Segment</a></p>
+<p style={{fontSize: '0.85rem', marginTop: '0.5rem'}}><a href="../data/loss-ratio-visualizations/loss-ratio-heatmap.html" target="_blank">Heatmap by Segment</a></p>
 </div>
 </div>
 
