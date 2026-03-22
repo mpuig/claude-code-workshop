@@ -3,6 +3,8 @@ title: "Appendix D: Sub-agents & Agent Teams"
 description: "How to use Claude Code sub-agents for parallel work, create custom agents for your team, and coordinate multi-agent teams for complex insurance workflows."
 ---
 
+import { Os, Mac, Win } from '../../components/os'
+
 # Appendix D: Sub-agents & Agent Teams
 
 > **Type:** Reference | **Prerequisites:** None
@@ -86,7 +88,7 @@ When analyzing claims data:
 | Location | Scope | Shared? | Priority |
 |----------|-------|---------|----------|
 | `.claude/agents/` | Current project | Yes (commit to repo) | Highest |
-| `~/.claude/agents/` (Mac/Linux) or `%USERPROFILE%\.claude\agents\` (Windows) | All your projects | No (local) | Lower |
+| <Os code mac="~/.claude/agents/" win={"%USERPROFILE%\\.claude\\agents\\"} /> | All your projects | No (local) | Lower |
 
 Project agents (`.claude/agents/`) are ideal for team-shared roles. Commit them to version control so your team uses and improves them together.
 

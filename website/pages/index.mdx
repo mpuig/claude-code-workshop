@@ -3,6 +3,8 @@ title: Claude Code Workshop
 description: Practical training for non-technical professionals on using Claude Code to build solutions without writing code.
 ---
 
+import { Os, Mac, Win } from '../components/os'
+
 # Claude Code Workshop
 
 Practical training for non-technical professionals on using Claude Code to build solutions without writing code.
@@ -105,11 +107,12 @@ Use these alongside the course when you need background, datasets, or deeper gui
 ## Prerequisites
 
 - A Claude account with Claude Code access
-- A terminal (macOS Terminal, Windows PowerShell, or WSL)
+- A terminal (<Os mac="macOS Terminal" win="Windows PowerShell or WSL" />)
 - No programming knowledge required
 
 ## Quick Start
 
+<Mac>
 ```bash
 # 1. Install Claude Code
 curl -fsSL https://claude.ai/install.sh | bash
@@ -119,3 +122,15 @@ claude
 
 # 3. Follow Module 1.2 to get set up
 ```
+</Mac>
+<Win>
+```powershell
+# 1. Install Claude Code
+irm https://claude.ai/install.ps1 | iex
+
+# 2. Start Claude Code
+claude
+
+# 3. Follow Module 1.2 to get set up
+```
+</Win>

@@ -3,6 +3,8 @@ title: "Appendix A: Claude Cowork"
 description: What Claude Cowork is, how it compares to Claude Code and Chat, and how to use plugins, MCP connectors, and cross-session memory for insurance workflows.
 ---
 
+import { Os, Mac, Win } from '../../components/os'
+
 # Appendix A: Claude Cowork
 
 > **Type:** Reference | **Prerequisites:** None
@@ -134,7 +136,7 @@ Configure these in **Settings > Connectors**.
 
 Adding an MCP server to Claude Desktop makes it available in Chat, Cowork, and Code Tab. However, it does **not** automatically apply to the Claude Code CLI. The CLI uses its own configuration.
 
-> **Important:** Chat and Cowork share `claude_desktop_config.json`. Code Tab shares that file plus `~/.claude.json` (`%USERPROFILE%\.claude.json` on Windows). Code CLI uses `~/.claude.json` (global) or `.mcp.json` (per-project). Adding an MCP to one tool does not make it available in the others.
+> **Important:** Chat and Cowork share `claude_desktop_config.json`. Code Tab shares that file plus <Os code mac="~/.claude.json" win="%USERPROFILE%\.claude.json" />. Code CLI uses <Os code mac="~/.claude.json" win="%USERPROFILE%\.claude.json" /> (global) or `.mcp.json` (per-project). Adding an MCP to one tool does not make it available in the others.
 
 ---
 
@@ -237,21 +239,21 @@ memory/
 | **Sub-agents (parallel tasks)** | No | Parallel sub-agents | Task tool (up to 10 parallel) | Task tool + custom (`claude/agents/`) |
 | | | | | |
 | **Cross-session memory** | Built-in | No -- add via instructions | No -- add via instructions | No -- add via instructions |
-| **Instructions** | Global + Project instructions | Global + folder instructions | Global + folder + CLAUDE.md | CLAUDE.md (project) + `~/.claude/CLAUDE.md` (global) |
+| **Instructions** | Global + Project instructions | Global + folder instructions | Global + folder + CLAUDE.md | CLAUDE.md (project) + <Os code mac="~/.claude/CLAUDE.md" win="%USERPROFILE%\.claude\CLAUDE.md" /> (global) |
 | **Projects** | Projects feature (web + desktop) | Folder-based only | Folder-based | Folder-based |
 | | | | | |
 | **Built-in skills (pdf, docx...)** | Yes | Yes | Yes | Install via plugin |
 | **Custom skills via Settings UI** | Upload .zip or .md | Upload .zip or .md | Upload .zip or .md | No |
-| **Custom skills via filesystem** | No | No | `~/.claude/skills/` (global) | `~/.claude/skills/` (global) + `.claude/skills/` (project) |
+| **Custom skills via filesystem** | No | No | <Os code mac="~/.claude/skills/" win={"%USERPROFILE%\\.claude\\skills\\"} /> (global) | <Os code mac="~/.claude/skills/" win={"%USERPROFILE%\\.claude\\skills\\"} /> (global) + `.claude/skills/` (project) |
 | **Plugin UI panel** | No | Cowork-specific (default: knowledge-work-plugins) | Code Tab-specific (default: claude-code) | No |
 | **Slash commands** | Reference by name only | Autocomplete | Autocomplete | Works but no autocomplete |
 | | | | | |
 | **Remote connectors (Gmail, Slack...)** | Yes | Yes | Yes | No -- use `claude mcp add` |
 | **Extensions (.mcpb / .dxt)** | Desktop only | Desktop only | Desktop only | No |
-| **Custom MCP servers (JSON config)** | Desktop only | Desktop only | Desktop config + `~/.claude.json` | `~/.claude.json` or `.mcp.json` (project) |
+| **Custom MCP servers (JSON config)** | Desktop only | Desktop only | Desktop config + <Os code mac="~/.claude.json" win="%USERPROFILE%\.claude.json" /> | <Os code mac="~/.claude.json" win="%USERPROFILE%\.claude.json" /> or `.mcp.json` (project) |
 | **Project-scoped MCPs** | Global only | Global only | Global only | Yes -- per-project via `.mcp.json` |
 
-> **Note:** Config files differ across tools. Chat/Cowork use `claude_desktop_config.json`. Code Tab shares that file plus `~/.claude.json`. Code CLI uses `~/.claude.json` (global) or `.mcp.json` (project). Adding an MCP to one does not make it available in the others.
+> **Note:** Config files differ across tools. Chat/Cowork use `claude_desktop_config.json`. Code Tab shares that file plus <Os code mac="~/.claude.json" win="%USERPROFILE%\.claude.json" />. Code CLI uses <Os code mac="~/.claude.json" win="%USERPROFILE%\.claude.json" /> (global) or `.mcp.json` (project). Adding an MCP to one does not make it available in the others.
 
 ---
 

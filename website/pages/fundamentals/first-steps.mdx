@@ -3,6 +3,8 @@ title: "Module 2.1: First Steps with Claude Code"
 description: "Learn how to give Claude instructions in natural language, reference files, and complete three insurance scenarios."
 ---
 
+import { Os, Mac, Win } from '../../components/os'
+
 # Module 2.1: First Steps with Claude Code
 
 > **Time:** 30 minutes | **Prerequisites:** Claude Code installed and authenticated ([Quick Start](/getting-started/install))
@@ -37,7 +39,7 @@ Claude Code works like talking to a very capable colleague. You type what you ne
 When you want Claude to read a file on your computer, use the `@` symbol followed by the file path:
 
 ```text
-Summarize the key findings in @/Users/yourname/Documents/mig-claims-q3-2024.csv
+Summarize the key findings in @<Os code mac="/Users/yourname/Documents/mig-claims-q3-2024.csv" win="C:\Users\yourname\Documents\mig-claims-q3-2024.csv" />
 ```
 
 Claude will read the file and work with its contents. This works with:

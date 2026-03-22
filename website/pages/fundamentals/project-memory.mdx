@@ -3,6 +3,8 @@ title: "Module 2.2: Project Memory with CLAUDE.md"
 description: "Learn how to use CLAUDE.md to give Claude Code persistent context about your projects and preferences."
 ---
 
+import { Os, Mac, Win } from '../../components/os'
+
 # Module 2.2: Project Memory with CLAUDE.md
 
 > **Time:** 15 minutes | **Prerequisites:** [Module 2.1: First Steps](/fundamentals/first-steps)
@@ -22,7 +24,7 @@ CLAUDE.md is a plain text file you place in your project folder. When you start 
 You can have:
 
 - **Project-level CLAUDE.md** -- lives in your project folder, applies to that project only
-- **Global CLAUDE.md** -- lives in your home directory (`~/.claude/CLAUDE.md` on Mac/Linux, `%USERPROFILE%\.claude\CLAUDE.md` on Windows), applies to every session everywhere
+- **Global CLAUDE.md** -- lives in your home directory (<Os code mac="~/.claude/CLAUDE.md" win="%USERPROFILE%\.claude\CLAUDE.md" />), applies to every session everywhere
 
 ![CLAUDE.md hierarchy across repositories and users](./images/claude-md-hierarchy.png)
 

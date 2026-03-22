@@ -125,3 +125,50 @@ article blockquote {
   font-weight: 600;
   margin-top: 2.5rem;
 }
+
+/* OS toggle in navbar */
+.os-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 4px 10px;
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  border-radius: 6px;
+  background: transparent;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1;
+  transition: border-color 0.15s;
+}
+
+.os-toggle:hover {
+  border-color: rgba(128, 128, 128, 0.6);
+}
+
+.os-toggle-active {
+  color: hsl(169, 60%, 45%);
+  font-weight: 600;
+}
+
+.os-toggle-inactive {
+  opacity: 0.4;
+}
+
+.os-toggle-separator {
+  opacity: 0.3;
+  margin: 0 1px;
+}
+
+/* OS-aware inline code */
+code.os-code {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  padding: 0.15em 0.35em;
+  border-radius: 4px;
+  background: rgba(128, 128, 128, 0.1);
+}
+
+.dark code.os-code {
+  background: rgba(128, 128, 128, 0.2);
+}

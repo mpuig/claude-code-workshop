@@ -3,6 +3,8 @@ title: "Building Skills for Claude Code"
 description: Learn what skills are, how to structure them, and best practices for creating repeatable insurance workflows that Claude can follow consistently.
 ---
 
+import { Os, Mac, Win } from '../../components/os'
+
 # Building Skills for Claude Code
 
 > **Type:** Reference | **Prerequisites:** [Building an Insurance App](/vibe-coding)
@@ -163,7 +165,7 @@ Skills can be installed at different levels depending on how broadly they should
 | Location | Scope | How to install |
 |----------|-------|----------------|
 | Claude.ai Settings > Skills | Shared across Chat, Cowork, and Code Tab | Upload `.zip` or `.md` |
-| `~/.claude/skills/` (Mac/Linux) or `%USERPROFILE%\.claude\skills\` (Windows) | All Claude Code projects on your machine | Place skill folder in directory |
+| <Os code mac="~/.claude/skills/" win={"%USERPROFILE%\\.claude\\skills\\"} /> | All Claude Code projects on your machine | Place skill folder in directory |
 | `.claude/skills/` (in project) | Only this specific project | Place skill folder in project |
 
 For more on how skills work across Claude's different interfaces, see [Appendix A: Claude Cowork](/appendix/claude-cowork#plugins-and-skills).

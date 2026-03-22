@@ -1,8 +1,12 @@
 import { useRouter } from 'next/router'
 import type { DocsThemeConfig } from 'nextra-theme-docs'
+import { OsToggle } from './components/os-toggle'
 
 const config: DocsThemeConfig = {
   logo: <strong>Claude Code Workshop</strong>,
+  navbar: {
+    extraContent: <OsToggle />,
+  },
   project: {
     link: 'https://github.com/mpuig/claude-code-workshop',
   },
